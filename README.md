@@ -1,6 +1,6 @@
 # OGC API Hackathon 2019
 
-<img src="http://www.opengeospatial.org/pub/www/files/OGC_Logo_2D_Blue_x_0_0.png" width="200"/>
+[<img src="http://www.opengeospatial.org/pub/www/files/OGC_Logo_2D_Blue_x_0_0.png" width="200"/>](https://www.opengeospatial.org)
 
 ## Hosted and Sponsored by
 [<img src="https://geovation.uk/wp-content/uploads/2018/11/geovation_logo.svg" width="200"/>](https://geovation.uk/) &nbsp;&nbsp;&nbsp;&nbsp; [<img src="https://www.ordnancesurvey.co.uk/blog/wp-content/uploads/2018/08/os-logo.png" width="200"/>](https://www.ordnancesurvey.co.uk/s) &nbsp;&nbsp;&nbsp;&nbsp; [<img src="https://www.esa.int/esalogo/images/logotype/img_colorlogo_darkblue.gif" width="200"/>](https://www.esa.int/ESA)
