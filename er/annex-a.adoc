@@ -1,70 +1,117 @@
 [appendix]
-[[AbstractTestSuite]]
-= Abstract Test Suite
+[[OGCAPIImplementations]]
+= Implementations of OGC APIs
 
-(( An Abstract Test Suite may be relevant to an Engineering Report. ))
+include::participanting-organizations/MeteorologicalServiceofCanada.adoc[]
 
-((An Abstract Test Suite is specified in Clause 9 and Annex A of ISO 19105. That Clause and Annex specify the ISO/TC 211 requirements for Abstract Test Suites.
-Examples of Abstract Test Suites are available in an annex of most ISO 191XX documents, one of the more useful is in ISO 19136. Note that this guidance may be more abstract than needed in an OGC® Implementation Standard. ))
+include::participanting-organizations/WebGeoDataVore.adoc[]
 
-NOTE: We skip level 2 headers so that asciidoc correctly numbers the subsections in the appendix.
+include::participanting-organizations/EcereCorporation.adoc[]
 
-=== Test module for conformance level 1
+include::participanting-organizations/interactiveinstrumentsGmbH.adoc[]
 
-==== 	Conformance level 1
-[cols=">20h,<80d",width="100%"]
-|====================
-|Test identifier | /test/case/id
-|Test purpose: | Confirm that the IUT satisfies all applicable requirements for conformance level 1.
-|Test method: a| Functional testing performed in an automated and/or manual manner. Verify the behaviour of the IUT for the following operations:
+include::participanting-organizations/UniversityCollegeLondon.adoc[]
 
-*	GetCapabilities (mandatory)
-*	DescribeRecord (mandatory)
-*	GetRecords (mandatory)
-*	GetRecordById (mandatory)
-*	GetRepositoryItem (mandatory)
-*	GetDomain (optional)
+include::participanting-organizations/DeimosSpaceUK.adoc[]
 
-|Requirement: |OGC 07-110: cl. 2.2
-|Test type: |Capability
-|====================
+include::participanting-organizations/ECMWF.adoc[]
 
-==== 	Test case for validity of XML response entity
-[cols=">20h,<80d",width="100%"]
-|====================
-|Test identifier | http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse
-|Test purpose: |The XML response entity is valid.
-|Test method: |Validate content of response entity against corresponding element declaration.
-|Requirement: |OGC 07-006r1: cl. 10.2.5.1, p. 118
-|Test type: |Capability
-|====================
+include::participanting-organizations/EOXITServicesGmbH.adoc[]
 
-=== Test module for conformance level 2
+include::participanting-organizations/GeoCatBV.adoc[]
 
-==== Conformance level 2
-[cols=">20h,<80d",width="100%"]
-|====================
-|Test identifier | /test/case/id
-|Test purpose: | Confirm that the IUT satisfies all applicable requirements for conformance level 1.
-|Test method: a| Functional testing performed in an automated and/or manual manner. Verify the behaviour of the IUT for the following operations:
+include::participanting-organizations/CubeWerxInc.adoc[]
 
-*	GetCapabilities (mandatory)
-*	DescribeRecord (mandatory)
-*	GetRecords (mandatory)
-*	GetRecordById (mandatory)
-*	GetRepositoryItem (mandatory)
-*	GetDomain (optional)
+include::participanting-organizations/SecureDimensions.adoc[]
 
-|Requirement: |OGC 07-110: cl. 2.2
-|Test type: |Capability
-|====================
+include::participanting-organizations/EuracResearch.adoc[]
 
-==== Test case for validity of XML response entity
-[cols=">20h,<80d",width="100%"]
-|====================
-|Test identifier | http://www.opengis.net/spec/xxx/conf/WRS.General-ValidResponse
-|Test purpose: |The XML response entity is valid.
-|Test method: |Validate content of response entity against corresponding element declaration.
-|Requirement: |OGC 07-006r1: cl. 10.2.5.1, p. 118
-|Test type: |Capability
-|====================
+include::participanting-organizations/UniversityofMünster.adoc[]
+
+include::participanting-organizations/Cicy.adoc[]
+
+include::participanting-organizations/HelyxSIS.adoc[]
+
+include::participanting-organizations/WestUniversityofTimisoara.adoc[]
+
+include::participanting-organizations/LandInformationNewZealand.adoc[]
+
+include::participanting-organizations/Dstl.adoc[]
+
+include::participanting-organizations/GeoSolutions.adoc[]
+
+include::participanting-organizations/OSGeo.adoc[]
+
+include::participanting-organizations/NOAANWS.adoc[]
+
+include::participanting-organizations/DuisburgEssenuniversity.adoc[]
+
+include::participanting-organizations/LandcareResearchNewZealand.adoc[]
+
+include::participanting-organizations/MetOffice.adoc[]
+
+include::participanting-organizations/GeoLabs.adoc[]
+
+include::participanting-organizations/JacobsUniversity.adoc[]
+
+include::participanting-organizations/InfinityCorporationLimited.adoc[]
+
+include::participanting-organizations/BritishAntarcticSurvey.adoc[]
+
+include::participanting-organizations/JetPropulsionLaboratory.adoc[]
+
+include::participanting-organizations/PrincetonUniversityLibrary.adoc[]
+
+include::participanting-organizations/CREAF.adoc[]
+
+include::participanting-organizations/StrategicAllianceConsultingInc.adoc[]
+
+include::participanting-organizations/Sinergise.adoc[]
+
+include::participanting-organizations/akouas.adoc[]
+
+include::participanting-organizations/52NorthGmbH.adoc[]
+
+include::participanting-organizations/NationalLandSurveyofFinland.adoc[]
+
+include::participanting-organizations/EOSDataAnalytics.adoc[]
+
+include::participanting-organizations/DistrictGovernmentCologneGeobasisNRW.adoc[]
+
+include::participanting-organizations/Hexagon.adoc[]
+
+include::participanting-organizations/EsriUK.adoc[]
+
+include::participanting-organizations/GeoSeer.adoc[]
+
+include::participanting-organizations/blockdore.adoc[]
+
+include::participanting-organizations/Geovation.adoc[]
+
+include::participanting-organizations/Heazeltech.adoc[]
+
+include::participanting-organizations/NASAJPL.adoc[]
+
+include::participanting-organizations/SimmsReeve.adoc[]
+
+include::participanting-organizations/ARC.adoc[]
+
+include::participanting-organizations/PrincetonUniversity.adoc[]
+
+include::participanting-organizations/JRCEuropeanCommission.adoc[]
+
+include::participanting-organizations/ElToro.adoc[]
+
+include::participanting-organizations/Arup.adoc[]
+
+include::participanting-organizations/GEOBEYOND.adoc[]
+
+include::participanting-organizations/NaturalResourcesCanada.adoc[]
+
+include::participanting-organizations/UniversityofNotreDame.adoc[]
+
+include::participanting-organizations/Solenix.adoc[]
+
+include::participanting-organizations/UniversityofBirmingham.adoc[]
+
+include::participanting-organizations/QuickCaption.adoc[]

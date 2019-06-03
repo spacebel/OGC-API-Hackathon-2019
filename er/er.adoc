@@ -138,12 +138,9 @@ include::4-overview.adoc[]
 
 include::5-introduction.adoc[]
 
-include::6-key_findings.adoc[]
+include::6-specifications.adoc[]
 
-include::7-specifications.adoc[]
-
-include::8-implementations.adoc[]
-
+include::7-key_findings.adoc[]
 
 // you may add any number of chapters as required here
 
