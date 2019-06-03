@@ -6,17 +6,13 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
 .NOTE: Delete the first three terms because they are examples.
 
-&#9679; coordinate reference system ::
+&#9679; application programming interface ::
 
- coordinate system that is related to the real world by a datum term name (source: ISO 19111)
+ standard set of documented and supported functions and procedures that expose the capabilities or data of an operating system, application or service to other applications (adapted from ISO/IEC TR 13066-2:2016)
 
 &#9679; portrayal ::
 
  presentation of information to humans (source: ISO 19117)
-
-&#9679; LiDAR ::
-
- *Light Detection and Ranging* -- a common method for acquiring point clouds through aerial, terrestrial, and mobile acquisition methods.
 
 &#9679; term name ::
 
@@ -31,9 +27,8 @@ For the purposes of this report, the definitions specified in Clause 4 of the OW
 
 .NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document. All symbols should be listed in alphabetical order. Some more frequently used abbreviated terms are provided below as examples.
 
-* COM	Component Object Model
-* CORBA	Common Object Request Broker Architecture
-* COTS	Commercial Off The Shelf
-* DCE	Distributed Computing Environment
-* DCOM	Distributed Component Object Model
-* IDL	Interface Definition Language
+* API	Application Programming Interface
+* WCS	Web Coverage Service
+* WFS	Web Feature Service
+* WMTS	Web Map Tile Service
+* OWS	OGC Web Services

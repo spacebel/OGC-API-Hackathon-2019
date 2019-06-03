@@ -1,9 +1,6 @@
 == Subject
-(( The following is, as all texts in double parentheses, a helper text. Please remove this and all other helper texts once done. ))
 
-(( The Subject clause shall define without ambiguity the topic of this document and the aspect(s) covered. It shall be succinct so that it can be used as a text for bibliographic purposes. ))
-
-(( This section shall be between 2-3 sentences and not longer than 140 words total.))
+The subject of this Engineering Report (ER) is a hackathon event that was held from June 20th to 21st, 2019 to advance the development of OGC Application Programming Interface (API) specifications. An API is a standard set of documented and supported functions and procedures that expose the capabilities or data of an operating system, application or service to other applications (adapted from ISO/IEC TR 13066-2:2016). The OGC API Hackathon 2019, as the event was called, was hosted by the Geovation Hub in London, United Kingdom. The event was sponsored by the European Space Agency (ESA) and the Ordnance Survey.
 
 == Executive Summary
 
@@ -27,10 +24,18 @@ All questions regarding this document should be directed to the editor or the co
 [width="80%",options="header",caption=""]
 |====================
 |Name |Organization | Role
-|((Full Name)) | (( from org )) | ((Editor/Contributor))
-|((Full Name)) | ((from org)) |((Editor/Contributor))
+|Gobe Hobona | Open Geospatial Consortium |TBA
+|Scott Simmons | Open Geospatial Consortium |TBA
+|Michael Gordon | Ordnance Survey |TBA
+|Simon Green | Ordnance Survey |TBA
+|((Full Name)) | ((from org)) |TBA
+|((Full Name)) | ((from org)) |TBA
+|((Full Name)) | ((from org)) |TBA
+|((Full Name)) | ((from org)) |TBA
+|((Full Name)) | ((from org)) |TBA
 |====================
 
+NOTE: Role = Editor and/or Contributor
 
 // *****************************************************************************
 // Editors please do not change the Foreword.

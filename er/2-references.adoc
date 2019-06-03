@@ -5,4 +5,11 @@ The following normative documents are referenced in this document.
 
 .NOTE: 	Only normative standards are referenced here, e.g. OGC, ISO or other SDO standards. All other references are listed in the bibliography. Example:
 
-* https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9, OGC® Web Services Common Standard]
+* https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC: OGC 06-121r9, OGC® Web Services Common Standard]
+* https://cdn.rawgit.com/opengeospatial/WFS_FES/3.0.0-draft.1/docs/17-069.html[OGC: OGC 17-069, OGC Web Feature Service 3.0: Part 1 - Core, Version 3.0.0-draft.1]
+* https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md[OpenAPI Initiative: OpenAPI Specification 3.0.1]
+* http://docs.opengeospatial.org/is/09-146r6/09-146r6.html[OGC: OGC 09-146r6, OGC® Coverage Implementation Schema, version 1.1, 2017]
+* http://docs.opengeospatial.org/is/17-089r1/17-089r1.html[OGC: OGC Web Coverage Service (WCS) 2.1 Interface Standard - Core, 2018]
+* http://docs.opengeospatial.org/is/14-065/14-065.html[OGC: OGC 14-065r2, OGC® WPS 2.0.2 Interface Standard Corrigendum 2, 2018]
+* http://portal.opengeospatial.org/files/?artifact_id=35326[OGC: OGC OGC 07-057r7, OpenGIS® Web Map Tile Service Implementation Standard, 2010]
+* http://docs.opengeospatial.org/is/09-025r2/09-025r2.html[OGC 09-025r2, OGC® Web Feature Service 2.0 Interface Standard – With Corrigendum, 2014]

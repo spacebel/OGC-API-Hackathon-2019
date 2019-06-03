@@ -1,0 +1,24 @@
+[[OGCAPISpecifications]]
+== OGC API Specifications
+
+TBA
+
+=== OGC API - Common Specification
+
+TBA
+
+=== OGC API - Features Specification
+
+TBA
+
+=== OGC API - Processes Specification
+
+TBA
+
+=== OGC API - Map Tiles Specification
+
+TBA
+
+=== OGC API - Coverages Specification
+
+TBA

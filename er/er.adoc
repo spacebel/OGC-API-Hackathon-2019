@@ -37,7 +37,7 @@
 // The title here should match the title on the first page.
 // *****************************************************************************
 
-:title: OGC Testbed-14:
+:title: OGC API Hackathon 2019 Engineering Report
 
 // *****************************************************************************
 // Document identifier, with format "OGC YY-nnn" (e.g., OGC 17-067).
@@ -136,9 +136,14 @@ include::4-overview.adoc[]
 // Editors organize included-file inputs as appropriate starting here.
 // *****************************************************************************
 
-include::5-example.adoc[]
+include::5-introduction.adoc[]
 
-include::6-math_example.adoc[]
+include::6-key_findings.adoc[]
+
+include::7-specifications.adoc[]
+
+include::8-implementations.adoc[]
+
 
 // you may add any number of chapters as required here
 
@@ -148,9 +153,6 @@ include::6-math_example.adoc[]
 
 include::annex-a.adoc[]
 
-include::annex-b.adoc[]
-
-include::annex-c.adoc[]
 
 // *****************************************************************************
 // Revision History should be the last annex before the Bibliography.
