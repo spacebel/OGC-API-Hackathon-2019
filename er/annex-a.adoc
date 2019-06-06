@@ -10,6 +10,8 @@ include::participanting-organizations/EcereCorporation.adoc[]
 
 include::participanting-organizations/interactiveinstrumentsGmbH.adoc[]
 
+include::participanting-organizations/ISRICWorldSoilInformation.adoc[]
+
 include::participanting-organizations/UniversityCollegeLondon.adoc[]
 
 include::participanting-organizations/DeimosSpaceUK.adoc[]
@@ -26,7 +28,7 @@ include::participanting-organizations/SecureDimensions.adoc[]
 
 include::participanting-organizations/EuracResearch.adoc[]
 
-include::participanting-organizations/UniversityofMünster.adoc[]
+include::participanting-organizations/UniversityofMunster.adoc[]
 
 include::participanting-organizations/Cicy.adoc[]
 
