@@ -95,7 +95,9 @@ Participants were advised to bring their own laptops to the hackathon. To suppor
 
 NOTE: This list will be updated at the start of the Hackathon
 
-The following organizations participated in the Hackathon as sponsors, organizers, participants, or observers:
+The Hackathon was sponsored by the European Space Agency (ESA) and the Ordnance Survey.
+
+The following organizations participated in the Hackathon:
 
 * 52°North GmbH
 * akouas
@@ -110,7 +112,7 @@ The following organizations participated in the Hackathon as sponsors, organizer
 * Deimos Space UK
 * developer
 * District Government Cologne - Geobasis NRW
-* Dstl
+* Defence Science and Technology Laboratory (Dstl)
 * Duisburg Essen university
 * Ecere Corporation
 * ECMWF
@@ -119,6 +121,7 @@ The following organizations participated in the Hackathon as sponsors, organizer
 * EOX IT Services GmbH
 * Esri UK
 * Eurac Research
+* European Space Agency (ESA)
 * GEOBEYOND
 * GeoCat B.V.
 * GeoLabs
@@ -131,17 +134,19 @@ The following organizations participated in the Hackathon as sponsors, organizer
 * Infinity Corporation Limited
 * interactive instruments GmbH
 * Jacobs University
-* Jet Propulsion Laboratory
+* Jet Propulsion Laboratory (JPL)
 * JRC, European Commission
 * Land Information New Zealand
 * Landcare Research, New Zealand
 * Met Office
 * Meteorological Service of Canada
-* NASA JPL
+* National Aeronautics and Space Administration (NASA)
+* National Geospatial Intelligence Agency (NGA)
 * National Land Survey of Finland
 * Natural Resources Canada
 * NOAA/NWS
 * Open Geospatial Consortium
+* Ordnance Survey
 * OSGeo
 * Princeton University
 * Princeton University Library
