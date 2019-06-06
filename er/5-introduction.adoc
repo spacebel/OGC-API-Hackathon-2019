@@ -133,6 +133,7 @@ The following organizations participated in the Hackathon:
 * Hexagon
 * Infinity Corporation Limited
 * interactive instruments GmbH
+* ISRIC - World Soil Information
 * Jacobs University
 * Jet Propulsion Laboratory (JPL)
 * JRC, European Commission
