@@ -157,7 +157,6 @@ The following organizations participated in the Hackathon:
 * Sinergise
 * Solenix
 * Strategic Alliance Consulting Inc
-* The Met. Office
 * University College London
 * University of Birmingham
 * University of Münster
