@@ -82,6 +82,8 @@ include::participanting-organizations/Hexagon.adoc[]
 
 include::participanting-organizations/EsriUK.adoc[]
 
+include::participanting-organizations/ESA.adoc[]
+
 include::participanting-organizations/GeoSeer.adoc[]
 
 include::participanting-organizations/blockdore.adoc[]
@@ -90,7 +92,7 @@ include::participanting-organizations/Geovation.adoc[]
 
 include::participanting-organizations/Heazeltech.adoc[]
 
-include::participanting-organizations/NASAJPL.adoc[]
+include::participanting-organizations/NASA.adoc[]
 
 include::participanting-organizations/SimmsReeve.adoc[]
 
