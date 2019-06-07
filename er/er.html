@@ -740,35 +740,67 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_scenario">6.2. Scenario</a></li>
 <li><a href="#_what_was_provided">6.3. What was provided</a>
 <ul class="sectlevel3">
-<li><a href="#_data_and_supporting_services">6.3.1. Data and Supporting Services</a></li>
-<li><a href="#_deployment_infrastructure">6.3.2. Deployment Infrastructure</a></li>
+<li><a href="#_supporting_datasets">6.3.1. Supporting Datasets</a></li>
+<li><a href="#_supporting_services">6.3.2. Supporting Services</a></li>
+<li><a href="#_deployment_infrastructure">6.3.3. Deployment Infrastructure</a></li>
 </ul>
 </li>
 <li><a href="#_hackathon_participants">6.4. Hackathon Participants</a></li>
 </ul>
 </li>
-<li><a href="#OGCAPISpecifications">7. OGC API Specifications</a>
+<li><a href="#Architecture">7. Architecture</a>
 <ul class="sectlevel2">
-<li><a href="#_ogc_api_common_specification">7.1. OGC API - Common Specification</a></li>
-<li><a href="#_ogc_api_features_specification">7.2. OGC API - Features Specification</a></li>
-<li><a href="#_ogc_api_processes_specification">7.3. OGC API - Processes Specification</a></li>
-<li><a href="#_ogc_api_map_tiles_specification">7.4. OGC API - Map Tiles Specification</a></li>
-<li><a href="#_ogc_api_coverages_specification">7.5. OGC API - Coverages Specification</a></li>
+<li><a href="#_service_implementations">7.1. Service Implementations</a>
+<ul class="sectlevel3">
+<li><a href="#_pygeoapi">7.1.1. pygeoapi</a></li>
+<li><a href="#_52north_web_processing_service">7.1.2. 52°North Web Processing Service</a></li>
 </ul>
 </li>
-<li><a href="#KeyFindings">8. Key Findings</a>
+<li><a href="#_client_implementations">7.2. Client Implementations</a></li>
+</ul>
+</li>
+<li><a href="#OGCAPISpecifications">8. OGC API Specifications</a>
 <ul class="sectlevel2">
-<li><a href="#_results">8.1. Results</a></li>
-<li><a href="#_alternatives">8.2. Alternatives</a></li>
-<li><a href="#_experiences">8.3. Experiences</a></li>
-<li><a href="#_lessons_learnt">8.4. Lessons learnt</a></li>
-<li><a href="#_what_occurred">8.5. What occurred</a></li>
-<li><a href="#_what_are_the_next_steps">8.6. What are the next steps?</a></li>
+<li><a href="#_ogc_api_common">8.1. OGC API - Common</a>
+<ul class="sectlevel3">
+<li><a href="#_key_resources">8.1.1. Key Resources</a></li>
+</ul>
+</li>
+<li><a href="#_ogc_api_features">8.2. OGC API - Features</a>
+<ul class="sectlevel3">
+<li><a href="#_key_resources_2">8.2.1. Key Resources</a></li>
+</ul>
+</li>
+<li><a href="#_ogc_api_processes">8.3. OGC API - Processes</a>
+<ul class="sectlevel3">
+<li><a href="#_key_resources_3">8.3.1. Key Resources</a></li>
+</ul>
+</li>
+<li><a href="#_ogc_api_map_tiles">8.4. OGC API - Map Tiles</a>
+<ul class="sectlevel3">
+<li><a href="#_key_resources_4">8.4.1. Key Resources</a></li>
+</ul>
+</li>
+<li><a href="#_ogc_api_coverages">8.5. OGC API - Coverages</a>
+<ul class="sectlevel3">
+<li><a href="#_key_resources_5">8.5.1. Key Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#KeyFindings">9. Key Findings</a>
+<ul class="sectlevel2">
+<li><a href="#_results">9.1. Results</a></li>
+<li><a href="#_alternatives">9.2. Alternatives</a></li>
+<li><a href="#_experiences">9.3. Experiences</a></li>
+<li><a href="#_lessons_learnt">9.4. Lessons learnt</a></li>
+<li><a href="#_what_occurred">9.5. What occurred</a></li>
+<li><a href="#_what_are_the_next_steps">9.6. What are the next steps?</a></li>
 </ul>
 </li>
 <li><a href="#OGCAPIImplementations">Appendix A: Implementations of OGC APIs</a>
 <ul class="sectlevel2">
-<li><a href="#MeteorologicalServiceofCanada">A.1. Meteorological Service of Canada</a>
+<li><a href="#FiftyTwoNorthGmbH">A.1. 52°North GmbH</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate">A.1.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution">A.1.2. Implemented Solution</a></li>
@@ -777,7 +809,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations">A.1.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#WebGeoDataVore">A.2. WebGeoDataVore</a>
+<li><a href="#akouas">A.2. akouas</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_2">A.2.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_2">A.2.2. Implemented Solution</a></li>
@@ -786,7 +818,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_2">A.2.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#EcereCorporation">A.3. Ecere Corporation</a>
+<li><a href="#ARC">A.3. ARC</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_3">A.3.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_3">A.3.2. Implemented Solution</a></li>
@@ -795,7 +827,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_3">A.3.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#interactiveinstrumentsGmbH">A.4. interactive instruments GmbH</a>
+<li><a href="#Arup">A.4. Arup</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_4">A.4.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_4">A.4.2. Implemented Solution</a></li>
@@ -804,7 +836,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_4">A.4.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#ISRICWorldSoilInformation">A.5. ISRIC - World Soil Information</a>
+<li><a href="#blockdore">A.5. blockdore</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_5">A.5.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_5">A.5.2. Implemented Solution</a></li>
@@ -813,7 +845,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_5">A.5.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityCollegeLondon">A.6. University College London</a>
+<li><a href="#BritishAntarcticSurvey">A.6. British Antarctic Survey</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_6">A.6.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_6">A.6.2. Implemented Solution</a></li>
@@ -822,7 +854,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_6">A.6.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#DeimosSpaceUK">A.7. Deimos Space UK</a>
+<li><a href="#Cicy">A.7. Cicy</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_7">A.7.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_7">A.7.2. Implemented Solution</a></li>
@@ -831,7 +863,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_7">A.7.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#ECMWF">A.8. ECMWF</a>
+<li><a href="#CREAF">A.8. CREAF</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_8">A.8.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_8">A.8.2. Implemented Solution</a></li>
@@ -840,7 +872,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_8">A.8.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#EOXITServicesGmbH">A.9. EOX IT Services GmbH</a>
+<li><a href="#CubeWerxInc">A.9. CubeWerx Inc.</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_9">A.9.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_9">A.9.2. Implemented Solution</a></li>
@@ -849,7 +881,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_9">A.9.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#GeoCatBV">A.10. GeoCat B.V.</a>
+<li><a href="#DeimosSpaceUK">A.10. Deimos Space UK</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_10">A.10.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_10">A.10.2. Implemented Solution</a></li>
@@ -858,7 +890,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_10">A.10.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#CubeWerxInc">A.11. CubeWerx Inc.</a>
+<li><a href="#DistrictGovernmentCologneGeobasisNRW">A.11. District Government Cologne - Geobasis NRW</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_11">A.11.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_11">A.11.2. Implemented Solution</a></li>
@@ -867,7 +899,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_11">A.11.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#SecureDimensions">A.12. Secure Dimensions</a>
+<li><a href="#Dstl">A.12. Dstl</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_12">A.12.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_12">A.12.2. Implemented Solution</a></li>
@@ -876,7 +908,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_12">A.12.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#EuracResearch">A.13. Eurac Research</a>
+<li><a href="#DuisburgEssenuniversity">A.13. Duisburg Essen university</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_13">A.13.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_13">A.13.2. Implemented Solution</a></li>
@@ -885,7 +917,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_13">A.13.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityofMunster">A.14. University of Münster</a>
+<li><a href="#EcereCorporation">A.14. Ecere Corporation</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_14">A.14.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_14">A.14.2. Implemented Solution</a></li>
@@ -894,7 +926,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_14">A.14.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Cicy">A.15. Cicy</a>
+<li><a href="#ECMWF">A.15. ECMWF</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_15">A.15.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_15">A.15.2. Implemented Solution</a></li>
@@ -903,7 +935,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_15">A.15.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#HelyxSIS">A.16. Helyx SIS</a>
+<li><a href="#ElToro">A.16. El Toro</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_16">A.16.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_16">A.16.2. Implemented Solution</a></li>
@@ -912,7 +944,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_16">A.16.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#WestUniversityofTimisoara">A.17. West University of Timisoara</a>
+<li><a href="#EOSDataAnalytics">A.17. EOS Data Analytics</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_17">A.17.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_17">A.17.2. Implemented Solution</a></li>
@@ -921,7 +953,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_17">A.17.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#LandInformationNewZealand">A.18. Land Information New Zealand</a>
+<li><a href="#EOXITServicesGmbH">A.18. EOX IT Services GmbH</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_18">A.18.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_18">A.18.2. Implemented Solution</a></li>
@@ -930,7 +962,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_18">A.18.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Dstl">A.19. Dstl</a>
+<li><a href="#ESA">A.19. European Space Agency (ESA)</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_19">A.19.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_19">A.19.2. Implemented Solution</a></li>
@@ -939,7 +971,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_19">A.19.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#GeoSolutions">A.20. GeoSolutions</a>
+<li><a href="#EsriUK">A.20. Esri UK</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_20">A.20.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_20">A.20.2. Implemented Solution</a></li>
@@ -948,7 +980,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_20">A.20.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#OSGeo">A.21. OSGeo</a>
+<li><a href="#EuracResearch">A.21. Eurac Research</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_21">A.21.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_21">A.21.2. Implemented Solution</a></li>
@@ -957,7 +989,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_21">A.21.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#NOAANWS">A.22. NOAA/NWS</a>
+<li><a href="#GEOBEYOND">A.22. GEOBEYOND</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_22">A.22.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_22">A.22.2. Implemented Solution</a></li>
@@ -966,7 +998,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_22">A.22.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#DuisburgEssenuniversity">A.23. Duisburg Essen university</a>
+<li><a href="#GeoCatBV">A.23. GeoCat B.V.</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_23">A.23.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_23">A.23.2. Implemented Solution</a></li>
@@ -975,7 +1007,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_23">A.23.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#LandcareResearchNewZealand">A.24. Landcare Research, New Zealand</a>
+<li><a href="#GeoLabs">A.24. GeoLabs</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_24">A.24.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_24">A.24.2. Implemented Solution</a></li>
@@ -984,7 +1016,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_24">A.24.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#MetOffice">A.25. Met Office</a>
+<li><a href="#GeoSeer">A.25. GeoSeer</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_25">A.25.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_25">A.25.2. Implemented Solution</a></li>
@@ -993,7 +1025,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_25">A.25.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#GeoLabs">A.26. GeoLabs</a>
+<li><a href="#GeoSolutions">A.26. GeoSolutions</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_26">A.26.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_26">A.26.2. Implemented Solution</a></li>
@@ -1002,7 +1034,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_26">A.26.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#JacobsUniversity">A.27. Jacobs University</a>
+<li><a href="#Geovation">A.27. Geovation</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_27">A.27.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_27">A.27.2. Implemented Solution</a></li>
@@ -1011,7 +1043,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_27">A.27.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#InfinityCorporationLimited">A.28. Infinity Corporation Limited</a>
+<li><a href="#Heazeltech">A.28. Heazeltech</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_28">A.28.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_28">A.28.2. Implemented Solution</a></li>
@@ -1020,7 +1052,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_28">A.28.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#BritishAntarcticSurvey">A.29. British Antarctic Survey</a>
+<li><a href="#HelyxSIS">A.29. Helyx SIS</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_29">A.29.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_29">A.29.2. Implemented Solution</a></li>
@@ -1029,7 +1061,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_29">A.29.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#JetPropulsionLaboratory">A.30. Jet Propulsion Laboratory</a>
+<li><a href="#Hexagon">A.30. Hexagon</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_30">A.30.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_30">A.30.2. Implemented Solution</a></li>
@@ -1038,7 +1070,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_30">A.30.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#PrincetonUniversityLibrary">A.31. Princeton University Library</a>
+<li><a href="#InfinityCorporationLimited">A.31. Infinity Corporation Limited</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_31">A.31.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_31">A.31.2. Implemented Solution</a></li>
@@ -1047,7 +1079,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_31">A.31.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#CREAF">A.32. CREAF</a>
+<li><a href="#interactiveinstrumentsGmbH">A.32. interactive instruments GmbH</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_32">A.32.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_32">A.32.2. Implemented Solution</a></li>
@@ -1056,7 +1088,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_32">A.32.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#StrategicAllianceConsultingInc">A.33. Strategic Alliance Consulting Inc</a>
+<li><a href="#ISRICWorldSoilInformation">A.33. ISRIC - World Soil Information</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_33">A.33.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_33">A.33.2. Implemented Solution</a></li>
@@ -1065,7 +1097,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_33">A.33.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Sinergise">A.34. Sinergise</a>
+<li><a href="#JacobsUniversity">A.34. Jacobs University</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_34">A.34.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_34">A.34.2. Implemented Solution</a></li>
@@ -1074,225 +1106,229 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_34">A.34.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#akouas">A.35. akouas</a>
+<li><a href="#JetPropulsionLaboratory">A.35. Jet Propulsion Laboratory</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_35">A.35.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_35">A.35.2. Implemented Solution</a></li>
 <li><a href="#_proposed_alternatives_35">A.35.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_35">A.35.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_35">A.35.5. Other Impressions &amp; Recommendations</a></li>
-<li><a href="#_motivation_to_participate_36">A.35.6. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_36">A.35.7. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_36">A.35.8. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_36">A.35.9. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_36">A.35.10. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#NationalLandSurveyofFinland">A.36. National Land Survey of Finland</a>
+<li><a href="#JRCEuropeanCommission">A.36. JRC, European Commission</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_37">A.36.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_37">A.36.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_37">A.36.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_37">A.36.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_37">A.36.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_36">A.36.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_36">A.36.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_36">A.36.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_36">A.36.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_36">A.36.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#EOSDataAnalytics">A.37. EOS Data Analytics</a>
+<li><a href="#LandcareResearchNewZealand">A.37. Landcare Research, New Zealand</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_38">A.37.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_38">A.37.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_38">A.37.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_38">A.37.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_38">A.37.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_37">A.37.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_37">A.37.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_37">A.37.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_37">A.37.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_37">A.37.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#DistrictGovernmentCologneGeobasisNRW">A.38. District Government Cologne - Geobasis NRW</a>
+<li><a href="#LandInformationNewZealand">A.38. Land Information New Zealand</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_39">A.38.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_39">A.38.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_39">A.38.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_39">A.38.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_39">A.38.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_38">A.38.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_38">A.38.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_38">A.38.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_38">A.38.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_38">A.38.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Hexagon">A.39. Hexagon</a>
+<li><a href="#MeteorologicalServiceofCanada">A.39. Meteorological Service of Canada</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_40">A.39.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_40">A.39.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_40">A.39.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_40">A.39.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_40">A.39.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_39">A.39.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_39">A.39.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_39">A.39.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_39">A.39.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_39">A.39.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#EsriUK">A.40. Esri UK</a>
+<li><a href="#MetOffice">A.40. Met Office</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_41">A.40.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_41">A.40.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_41">A.40.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_41">A.40.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_41">A.40.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_40">A.40.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_40">A.40.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_40">A.40.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_40">A.40.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_40">A.40.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#ESA">A.41. European Space Agency (ESA)</a>
+<li><a href="#NASA">A.41. National Aeronautics and Space Administration (NASA)</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_42">A.41.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_42">A.41.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_42">A.41.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_42">A.41.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_42">A.41.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_41">A.41.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_41">A.41.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_41">A.41.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_41">A.41.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_41">A.41.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#GeoSeer">A.42. GeoSeer</a>
+<li><a href="#NationalLandSurveyofFinland">A.42. National Land Survey of Finland</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_43">A.42.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_43">A.42.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_43">A.42.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_43">A.42.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_43">A.42.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_42">A.42.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_42">A.42.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_42">A.42.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_42">A.42.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_42">A.42.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#blockdore">A.43. blockdore</a>
+<li><a href="#NaturalResourcesCanada">A.43. Natural Resources Canada</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_44">A.43.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_44">A.43.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_44">A.43.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_44">A.43.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_44">A.43.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_43">A.43.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_43">A.43.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_43">A.43.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_43">A.43.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_43">A.43.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Geovation">A.44. Geovation</a>
+<li><a href="#NOAANWS">A.44. NOAA/NWS</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_45">A.44.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_45">A.44.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_45">A.44.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_45">A.44.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_45">A.44.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_44">A.44.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_44">A.44.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_44">A.44.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_44">A.44.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_44">A.44.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Heazeltech">A.45. Heazeltech</a>
+<li><a href="#OSGeo">A.45. OSGeo</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_46">A.45.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_46">A.45.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_46">A.45.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_46">A.45.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_46">A.45.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_45">A.45.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_45">A.45.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_45">A.45.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_45">A.45.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_45">A.45.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#NASA">A.46. National Aeronautics and Space Administration (NASA)</a>
+<li><a href="#PrincetonUniversity">A.46. Princeton University</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_47">A.46.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_47">A.46.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_47">A.46.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_47">A.46.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_47">A.46.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_46">A.46.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_46">A.46.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_46">A.46.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_46">A.46.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_46">A.46.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#SimmsReeve">A.47. Simms Reeve</a>
+<li><a href="#PrincetonUniversityLibrary">A.47. Princeton University Library</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_48">A.47.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_48">A.47.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_48">A.47.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_48">A.47.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_48">A.47.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_47">A.47.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_47">A.47.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_47">A.47.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_47">A.47.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_47">A.47.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#ARC">A.48. ARC</a>
+<li><a href="#QuickCaption">A.48. Quick Caption</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_49">A.48.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_49">A.48.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_49">A.48.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_49">A.48.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_49">A.48.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_48">A.48.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_48">A.48.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_48">A.48.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_48">A.48.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_48">A.48.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#PrincetonUniversity">A.49. Princeton University</a>
+<li><a href="#SecureDimensions">A.49. Secure Dimensions</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_50">A.49.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_50">A.49.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_50">A.49.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_50">A.49.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_50">A.49.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_49">A.49.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_49">A.49.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_49">A.49.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_49">A.49.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_49">A.49.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#JRCEuropeanCommission">A.50. JRC, European Commission</a>
+<li><a href="#SimmsReeve">A.50. Simms Reeve</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_51">A.50.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_51">A.50.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_51">A.50.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_51">A.50.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_51">A.50.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_50">A.50.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_50">A.50.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_50">A.50.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_50">A.50.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_50">A.50.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#ElToro">A.51. El Toro</a>
+<li><a href="#Sinergise">A.51. Sinergise</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_52">A.51.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_52">A.51.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_52">A.51.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_52">A.51.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_52">A.51.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_51">A.51.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_51">A.51.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_51">A.51.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_51">A.51.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_51">A.51.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Arup">A.52. Arup</a>
+<li><a href="#Solenix">A.52. Solenix</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_53">A.52.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_53">A.52.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_53">A.52.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_53">A.52.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_53">A.52.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_52">A.52.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_52">A.52.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_52">A.52.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_52">A.52.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_52">A.52.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#GEOBEYOND">A.53. GEOBEYOND</a>
+<li><a href="#StrategicAllianceConsultingInc">A.53. Strategic Alliance Consulting Inc</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_54">A.53.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_54">A.53.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_54">A.53.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_54">A.53.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_54">A.53.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_53">A.53.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_53">A.53.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_53">A.53.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_53">A.53.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_53">A.53.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#NaturalResourcesCanada">A.54. Natural Resources Canada</a>
+<li><a href="#UniversityCollegeLondon">A.54. University College London</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_55">A.54.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_55">A.54.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_55">A.54.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_55">A.54.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_55">A.54.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_54">A.54.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_54">A.54.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_54">A.54.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_54">A.54.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_54">A.54.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityofNotreDame">A.55. University of Notre Dame</a>
+<li><a href="#UniversityofBirmingham">A.55. University of Birmingham</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_56">A.55.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_56">A.55.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_56">A.55.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_56">A.55.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_56">A.55.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_55">A.55.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_55">A.55.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_55">A.55.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_55">A.55.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_55">A.55.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Solenix">A.56. Solenix</a>
+<li><a href="#UniversityofMunster">A.56. University of Münster</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_57">A.56.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_57">A.56.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_57">A.56.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_57">A.56.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_57">A.56.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_56">A.56.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_56">A.56.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_56">A.56.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_56">A.56.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_56">A.56.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityofBirmingham">A.57. University of Birmingham</a>
+<li><a href="#UniversityofNotreDame">A.57. University of Notre Dame</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_58">A.57.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_58">A.57.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_58">A.57.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_58">A.57.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_58">A.57.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_57">A.57.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_57">A.57.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_57">A.57.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_57">A.57.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_57">A.57.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#QuickCaption">A.58. Quick Caption</a>
+<li><a href="#WebGeoDataVore">A.58. WebGeoDataVore</a>
 <ul class="sectlevel3">
-<li><a href="#_motivation_to_participate_59">A.58.1. Motivation to Participate</a></li>
-<li><a href="#_implemented_solution_59">A.58.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_59">A.58.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_59">A.58.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_59">A.58.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_motivation_to_participate_58">A.58.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_58">A.58.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_58">A.58.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_58">A.58.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_58">A.58.5. Other Impressions &amp; Recommendations</a></li>
+</ul>
+</li>
+<li><a href="#WestUniversityofTimisoara">A.59. West University of Timisoara</a>
+<ul class="sectlevel3">
+<li><a href="#_motivation_to_participate_59">A.59.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_59">A.59.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_59">A.59.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_59">A.59.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_59">A.59.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
 </ul>
@@ -1470,33 +1506,78 @@ Role = Editor and/or Contributor
 <p>For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard <a href="https://portal.opengeospatial.org/files/?artifact_id=38867&amp;version=2">OGC 06-121r9</a> shall apply. In addition, the following terms and definitions apply.</p>
 </div>
 <div class="dlist">
-<div class="title">NOTE: Delete the first three terms because they are examples.</div>
 <dl>
 <dt class="hdlist1">&#9679; application programming interface </dt>
 <dd>
 <p>standard set of documented and supported functions and procedures that expose the capabilities or data of an operating system, application or service to other applications (adapted from ISO/IEC TR 13066-2:2016)</p>
 </dd>
-<dt class="hdlist1">&#9679; portrayal </dt>
+<dt class="hdlist1">&#9679; feature </dt>
 <dd>
-<p>presentation of information to humans (source: ISO 19117)</p>
+<p>abstraction of real world phenomena (source: ISO 19101-1:2014)</p>
 </dd>
-<dt class="hdlist1">&#9679; term name </dt>
+<dt class="hdlist1">&#9679; OpenAPI definition | OpenAPI document </dt>
 <dd>
-<p>text of the definition</p>
+<p>a document (or set of documents) that defines or describes an API and conforms to the OpenAPI Specification [derived from the OpenAPI Specification]</p>
 </dd>
-<dt class="hdlist1">&#9679; term name|synonym  </dt>
+<dt class="hdlist1">&#9679; coverage  </dt>
 <dd>
-<p>text of the definition</p>
+<p>feature that acts as a function to return values from its range for any direct position within its spatiotemporal domain, as defined in OGC Abstract Topic 6 (OGC 07-011).</p>
+</dd>
+<dt class="hdlist1">&#9679; Regular grid  </dt>
+<dd>
+<p>grid whose grid lines have a constant distance along each grid axis</p>
+</dd>
+<dt class="hdlist1">&#9679; process  </dt>
+<dd>
+<p>A process p is a function that for each input returns a corresponding output</p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/processterm.png" alt="processterm">
+</div>
+</div>
+<div class="paragraph">
+<p>where X denotes the domain of arguments x and Y denotes the co-domain of values y. Within the Web Processing Service (WPS) standard, process arguments are referred to as process inputs and result values are referred to as process outputs. Processes that have no process inputs represent value generators that deliver constant or random process outputs.</p>
+</div>
+</dd>
+<dt class="hdlist1">&#9679; service  </dt>
+<dd>
+<p>distinct part of the functionality that is provided by an entity through interfaces (source: ISO/IEC TR 14252)</p>
+</dd>
+<dt class="hdlist1">&#9679; operation  </dt>
+<dd>
+<p>specification of a transformation or query that an object may be called to execute (source: ISO 19119)</p>
+</dd>
+<dt class="hdlist1">&#9679; request  </dt>
+<dd>
+<p>invocation of an operation by a client</p>
+</dd>
+<dt class="hdlist1">&#9679; response  </dt>
+<dd>
+<p>result of an operation, returned from a server to a client</p>
 </dd>
 </dl>
 </div>
 <div class="sect2">
 <h3 id="_abbreviated_terms"><a class="anchor" href="#_abbreviated_terms"></a>4.1. Abbreviated terms</h3>
 <div class="ulist">
-<div class="title">NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document. All symbols should be listed in alphabetical order. Some more frequently used abbreviated terms are provided below as examples.</div>
 <ul>
 <li>
 <p>API	Application Programming Interface</p>
+</li>
+<li>
+<p>CRS Coordinate Reference System</p>
+</li>
+<li>
+<p>GML Geography Markup Language</p>
+</li>
+<li>
+<p>HTML Hypertext Markup Language</p>
+</li>
+<li>
+<p>HTTP Hypertext Transfer Protocol</p>
+</li>
+<li>
+<p>JSON Java Script Object Notation</p>
 </li>
 <li>
 <p>WCS	Web Coverage Service</p>
@@ -1510,6 +1591,12 @@ Role = Editor and/or Contributor
 <li>
 <p>OWS	OGC Web Services</p>
 </li>
+<li>
+<p>REST Representational State Transfer</p>
+</li>
+<li>
+<p>XML Extensible Markup Language</p>
+</li>
 </ul>
 </div>
 </div>
@@ -1518,38 +1605,20 @@ Role = Editor and/or Contributor
 <div class="sect1">
 <h2 id="Overview"><a class="anchor" href="#Overview"></a>5. Overview</h2>
 <div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title">Instructions</div>
 <div class="paragraph">
-<p>This 4-overview.adoc file helps the reader to better understand the various sections of the ER. It should be written like an extended table of contents.</p>
-</div>
-</td>
-</tr>
-</table>
+<p>Section 6 introduces the OGC API Hackathon by describing the challenge, the scenario adopted, and the infrastructure used by the participants. The section also presents overviews of the datasets and services identified to support participants during the Hackathon. The section also presents a list of the organizations represented by the participants.</p>
 </div>
 <div class="paragraph">
-<p>Example:</p>
+<p>Section 7 presents the solution architecture developed in this hackathon. The section identifies the client and service implementations of the OGC API specifications.</p>
 </div>
 <div class="paragraph">
-<p>Section 5 introduces the problem of vector tiling. It describes the situation prior to the testbed and discusses the requirements set by the sponsors.</p>
+<p>Section 8 describes each of the OGC API specifications that were involved in the hackathon.</p>
 </div>
 <div class="paragraph">
-<p>Section 6 discusses the mathematical model behind the various tiling strategies. It provides recommendations on preferred strategies.</p>
+<p>Section 9 provides summary of the main findings and discusses alternative approaches that could have been taken, as well as experiences and lessons learnt.</p>
 </div>
 <div class="paragraph">
-<p>Section 7 presents the solution developed in this testbed. A clear mapping of requirements to solutions is provided. The section shows additional work is required to implement 3D tiles, which could not be addressed in this activity.</p>
-</div>
-<div class="paragraph">
-<p>Section 8 provides a summary of the main findings and discusses links to other tasks such as WFS 3.0 and WMTS 2.3.</p>
-</div>
-<div class="paragraph">
-<p>Annex A provides code snippets that illustrate the functionality of the Vector Tiling Engine and shall help to implement similar technology. It briefly discusses the key issues we experienced during implementation.</p>
+<p>Appendix A provides reports from each participating organisation, covering their motivation for participating, a description of their implementation of the OGC API specifications, alternative approaches, their experiences, impressions and recommendations.</p>
 </div>
 </div>
 </div>
@@ -1592,11 +1661,14 @@ This section is a working draft.
 </table>
 </div>
 <div class="paragraph">
-<p>To facilitate the development of the OGC API specifications, the scenario presented in this section was provided as a reference for the teams. Risk mitigation is part of the disaster management cycle [<a href="#GEOAIP2009">3</a>], which includes the steps shown in <a href="#img_disastermanagementcycle">Figure 1</a>.</p>
+<p>To facilitate the development of the OGC API specifications, the scenario presented in this section was provided as a reference for the teams. The scenario is based on flood risk management and is motivated by recents events such as the 2018 floods that affected parts of Europe (including the United Kingdom, Italy, France, Spain and Portugal) [<a href="#WikipediaEUFloods">3</a>] and the 2019 floods that affected parts of the United States [<a href="#WikipediaUSFloods">4</a>]. The scenario draws from the OGC&#8217;s Disasters Interoperability Concept Development Study (CDS) which assessed geospatial Web services across the disaster domain, defining the core components of National Spatial Data Infrastructure (SDI) architecture for disasters (Disasters SDI), and defining use cases and scenarios for future implementations as part of a follow-on pilot phase [<a href="#Idol2018">5</a>].</p>
+</div>
+<div class="paragraph">
+<p>Risk mitigation is one of the phases in the ‘life cycle’ of disaster management [<a href="#Idol2018">5</a>], which includes the steps shown in <a href="#img_disastermanagementcycle">Figure 1</a>. <em>Mitigation</em> refers to taking sustained actions to minimise or completely eliminate the long-term risk from hazards and their effects to individuals and property. <em>Preparedness</em> refers to building the emergency management capabilities to respond effectively to any hazard, as well as to recover from the hazard. <em>Response</em> refers to conducting emergency operations that reduce the hazard to acceptable levels (or eliminate it entirely) in order to save lives, through evacuation of potential victims, and provision of food, water, medical care and shelter to those affected by the disaster. <em>Recovery</em> refers to the rebuilding of communities that have been affected by a disaster so that those communities, as well as their governments, can return to normality and function on their own. A more detailed discussion on disaster management can be found in the OGC Development of Disaster Spatial Data Infrastructures for Disaster Resilience Engineering Report [<a href="#Idol2018">5</a>].</p>
 </div>
 <div id="img_disastermanagementcycle" class="imageblock text-center">
 <div class="content">
-<img src="images/disastermgmtcycle.png" alt="disastermgmtcycle" width="400">
+<img src="images/disastermgmtcycle2.png" alt="disastermgmtcycle2" width="800">
 </div>
 <div class="title">Figure 1. Disaster management cycle</div>
 </div>
@@ -1667,35 +1739,48 @@ This section is a working draft.
 <div class="sect2">
 <h3 id="_what_was_provided"><a class="anchor" href="#_what_was_provided"></a>6.3. What was provided</h3>
 <div class="sect3">
-<h4 id="_data_and_supporting_services"><a class="anchor" href="#_data_and_supporting_services"></a>6.3.1. Data and Supporting Services</h4>
+<h4 id="_supporting_datasets"><a class="anchor" href="#_supporting_datasets"></a>6.3.1. Supporting Datasets</h4>
 <div class="paragraph">
 <p>The following datasets were identified as relevant to the scenario, and thus recommended for testing implementations of the specifications.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://sentinel.esa.int/web/sentinel/sentinel-data-access">ESA Sentinel Data</a></p>
+<p>ESA Sentinel Data: The Sentinels are a family of missions developed by ESA for Corpenicus, the European Union&#8217;s Earth Observation programme. The data supplied to the OGC API Hackathon included imagery from the Sentinel-2 mission. Launched on 23 June 2015, the Sentinel-2 mission is a polar-orbiting, multispectral high-resolution imaging mission for land monitoring to support emergency services, imagery of vegetation, soil and water cover, inland waterways and coastal areas [<a href="#ESACopernicus1">6</a>].  The Sentinel imagery was supplied by Sinergise, the providers of sentinelhub.com [<a href="#Sinergise2019">7</a>].</p>
 </li>
 <li>
-<p><a href="https://www.metoffice.gov.uk/datapoint">Met Office DataPoint</a></p>
+<p>UK Met Office DataPoint: DataPoint is a freely available service that offers meteorological feeds for use by professionals, the scientific community, and developers. It is an unsupported service, with a primary goal of facilitating research, development and innovation [<a href="#MetOffice2019">8</a>].</p>
 </li>
 <li>
-<p><a href="https://registry.opendata.aws/uk-met-office/">Met Office Gridded Data</a></p>
+<p>UK Met Office Atmospheric Deterministic and Probabilistic Forecasts: This dataset includes atmospheric deterministic and probabilistic forecasts provided as downloadable gridded data [<a href="#MetOffice2019b">9</a>]. The data includes 2km deterministic high-resolution atmospheric data for the UK and 10km deterministic high-resolution atmospheric data for the Globe. There is also data from the Global and Regional Ensemble Prediction System.</p>
 </li>
 <li>
-<p><a href="https://www.ordnancesurvey.co.uk/opendatadownload/products.html">Ordnance Survey - OS Open Zoomstack</a></p>
+<p>Ordnance Survey - OS Open Zoomstack: This dataset provides a single, customisable map of Great Britain to be used at national and local levels. The dataset is available in OGC GeoPackage format. The dataset includes vector data at a variety of scales, from a whole-country view to a street-level view (1:10,000) [<a href="#OrdnanceSurvey2019z">10</a>].</p>
 </li>
 <li>
-<p><a href="https://www.ordnancesurvey.co.uk/opendatadownload/products.html">Ordnance Survey - OS Open Greenspace</a></p>
-</li>
-<li>
-<p><a href="https://dd.weather.gc.ca/">Meteorological Service of Canada Datamart</a></p>
+<p>Meteorological Service of Canada Datamart: A variety of raw meteorological data types and forecast data provided by the Meteorological Service of Canada (MSC). It is aimed at specialized users with good meteorological and Information Technology knowledge. The datasets are available through direct download from an HTTP server, as well as through a Web Map Service (WMS) [<a href="#MSC2019">11</a>].</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_deployment_infrastructure"><a class="anchor" href="#_deployment_infrastructure"></a>6.3.2. Deployment Infrastructure</h4>
+<h4 id="_supporting_services"><a class="anchor" href="#_supporting_services"></a>6.3.2. Supporting Services</h4>
+<div class="paragraph">
+<p>The following datasets were identified as relevant to the scenario, and thus recommended for testing implementations of the specifications.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Meteorological Service of Canada Geospatial web services: This service provides access to the MSC&#8217;s open data, including raw numerical weather prediction (NWP) model data layers and the weather radar mosaic. The service provides meteorological layers through a Web Map Service (WMS) interface to enable end-users to display meteorological data within their own tools, on interactive web maps and in mobile apps [<a href="#MSC2019b">12</a>].</p>
+</li>
+<li>
+<p>National Oceanic and Atmospheric Administration (NOAA) National Weather Service Data as OGC Web Services: These web services provide meteorological data covering the United States, through interfaces that conform to the Web Map Service (WMS), Web Feature Service (WFS) and Web Coverage Service (WCS) standards of the OGC [<a href="#NOAA2019">13</a>].</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_deployment_infrastructure"><a class="anchor" href="#_deployment_infrastructure"></a>6.3.3. Deployment Infrastructure</h4>
 <div class="paragraph">
 <p>Participants were advised to bring their own laptops to the hackathon. To support testing, the following infrastructure options were available to participants:</p>
 </div>
@@ -1911,9 +1996,6 @@ This list will be updated at the start of the Hackathon
 <p>Strategic Alliance Consulting Inc</p>
 </li>
 <li>
-<p>The Met. Office</p>
-</li>
-<li>
 <p>University College London</p>
 </li>
 <li>
@@ -1937,37 +2019,37 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect1">
-<h2 id="OGCAPISpecifications"><a class="anchor" href="#OGCAPISpecifications"></a>7. OGC API Specifications</h2>
+<h2 id="Architecture"><a class="anchor" href="#Architecture"></a>7. Architecture</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>TBA</p>
+<p>Implementations of these specifications were deployed in the Hackathon infrastructure in order to build a solution with the architecture shown in <a href="#img_architecture">Figure 2</a>. As shown on the illustration, the focus of the hackathon was on development of the OGC API - Common, the OGC API - Features, OGC API – Processes, the OGC API – Coverages and the OGC API – Map Tiles standards.</p>
 </div>
-<div class="sect2">
-<h3 id="_ogc_api_common_specification"><a class="anchor" href="#_ogc_api_common_specification"></a>7.1. OGC API - Common Specification</h3>
+<div id="img_architecture" class="imageblock text-center">
+<div class="content">
+<img src="images/architecture.png" alt="architecture" width="800">
+</div>
+<div class="title">Figure 2. Solution Architecture of the OGC API Hackathon</div>
+</div>
 <div class="paragraph">
-<p>TBA</p>
-</div>
+<p>The OGC API - Common specification documents the set of common practices and shared requirements that have emerged from the development of Resource Oriented Architectures and Web APIs within the OGC. The specification serves as a common foundation upon which all OGC APIs will be built. The OGC API - Processes specification defines how a client application can request the execution of a process, how the inputs to that process can be provided, and how the output from the process is handled. The OGC API - Map Tiles specification defines an OGC standard for a Web Map Tile API that can serve map tiles of spatially referenced data using tile images with predefined content, extent, and resolution. The OGC API - Coverages specification defines a Web API for accessing coverages that are modelled according to the <a href="http://docs.opengeospatial.org/is/09-146r6/09-146r6.html">Coverage Implementation Schema (CIS) 1.1</a>. The hackathon also sought to maintain consistency between the aforementioned specifications and the OGC API - Features specification. The OGC API - Features specification offers the capability to create, modify and query geospatial feature data on the Web.</p>
 </div>
 <div class="sect2">
-<h3 id="_ogc_api_features_specification"><a class="anchor" href="#_ogc_api_features_specification"></a>7.2. OGC API - Features Specification</h3>
+<h3 id="_service_implementations"><a class="anchor" href="#_service_implementations"></a>7.1. Service Implementations</h3>
+<div class="sect3">
+<h4 id="_pygeoapi"><a class="anchor" href="#_pygeoapi"></a>7.1.1. pygeoapi</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>pygeoapi is a Python server implementation of the emerging OGC API specifications. Early versions of this software implemented the OGC API - Features specification (formerly WFS 3.0). Recent versions of the software have included support for both the OGC API - Features and the OGC API - Processes specifications. Support for these specifications makes it possible publish feature data and geospatial processes. As the name suggests the software is built using the Python programming language and is supported by a developer toolchain that includes Docker and Git/Github.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_ogc_api_processes_specification"><a class="anchor" href="#_ogc_api_processes_specification"></a>7.3. OGC API - Processes Specification</h3>
+<div class="sect3">
+<h4 id="_52north_web_processing_service"><a class="anchor" href="#_52north_web_processing_service"></a>7.1.2. 52°North Web Processing Service</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>The 52°North Web Processing Service is an open source implementation of both the WPS standard and the OGC API - Processes specification. It enables the deployment of geospatial processes on the Web in a way that conforms to OGC standards. The software is built using the Java programming language and is supported by a developer toolchain that includes Maven and Git/Github. The software features a pluggable architecture for processes and data encodings.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_ogc_api_map_tiles_specification"><a class="anchor" href="#_ogc_api_map_tiles_specification"></a>7.4. OGC API - Map Tiles Specification</h3>
-<div class="paragraph">
-<p>TBA</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ogc_api_coverages_specification"><a class="anchor" href="#_ogc_api_coverages_specification"></a>7.5. OGC API - Coverages Specification</h3>
+<h3 id="_client_implementations"><a class="anchor" href="#_client_implementations"></a>7.2. Client Implementations</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -1975,43 +2057,111 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect1">
-<h2 id="KeyFindings"><a class="anchor" href="#KeyFindings"></a>8. Key Findings</h2>
+<h2 id="OGCAPISpecifications"><a class="anchor" href="#OGCAPISpecifications"></a>8. OGC API Specifications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This chapter describes each of the OGC API specifications that were advanced by the Hackathon. The section presents an overview of each specification and is not intended to be a substitute for reading the complete specification.</p>
+</div>
+<div class="sect2">
+<h3 id="_ogc_api_common"><a class="anchor" href="#_ogc_api_common"></a>8.1. OGC API - Common</h3>
+<div class="paragraph">
+<p>The OGC API - Common specification documents the set of common practices and shared requirements that have emerged from the development of Resource Oriented Architectures and Web APIs within the OGC. The specification serves as a common foundation upon which all OGC APIs will be built. As such, the OGC API - Common standard serves as the "OWS Common" standard for OGC Resource Oriented APIs. Consistent with the architecture of the Web, this specification uses a resource architecture that conforms to principles of Representational State Transfer (REST). The specification establishes a common pattern that is based on <a href="https://www.openapis.org/">OpenAPI</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_key_resources"><a class="anchor" href="#_key_resources"></a>8.1.1. Key Resources</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ogc_api_features"><a class="anchor" href="#_ogc_api_features"></a>8.2. OGC API - Features</h3>
+<div class="paragraph">
+<p>The OGC API - Features specification offers the capability to create, modify and query spatial data on the Web. The specification is a multi-part document. The Core part of the specification describes the mandatory capabilities that every implementing service has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Envisaged future capabilities include, for example, support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems. This specification builds on the Web Feature Service (WFS) standard.</p>
+</div>
+<div class="sect3">
+<h4 id="_key_resources_2"><a class="anchor" href="#_key_resources_2"></a>8.2.1. Key Resources</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ogc_api_processes"><a class="anchor" href="#_ogc_api_processes"></a>8.3. OGC API - Processes</h3>
+<div class="paragraph">
+<p>The OGC API - Processes specification provides defines how a client application can request the execution of a process, how the inputs to that process can be provided, and how the output from the process is handled. The specification allows for the wrapping of computational tasks into an executable process that can be invoked by a client application. Examples of computational processes that can be supported by implementations of this specification include raster algebra, geometry buffering, constructive area geometry, routing and several others. This specification builds on the Web Processing Service (WPS) standard.</p>
+</div>
+<div class="sect3">
+<h4 id="_key_resources_3"><a class="anchor" href="#_key_resources_3"></a>8.3.1. Key Resources</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ogc_api_map_tiles"><a class="anchor" href="#_ogc_api_map_tiles"></a>8.4. OGC API - Map Tiles</h3>
+<div class="paragraph">
+<p>The OGC API - Map Tiles specification defines an OGC standard for a Web Map Tile API that can serve map tiles of spatially referenced data using tile images with predefined content, extent, and resolution. The specification describes the discovery and query operations of an API that provides access to Map Tiles in a manner independent of the underlying data store. The discovery operations allow the API to be interrogated to determine its capabilities and retrieve metadata about the organisation and distribution of tiles. The query operations allow tiles to be retrieved from the underlying data store based upon simple selection criteria, defined by the client. This specification builds on the Web Map Tile Service (WMTS) standard.</p>
+</div>
+<div class="sect3">
+<h4 id="_key_resources_4"><a class="anchor" href="#_key_resources_4"></a>8.4.1. Key Resources</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ogc_api_coverages"><a class="anchor" href="#_ogc_api_coverages"></a>8.5. OGC API - Coverages</h3>
+<div class="paragraph">
+<p>The OGC API - Coverages specification defines a Web API for accessing coverages that are modelled according to the <a href="http://docs.opengeospatial.org/is/09-146r6/09-146r6.html">Coverage Implementation Schema (CIS) 1.1</a>. Coverages are represented by some binary or ASCII serialization, specified by some data (en­coding) format. Arguably the most popular type of coverage is that of a gridded coverage. Gridded coverages have a grid as their domain set describing the direct positions in multi-dimensional coordinate space, depending on the type of grid. Satellite imagery is typically modelled as a gridded coverage, for example. The OGC API - Coverages specification builds on the Web Coverage Service (WCS) standard.</p>
+</div>
+<div class="sect3">
+<h4 id="_key_resources_5"><a class="anchor" href="#_key_resources_5"></a>8.5.1. Key Resources</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="KeyFindings"><a class="anchor" href="#KeyFindings"></a>9. Key Findings</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect2">
-<h3 id="_results"><a class="anchor" href="#_results"></a>8.1. Results</h3>
+<h3 id="_results"><a class="anchor" href="#_results"></a>9.1. Results</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_alternatives"><a class="anchor" href="#_alternatives"></a>8.2. Alternatives</h3>
+<h3 id="_alternatives"><a class="anchor" href="#_alternatives"></a>9.2. Alternatives</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_experiences"><a class="anchor" href="#_experiences"></a>8.3. Experiences</h3>
+<h3 id="_experiences"><a class="anchor" href="#_experiences"></a>9.3. Experiences</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_lessons_learnt"><a class="anchor" href="#_lessons_learnt"></a>8.4. Lessons learnt</h3>
+<h3 id="_lessons_learnt"><a class="anchor" href="#_lessons_learnt"></a>9.4. Lessons learnt</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_what_occurred"><a class="anchor" href="#_what_occurred"></a>8.5. What occurred</h3>
+<h3 id="_what_occurred"><a class="anchor" href="#_what_occurred"></a>9.5. What occurred</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_what_are_the_next_steps"><a class="anchor" href="#_what_are_the_next_steps"></a>8.6. What are the next steps?</h3>
+<h3 id="_what_are_the_next_steps"><a class="anchor" href="#_what_are_the_next_steps"></a>9.6. What are the next steps?</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2022,7 +2172,7 @@ This list will be updated at the start of the Hackathon
 <h2 id="OGCAPIImplementations"><a class="anchor" href="#OGCAPIImplementations"></a>Appendix A: Implementations of OGC APIs</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="MeteorologicalServiceofCanada"><a class="anchor" href="#MeteorologicalServiceofCanada"></a>A.1. Meteorological Service of Canada</h3>
+<h3 id="FiftyTwoNorthGmbH"><a class="anchor" href="#FiftyTwoNorthGmbH"></a>A.1. 52°North GmbH</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2035,7 +2185,13 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_implemented_solution"><a class="anchor" href="#_implemented_solution"></a>A.1.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>52°North implemented and deployed an instance of the 52°North Web Processing Service software. A screenshot of the deployed service is shown in <a href="#img_52n_wps">Figure 3</a>. The software was configured to offer an interface that conforms to the OGC API - Processes specification.</p>
+</div>
+<div id="img_52n_wps" class="imageblock text-center">
+<div class="content">
+<img src="images/52n_wps.png" alt="52n wps" width="800">
+</div>
+<div class="title">Figure 3. Swagger Hub page of the OGC API - Processes implementation deployed by 52°North GmbH</div>
 </div>
 </div>
 <div class="sect3">
@@ -2058,7 +2214,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="WebGeoDataVore"><a class="anchor" href="#WebGeoDataVore"></a>A.2. WebGeoDataVore</h3>
+<h3 id="akouas"><a class="anchor" href="#akouas"></a>A.2. akouas</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2094,7 +2250,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="EcereCorporation"><a class="anchor" href="#EcereCorporation"></a>A.3. Ecere Corporation</h3>
+<h3 id="ARC"><a class="anchor" href="#ARC"></a>A.3. ARC</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2130,7 +2286,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="interactiveinstrumentsGmbH"><a class="anchor" href="#interactiveinstrumentsGmbH"></a>A.4. interactive instruments GmbH</h3>
+<h3 id="Arup"><a class="anchor" href="#Arup"></a>A.4. Arup</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2166,7 +2322,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="ISRICWorldSoilInformation"><a class="anchor" href="#ISRICWorldSoilInformation"></a>A.5. ISRIC - World Soil Information</h3>
+<h3 id="blockdore"><a class="anchor" href="#blockdore"></a>A.5. blockdore</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2202,7 +2358,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="UniversityCollegeLondon"><a class="anchor" href="#UniversityCollegeLondon"></a>A.6. University College London</h3>
+<h3 id="BritishAntarcticSurvey"><a class="anchor" href="#BritishAntarcticSurvey"></a>A.6. British Antarctic Survey</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2238,7 +2394,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="DeimosSpaceUK"><a class="anchor" href="#DeimosSpaceUK"></a>A.7. Deimos Space UK</h3>
+<h3 id="Cicy"><a class="anchor" href="#Cicy"></a>A.7. Cicy</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2274,7 +2430,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="ECMWF"><a class="anchor" href="#ECMWF"></a>A.8. ECMWF</h3>
+<h3 id="CREAF"><a class="anchor" href="#CREAF"></a>A.8. CREAF</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2310,7 +2466,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="EOXITServicesGmbH"><a class="anchor" href="#EOXITServicesGmbH"></a>A.9. EOX IT Services GmbH</h3>
+<h3 id="CubeWerxInc"><a class="anchor" href="#CubeWerxInc"></a>A.9. CubeWerx Inc.</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2346,7 +2502,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="GeoCatBV"><a class="anchor" href="#GeoCatBV"></a>A.10. GeoCat B.V.</h3>
+<h3 id="DeimosSpaceUK"><a class="anchor" href="#DeimosSpaceUK"></a>A.10. Deimos Space UK</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2382,7 +2538,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="CubeWerxInc"><a class="anchor" href="#CubeWerxInc"></a>A.11. CubeWerx Inc.</h3>
+<h3 id="DistrictGovernmentCologneGeobasisNRW"><a class="anchor" href="#DistrictGovernmentCologneGeobasisNRW"></a>A.11. District Government Cologne - Geobasis NRW</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2418,7 +2574,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="SecureDimensions"><a class="anchor" href="#SecureDimensions"></a>A.12. Secure Dimensions</h3>
+<h3 id="Dstl"><a class="anchor" href="#Dstl"></a>A.12. Dstl</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2454,7 +2610,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="EuracResearch"><a class="anchor" href="#EuracResearch"></a>A.13. Eurac Research</h3>
+<h3 id="DuisburgEssenuniversity"><a class="anchor" href="#DuisburgEssenuniversity"></a>A.13. Duisburg Essen university</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2490,7 +2646,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="UniversityofMunster"><a class="anchor" href="#UniversityofMunster"></a>A.14. University of Münster</h3>
+<h3 id="EcereCorporation"><a class="anchor" href="#EcereCorporation"></a>A.14. Ecere Corporation</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2526,7 +2682,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="Cicy"><a class="anchor" href="#Cicy"></a>A.15. Cicy</h3>
+<h3 id="ECMWF"><a class="anchor" href="#ECMWF"></a>A.15. ECMWF</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2562,7 +2718,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="HelyxSIS"><a class="anchor" href="#HelyxSIS"></a>A.16. Helyx SIS</h3>
+<h3 id="ElToro"><a class="anchor" href="#ElToro"></a>A.16. El Toro</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2598,7 +2754,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="WestUniversityofTimisoara"><a class="anchor" href="#WestUniversityofTimisoara"></a>A.17. West University of Timisoara</h3>
+<h3 id="EOSDataAnalytics"><a class="anchor" href="#EOSDataAnalytics"></a>A.17. EOS Data Analytics</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2634,7 +2790,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="LandInformationNewZealand"><a class="anchor" href="#LandInformationNewZealand"></a>A.18. Land Information New Zealand</h3>
+<h3 id="EOXITServicesGmbH"><a class="anchor" href="#EOXITServicesGmbH"></a>A.18. EOX IT Services GmbH</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2670,7 +2826,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="Dstl"><a class="anchor" href="#Dstl"></a>A.19. Dstl</h3>
+<h3 id="ESA"><a class="anchor" href="#ESA"></a>A.19. European Space Agency (ESA)</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2706,7 +2862,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="GeoSolutions"><a class="anchor" href="#GeoSolutions"></a>A.20. GeoSolutions</h3>
+<h3 id="EsriUK"><a class="anchor" href="#EsriUK"></a>A.20. Esri UK</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2742,7 +2898,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="OSGeo"><a class="anchor" href="#OSGeo"></a>A.21. OSGeo</h3>
+<h3 id="EuracResearch"><a class="anchor" href="#EuracResearch"></a>A.21. Eurac Research</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2778,7 +2934,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="NOAANWS"><a class="anchor" href="#NOAANWS"></a>A.22. NOAA/NWS</h3>
+<h3 id="GEOBEYOND"><a class="anchor" href="#GEOBEYOND"></a>A.22. GEOBEYOND</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2814,7 +2970,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="DuisburgEssenuniversity"><a class="anchor" href="#DuisburgEssenuniversity"></a>A.23. Duisburg Essen university</h3>
+<h3 id="GeoCatBV"><a class="anchor" href="#GeoCatBV"></a>A.23. GeoCat B.V.</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2850,7 +3006,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="LandcareResearchNewZealand"><a class="anchor" href="#LandcareResearchNewZealand"></a>A.24. Landcare Research, New Zealand</h3>
+<h3 id="GeoLabs"><a class="anchor" href="#GeoLabs"></a>A.24. GeoLabs</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2886,7 +3042,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="MetOffice"><a class="anchor" href="#MetOffice"></a>A.25. Met Office</h3>
+<h3 id="GeoSeer"><a class="anchor" href="#GeoSeer"></a>A.25. GeoSeer</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2922,7 +3078,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="GeoLabs"><a class="anchor" href="#GeoLabs"></a>A.26. GeoLabs</h3>
+<h3 id="GeoSolutions"><a class="anchor" href="#GeoSolutions"></a>A.26. GeoSolutions</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2958,7 +3114,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="JacobsUniversity"><a class="anchor" href="#JacobsUniversity"></a>A.27. Jacobs University</h3>
+<h3 id="Geovation"><a class="anchor" href="#Geovation"></a>A.27. Geovation</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2994,7 +3150,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="InfinityCorporationLimited"><a class="anchor" href="#InfinityCorporationLimited"></a>A.28. Infinity Corporation Limited</h3>
+<h3 id="Heazeltech"><a class="anchor" href="#Heazeltech"></a>A.28. Heazeltech</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3030,7 +3186,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="BritishAntarcticSurvey"><a class="anchor" href="#BritishAntarcticSurvey"></a>A.29. British Antarctic Survey</h3>
+<h3 id="HelyxSIS"><a class="anchor" href="#HelyxSIS"></a>A.29. Helyx SIS</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3066,7 +3222,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="JetPropulsionLaboratory"><a class="anchor" href="#JetPropulsionLaboratory"></a>A.30. Jet Propulsion Laboratory</h3>
+<h3 id="Hexagon"><a class="anchor" href="#Hexagon"></a>A.30. Hexagon</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3102,7 +3258,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="PrincetonUniversityLibrary"><a class="anchor" href="#PrincetonUniversityLibrary"></a>A.31. Princeton University Library</h3>
+<h3 id="InfinityCorporationLimited"><a class="anchor" href="#InfinityCorporationLimited"></a>A.31. Infinity Corporation Limited</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3138,7 +3294,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="CREAF"><a class="anchor" href="#CREAF"></a>A.32. CREAF</h3>
+<h3 id="interactiveinstrumentsGmbH"><a class="anchor" href="#interactiveinstrumentsGmbH"></a>A.32. interactive instruments GmbH</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3174,7 +3330,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="StrategicAllianceConsultingInc"><a class="anchor" href="#StrategicAllianceConsultingInc"></a>A.33. Strategic Alliance Consulting Inc</h3>
+<h3 id="ISRICWorldSoilInformation"><a class="anchor" href="#ISRICWorldSoilInformation"></a>A.33. ISRIC - World Soil Information</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3210,7 +3366,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="Sinergise"><a class="anchor" href="#Sinergise"></a>A.34. Sinergise</h3>
+<h3 id="JacobsUniversity"><a class="anchor" href="#JacobsUniversity"></a>A.34. Jacobs University</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3246,7 +3402,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="akouas"><a class="anchor" href="#akouas"></a>A.35. akouas</h3>
+<h3 id="JetPropulsionLaboratory"><a class="anchor" href="#JetPropulsionLaboratory"></a>A.35. Jet Propulsion Laboratory</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -3279,868 +3435,882 @@ This list will be updated at the start of the Hackathon
 <div class="paragraph">
 <p>TBA</p>
 </div>
-<div class="paragraph">
-<p>[[52NorthGmbH]]
-=== 52°North GmbH</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="JRCEuropeanCommission"><a class="anchor" href="#JRCEuropeanCommission"></a>A.36. JRC, European Commission</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_36"><a class="anchor" href="#_motivation_to_participate_36"></a>A.36.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_36"><a class="anchor" href="#_motivation_to_participate_36"></a>A.35.6. Motivation to Participate</h4>
+<h4 id="_implemented_solution_36"><a class="anchor" href="#_implemented_solution_36"></a>A.36.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_implemented_solution_36"><a class="anchor" href="#_implemented_solution_36"></a>A.35.7. Implemented Solution</h4>
+<h4 id="_proposed_alternatives_36"><a class="anchor" href="#_proposed_alternatives_36"></a>A.36.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_36"><a class="anchor" href="#_proposed_alternatives_36"></a>A.35.8. Proposed Alternatives</h4>
+<h4 id="_experiences_with_ogc_api_specifications_36"><a class="anchor" href="#_experiences_with_ogc_api_specifications_36"></a>A.36.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_36"><a class="anchor" href="#_experiences_with_ogc_api_specifications_36"></a>A.35.9. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_36"><a class="anchor" href="#_other_impressions_recommendations_36"></a>A.35.10. Other Impressions &amp; Recommendations</h4>
+<h4 id="_other_impressions_recommendations_36"><a class="anchor" href="#_other_impressions_recommendations_36"></a>A.36.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="NationalLandSurveyofFinland"><a class="anchor" href="#NationalLandSurveyofFinland"></a>A.36. National Land Survey of Finland</h3>
+<h3 id="LandcareResearchNewZealand"><a class="anchor" href="#LandcareResearchNewZealand"></a>A.37. Landcare Research, New Zealand</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_37"><a class="anchor" href="#_motivation_to_participate_37"></a>A.36.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_37"><a class="anchor" href="#_implemented_solution_37"></a>A.36.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_37"><a class="anchor" href="#_motivation_to_participate_37"></a>A.37.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_37"><a class="anchor" href="#_proposed_alternatives_37"></a>A.36.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_37"><a class="anchor" href="#_implemented_solution_37"></a>A.37.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_37"><a class="anchor" href="#_experiences_with_ogc_api_specifications_37"></a>A.36.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_37"><a class="anchor" href="#_proposed_alternatives_37"></a>A.37.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_37"><a class="anchor" href="#_other_impressions_recommendations_37"></a>A.36.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="EOSDataAnalytics"><a class="anchor" href="#EOSDataAnalytics"></a>A.37. EOS Data Analytics</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="sect3">
-<h4 id="_motivation_to_participate_38"><a class="anchor" href="#_motivation_to_participate_38"></a>A.37.1. Motivation to Participate</h4>
+<h4 id="_experiences_with_ogc_api_specifications_37"><a class="anchor" href="#_experiences_with_ogc_api_specifications_37"></a>A.37.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_implemented_solution_38"><a class="anchor" href="#_implemented_solution_38"></a>A.37.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_proposed_alternatives_38"><a class="anchor" href="#_proposed_alternatives_38"></a>A.37.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_38"><a class="anchor" href="#_experiences_with_ogc_api_specifications_38"></a>A.37.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_38"><a class="anchor" href="#_other_impressions_recommendations_38"></a>A.37.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_other_impressions_recommendations_37"><a class="anchor" href="#_other_impressions_recommendations_37"></a>A.37.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="DistrictGovernmentCologneGeobasisNRW"><a class="anchor" href="#DistrictGovernmentCologneGeobasisNRW"></a>A.38. District Government Cologne - Geobasis NRW</h3>
+<h3 id="LandInformationNewZealand"><a class="anchor" href="#LandInformationNewZealand"></a>A.38. Land Information New Zealand</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_39"><a class="anchor" href="#_motivation_to_participate_39"></a>A.38.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_39"><a class="anchor" href="#_implemented_solution_39"></a>A.38.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_38"><a class="anchor" href="#_motivation_to_participate_38"></a>A.38.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_39"><a class="anchor" href="#_proposed_alternatives_39"></a>A.38.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_38"><a class="anchor" href="#_implemented_solution_38"></a>A.38.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_39"><a class="anchor" href="#_experiences_with_ogc_api_specifications_39"></a>A.38.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_38"><a class="anchor" href="#_proposed_alternatives_38"></a>A.38.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_39"><a class="anchor" href="#_other_impressions_recommendations_39"></a>A.38.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Hexagon"><a class="anchor" href="#Hexagon"></a>A.39. Hexagon</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="sect3">
-<h4 id="_motivation_to_participate_40"><a class="anchor" href="#_motivation_to_participate_40"></a>A.39.1. Motivation to Participate</h4>
+<h4 id="_experiences_with_ogc_api_specifications_38"><a class="anchor" href="#_experiences_with_ogc_api_specifications_38"></a>A.38.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_implemented_solution_40"><a class="anchor" href="#_implemented_solution_40"></a>A.39.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_proposed_alternatives_40"><a class="anchor" href="#_proposed_alternatives_40"></a>A.39.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_40"><a class="anchor" href="#_experiences_with_ogc_api_specifications_40"></a>A.39.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_40"><a class="anchor" href="#_other_impressions_recommendations_40"></a>A.39.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_other_impressions_recommendations_38"><a class="anchor" href="#_other_impressions_recommendations_38"></a>A.38.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="EsriUK"><a class="anchor" href="#EsriUK"></a>A.40. Esri UK</h3>
+<h3 id="MeteorologicalServiceofCanada"><a class="anchor" href="#MeteorologicalServiceofCanada"></a>A.39. Meteorological Service of Canada</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p>The Meteorological Service of Canada (MSC) is the national meteorological agency of Canada. It is a division of Environment and Climate Change Canada. The MSC primarily provides public meteorological information, weather forecasts, and warnings of severe weather and other environmental hazards.</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_41"><a class="anchor" href="#_motivation_to_participate_41"></a>A.40.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_41"><a class="anchor" href="#_implemented_solution_41"></a>A.40.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_39"><a class="anchor" href="#_motivation_to_participate_39"></a>A.39.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_41"><a class="anchor" href="#_proposed_alternatives_41"></a>A.40.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_39"><a class="anchor" href="#_implemented_solution_39"></a>A.39.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>The MSC implemented and deployed an instance of pygeoapi - a Python server implementation of the emerging OGC API specifications. A screenshot of the landing page of the deployed service is shown in <a href="#img_msc_pygeoapi">Figure 4</a>. The software was configured to offer an interface that conforms to the OGC API - Features and OGC API - Processes specifications.</p>
+</div>
+<div id="img_msc_pygeoapi" class="imageblock text-center">
+<div class="content">
+<img src="images/msc_pygeoapi.png" alt="msc pygeoapi" width="800">
+</div>
+<div class="title">Figure 4. The landing page of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
+</div>
+<div class="paragraph">
+<p>A screenshot of the OpenAPI page of the deployed service is shown in <a href="#img_msc_pygeoapi_openapi">Figure 5</a>.</p>
+</div>
+<div id="img_msc_pygeoapi_openapi" class="imageblock text-center">
+<div class="content">
+<img src="images/msc_pygeoapi_openapi.png" alt="msc pygeoapi openapi" width="800">
+</div>
+<div class="title">Figure 5. The OpenAPI definition of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_39"><a class="anchor" href="#_proposed_alternatives_39"></a>A.39.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_41"><a class="anchor" href="#_experiences_with_ogc_api_specifications_41"></a>A.40.4. Experiences with OGC API Specifications</h4>
+<h4 id="_experiences_with_ogc_api_specifications_39"><a class="anchor" href="#_experiences_with_ogc_api_specifications_39"></a>A.39.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_41"><a class="anchor" href="#_other_impressions_recommendations_41"></a>A.40.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="ESA"><a class="anchor" href="#ESA"></a>A.41. European Space Agency (ESA)</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="sect3">
-<h4 id="_motivation_to_participate_42"><a class="anchor" href="#_motivation_to_participate_42"></a>A.41.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_42"><a class="anchor" href="#_implemented_solution_42"></a>A.41.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_proposed_alternatives_42"><a class="anchor" href="#_proposed_alternatives_42"></a>A.41.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_42"><a class="anchor" href="#_experiences_with_ogc_api_specifications_42"></a>A.41.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_42"><a class="anchor" href="#_other_impressions_recommendations_42"></a>A.41.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_other_impressions_recommendations_39"><a class="anchor" href="#_other_impressions_recommendations_39"></a>A.39.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="GeoSeer"><a class="anchor" href="#GeoSeer"></a>A.42. GeoSeer</h3>
+<h3 id="MetOffice"><a class="anchor" href="#MetOffice"></a>A.40. Met Office</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_43"><a class="anchor" href="#_motivation_to_participate_43"></a>A.42.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_43"><a class="anchor" href="#_implemented_solution_43"></a>A.42.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_40"><a class="anchor" href="#_motivation_to_participate_40"></a>A.40.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_43"><a class="anchor" href="#_proposed_alternatives_43"></a>A.42.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_40"><a class="anchor" href="#_implemented_solution_40"></a>A.40.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_43"><a class="anchor" href="#_experiences_with_ogc_api_specifications_43"></a>A.42.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_40"><a class="anchor" href="#_proposed_alternatives_40"></a>A.40.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_43"><a class="anchor" href="#_other_impressions_recommendations_43"></a>A.42.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="blockdore"><a class="anchor" href="#blockdore"></a>A.43. blockdore</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="sect3">
-<h4 id="_motivation_to_participate_44"><a class="anchor" href="#_motivation_to_participate_44"></a>A.43.1. Motivation to Participate</h4>
+<h4 id="_experiences_with_ogc_api_specifications_40"><a class="anchor" href="#_experiences_with_ogc_api_specifications_40"></a>A.40.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_implemented_solution_44"><a class="anchor" href="#_implemented_solution_44"></a>A.43.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_proposed_alternatives_44"><a class="anchor" href="#_proposed_alternatives_44"></a>A.43.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_44"><a class="anchor" href="#_experiences_with_ogc_api_specifications_44"></a>A.43.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_44"><a class="anchor" href="#_other_impressions_recommendations_44"></a>A.43.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_other_impressions_recommendations_40"><a class="anchor" href="#_other_impressions_recommendations_40"></a>A.40.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Geovation"><a class="anchor" href="#Geovation"></a>A.44. Geovation</h3>
+<h3 id="NASA"><a class="anchor" href="#NASA"></a>A.41. National Aeronautics and Space Administration (NASA)</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_45"><a class="anchor" href="#_motivation_to_participate_45"></a>A.44.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_45"><a class="anchor" href="#_implemented_solution_45"></a>A.44.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_41"><a class="anchor" href="#_motivation_to_participate_41"></a>A.41.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_45"><a class="anchor" href="#_proposed_alternatives_45"></a>A.44.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_41"><a class="anchor" href="#_implemented_solution_41"></a>A.41.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_45"><a class="anchor" href="#_experiences_with_ogc_api_specifications_45"></a>A.44.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_41"><a class="anchor" href="#_proposed_alternatives_41"></a>A.41.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_45"><a class="anchor" href="#_other_impressions_recommendations_45"></a>A.44.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Heazeltech"><a class="anchor" href="#Heazeltech"></a>A.45. Heazeltech</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="sect3">
-<h4 id="_motivation_to_participate_46"><a class="anchor" href="#_motivation_to_participate_46"></a>A.45.1. Motivation to Participate</h4>
+<h4 id="_experiences_with_ogc_api_specifications_41"><a class="anchor" href="#_experiences_with_ogc_api_specifications_41"></a>A.41.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_implemented_solution_46"><a class="anchor" href="#_implemented_solution_46"></a>A.45.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_proposed_alternatives_46"><a class="anchor" href="#_proposed_alternatives_46"></a>A.45.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_46"><a class="anchor" href="#_experiences_with_ogc_api_specifications_46"></a>A.45.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_46"><a class="anchor" href="#_other_impressions_recommendations_46"></a>A.45.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_other_impressions_recommendations_41"><a class="anchor" href="#_other_impressions_recommendations_41"></a>A.41.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="NASA"><a class="anchor" href="#NASA"></a>A.46. National Aeronautics and Space Administration (NASA)</h3>
+<h3 id="NationalLandSurveyofFinland"><a class="anchor" href="#NationalLandSurveyofFinland"></a>A.42. National Land Survey of Finland</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_47"><a class="anchor" href="#_motivation_to_participate_47"></a>A.46.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_47"><a class="anchor" href="#_implemented_solution_47"></a>A.46.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_42"><a class="anchor" href="#_motivation_to_participate_42"></a>A.42.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_47"><a class="anchor" href="#_proposed_alternatives_47"></a>A.46.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_42"><a class="anchor" href="#_implemented_solution_42"></a>A.42.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_47"><a class="anchor" href="#_experiences_with_ogc_api_specifications_47"></a>A.46.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_42"><a class="anchor" href="#_proposed_alternatives_42"></a>A.42.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_47"><a class="anchor" href="#_other_impressions_recommendations_47"></a>A.46.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="SimmsReeve"><a class="anchor" href="#SimmsReeve"></a>A.47. Simms Reeve</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="sect3">
-<h4 id="_motivation_to_participate_48"><a class="anchor" href="#_motivation_to_participate_48"></a>A.47.1. Motivation to Participate</h4>
+<h4 id="_experiences_with_ogc_api_specifications_42"><a class="anchor" href="#_experiences_with_ogc_api_specifications_42"></a>A.42.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_implemented_solution_48"><a class="anchor" href="#_implemented_solution_48"></a>A.47.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_proposed_alternatives_48"><a class="anchor" href="#_proposed_alternatives_48"></a>A.47.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_48"><a class="anchor" href="#_experiences_with_ogc_api_specifications_48"></a>A.47.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_48"><a class="anchor" href="#_other_impressions_recommendations_48"></a>A.47.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_other_impressions_recommendations_42"><a class="anchor" href="#_other_impressions_recommendations_42"></a>A.42.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="ARC"><a class="anchor" href="#ARC"></a>A.48. ARC</h3>
+<h3 id="NaturalResourcesCanada"><a class="anchor" href="#NaturalResourcesCanada"></a>A.43. Natural Resources Canada</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_49"><a class="anchor" href="#_motivation_to_participate_49"></a>A.48.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_49"><a class="anchor" href="#_implemented_solution_49"></a>A.48.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_43"><a class="anchor" href="#_motivation_to_participate_43"></a>A.43.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_49"><a class="anchor" href="#_proposed_alternatives_49"></a>A.48.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_43"><a class="anchor" href="#_implemented_solution_43"></a>A.43.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_49"><a class="anchor" href="#_experiences_with_ogc_api_specifications_49"></a>A.48.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_43"><a class="anchor" href="#_proposed_alternatives_43"></a>A.43.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_49"><a class="anchor" href="#_other_impressions_recommendations_49"></a>A.48.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_43"><a class="anchor" href="#_experiences_with_ogc_api_specifications_43"></a>A.43.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_43"><a class="anchor" href="#_other_impressions_recommendations_43"></a>A.43.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="PrincetonUniversity"><a class="anchor" href="#PrincetonUniversity"></a>A.49. Princeton University</h3>
+<h3 id="NOAANWS"><a class="anchor" href="#NOAANWS"></a>A.44. NOAA/NWS</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_50"><a class="anchor" href="#_motivation_to_participate_50"></a>A.49.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_50"><a class="anchor" href="#_implemented_solution_50"></a>A.49.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_44"><a class="anchor" href="#_motivation_to_participate_44"></a>A.44.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_50"><a class="anchor" href="#_proposed_alternatives_50"></a>A.49.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_44"><a class="anchor" href="#_implemented_solution_44"></a>A.44.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_50"><a class="anchor" href="#_experiences_with_ogc_api_specifications_50"></a>A.49.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_44"><a class="anchor" href="#_proposed_alternatives_44"></a>A.44.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_50"><a class="anchor" href="#_other_impressions_recommendations_50"></a>A.49.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_44"><a class="anchor" href="#_experiences_with_ogc_api_specifications_44"></a>A.44.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_44"><a class="anchor" href="#_other_impressions_recommendations_44"></a>A.44.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="JRCEuropeanCommission"><a class="anchor" href="#JRCEuropeanCommission"></a>A.50. JRC, European Commission</h3>
+<h3 id="OSGeo"><a class="anchor" href="#OSGeo"></a>A.45. OSGeo</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_51"><a class="anchor" href="#_motivation_to_participate_51"></a>A.50.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_51"><a class="anchor" href="#_implemented_solution_51"></a>A.50.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_45"><a class="anchor" href="#_motivation_to_participate_45"></a>A.45.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_51"><a class="anchor" href="#_proposed_alternatives_51"></a>A.50.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_45"><a class="anchor" href="#_implemented_solution_45"></a>A.45.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_51"><a class="anchor" href="#_experiences_with_ogc_api_specifications_51"></a>A.50.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_45"><a class="anchor" href="#_proposed_alternatives_45"></a>A.45.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_51"><a class="anchor" href="#_other_impressions_recommendations_51"></a>A.50.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_45"><a class="anchor" href="#_experiences_with_ogc_api_specifications_45"></a>A.45.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_45"><a class="anchor" href="#_other_impressions_recommendations_45"></a>A.45.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="ElToro"><a class="anchor" href="#ElToro"></a>A.51. El Toro</h3>
+<h3 id="PrincetonUniversity"><a class="anchor" href="#PrincetonUniversity"></a>A.46. Princeton University</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_52"><a class="anchor" href="#_motivation_to_participate_52"></a>A.51.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_52"><a class="anchor" href="#_implemented_solution_52"></a>A.51.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_46"><a class="anchor" href="#_motivation_to_participate_46"></a>A.46.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_52"><a class="anchor" href="#_proposed_alternatives_52"></a>A.51.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_46"><a class="anchor" href="#_implemented_solution_46"></a>A.46.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_52"><a class="anchor" href="#_experiences_with_ogc_api_specifications_52"></a>A.51.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_46"><a class="anchor" href="#_proposed_alternatives_46"></a>A.46.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_52"><a class="anchor" href="#_other_impressions_recommendations_52"></a>A.51.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_46"><a class="anchor" href="#_experiences_with_ogc_api_specifications_46"></a>A.46.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_46"><a class="anchor" href="#_other_impressions_recommendations_46"></a>A.46.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Arup"><a class="anchor" href="#Arup"></a>A.52. Arup</h3>
+<h3 id="PrincetonUniversityLibrary"><a class="anchor" href="#PrincetonUniversityLibrary"></a>A.47. Princeton University Library</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_53"><a class="anchor" href="#_motivation_to_participate_53"></a>A.52.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_53"><a class="anchor" href="#_implemented_solution_53"></a>A.52.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_47"><a class="anchor" href="#_motivation_to_participate_47"></a>A.47.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_53"><a class="anchor" href="#_proposed_alternatives_53"></a>A.52.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_47"><a class="anchor" href="#_implemented_solution_47"></a>A.47.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_53"><a class="anchor" href="#_experiences_with_ogc_api_specifications_53"></a>A.52.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_47"><a class="anchor" href="#_proposed_alternatives_47"></a>A.47.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_53"><a class="anchor" href="#_other_impressions_recommendations_53"></a>A.52.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_47"><a class="anchor" href="#_experiences_with_ogc_api_specifications_47"></a>A.47.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_47"><a class="anchor" href="#_other_impressions_recommendations_47"></a>A.47.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="GEOBEYOND"><a class="anchor" href="#GEOBEYOND"></a>A.53. GEOBEYOND</h3>
+<h3 id="QuickCaption"><a class="anchor" href="#QuickCaption"></a>A.48. Quick Caption</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_54"><a class="anchor" href="#_motivation_to_participate_54"></a>A.53.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_54"><a class="anchor" href="#_implemented_solution_54"></a>A.53.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_48"><a class="anchor" href="#_motivation_to_participate_48"></a>A.48.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_54"><a class="anchor" href="#_proposed_alternatives_54"></a>A.53.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_48"><a class="anchor" href="#_implemented_solution_48"></a>A.48.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_54"><a class="anchor" href="#_experiences_with_ogc_api_specifications_54"></a>A.53.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_48"><a class="anchor" href="#_proposed_alternatives_48"></a>A.48.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_54"><a class="anchor" href="#_other_impressions_recommendations_54"></a>A.53.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_48"><a class="anchor" href="#_experiences_with_ogc_api_specifications_48"></a>A.48.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_48"><a class="anchor" href="#_other_impressions_recommendations_48"></a>A.48.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="NaturalResourcesCanada"><a class="anchor" href="#NaturalResourcesCanada"></a>A.54. Natural Resources Canada</h3>
+<h3 id="SecureDimensions"><a class="anchor" href="#SecureDimensions"></a>A.49. Secure Dimensions</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_55"><a class="anchor" href="#_motivation_to_participate_55"></a>A.54.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_55"><a class="anchor" href="#_implemented_solution_55"></a>A.54.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_49"><a class="anchor" href="#_motivation_to_participate_49"></a>A.49.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_55"><a class="anchor" href="#_proposed_alternatives_55"></a>A.54.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_49"><a class="anchor" href="#_implemented_solution_49"></a>A.49.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_55"><a class="anchor" href="#_experiences_with_ogc_api_specifications_55"></a>A.54.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_49"><a class="anchor" href="#_proposed_alternatives_49"></a>A.49.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_55"><a class="anchor" href="#_other_impressions_recommendations_55"></a>A.54.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_49"><a class="anchor" href="#_experiences_with_ogc_api_specifications_49"></a>A.49.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_49"><a class="anchor" href="#_other_impressions_recommendations_49"></a>A.49.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="UniversityofNotreDame"><a class="anchor" href="#UniversityofNotreDame"></a>A.55. University of Notre Dame</h3>
+<h3 id="SimmsReeve"><a class="anchor" href="#SimmsReeve"></a>A.50. Simms Reeve</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_56"><a class="anchor" href="#_motivation_to_participate_56"></a>A.55.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_56"><a class="anchor" href="#_implemented_solution_56"></a>A.55.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_50"><a class="anchor" href="#_motivation_to_participate_50"></a>A.50.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_56"><a class="anchor" href="#_proposed_alternatives_56"></a>A.55.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_50"><a class="anchor" href="#_implemented_solution_50"></a>A.50.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_56"><a class="anchor" href="#_experiences_with_ogc_api_specifications_56"></a>A.55.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_50"><a class="anchor" href="#_proposed_alternatives_50"></a>A.50.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_56"><a class="anchor" href="#_other_impressions_recommendations_56"></a>A.55.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_50"><a class="anchor" href="#_experiences_with_ogc_api_specifications_50"></a>A.50.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_50"><a class="anchor" href="#_other_impressions_recommendations_50"></a>A.50.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Solenix"><a class="anchor" href="#Solenix"></a>A.56. Solenix</h3>
+<h3 id="Sinergise"><a class="anchor" href="#Sinergise"></a>A.51. Sinergise</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_57"><a class="anchor" href="#_motivation_to_participate_57"></a>A.56.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_57"><a class="anchor" href="#_implemented_solution_57"></a>A.56.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_51"><a class="anchor" href="#_motivation_to_participate_51"></a>A.51.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_57"><a class="anchor" href="#_proposed_alternatives_57"></a>A.56.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_51"><a class="anchor" href="#_implemented_solution_51"></a>A.51.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_57"><a class="anchor" href="#_experiences_with_ogc_api_specifications_57"></a>A.56.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_51"><a class="anchor" href="#_proposed_alternatives_51"></a>A.51.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_57"><a class="anchor" href="#_other_impressions_recommendations_57"></a>A.56.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_51"><a class="anchor" href="#_experiences_with_ogc_api_specifications_51"></a>A.51.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_51"><a class="anchor" href="#_other_impressions_recommendations_51"></a>A.51.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="UniversityofBirmingham"><a class="anchor" href="#UniversityofBirmingham"></a>A.57. University of Birmingham</h3>
+<h3 id="Solenix"><a class="anchor" href="#Solenix"></a>A.52. Solenix</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_58"><a class="anchor" href="#_motivation_to_participate_58"></a>A.57.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_58"><a class="anchor" href="#_implemented_solution_58"></a>A.57.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_52"><a class="anchor" href="#_motivation_to_participate_52"></a>A.52.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_58"><a class="anchor" href="#_proposed_alternatives_58"></a>A.57.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_52"><a class="anchor" href="#_implemented_solution_52"></a>A.52.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_58"><a class="anchor" href="#_experiences_with_ogc_api_specifications_58"></a>A.57.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_52"><a class="anchor" href="#_proposed_alternatives_52"></a>A.52.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_58"><a class="anchor" href="#_other_impressions_recommendations_58"></a>A.57.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_52"><a class="anchor" href="#_experiences_with_ogc_api_specifications_52"></a>A.52.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_52"><a class="anchor" href="#_other_impressions_recommendations_52"></a>A.52.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="QuickCaption"><a class="anchor" href="#QuickCaption"></a>A.58. Quick Caption</h3>
+<h3 id="StrategicAllianceConsultingInc"><a class="anchor" href="#StrategicAllianceConsultingInc"></a>A.53. Strategic Alliance Consulting Inc</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_59"><a class="anchor" href="#_motivation_to_participate_59"></a>A.58.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_59"><a class="anchor" href="#_implemented_solution_59"></a>A.58.2. Implemented Solution</h4>
+<h4 id="_motivation_to_participate_53"><a class="anchor" href="#_motivation_to_participate_53"></a>A.53.1. Motivation to Participate</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_59"><a class="anchor" href="#_proposed_alternatives_59"></a>A.58.3. Proposed Alternatives</h4>
+<h4 id="_implemented_solution_53"><a class="anchor" href="#_implemented_solution_53"></a>A.53.2. Implemented Solution</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_59"><a class="anchor" href="#_experiences_with_ogc_api_specifications_59"></a>A.58.4. Experiences with OGC API Specifications</h4>
+<h4 id="_proposed_alternatives_53"><a class="anchor" href="#_proposed_alternatives_53"></a>A.53.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_59"><a class="anchor" href="#_other_impressions_recommendations_59"></a>A.58.5. Other Impressions &amp; Recommendations</h4>
+<h4 id="_experiences_with_ogc_api_specifications_53"><a class="anchor" href="#_experiences_with_ogc_api_specifications_53"></a>A.53.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_53"><a class="anchor" href="#_other_impressions_recommendations_53"></a>A.53.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="UniversityCollegeLondon"><a class="anchor" href="#UniversityCollegeLondon"></a>A.54. University College London</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_54"><a class="anchor" href="#_motivation_to_participate_54"></a>A.54.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_54"><a class="anchor" href="#_implemented_solution_54"></a>A.54.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_54"><a class="anchor" href="#_proposed_alternatives_54"></a>A.54.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_54"><a class="anchor" href="#_experiences_with_ogc_api_specifications_54"></a>A.54.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_54"><a class="anchor" href="#_other_impressions_recommendations_54"></a>A.54.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="UniversityofBirmingham"><a class="anchor" href="#UniversityofBirmingham"></a>A.55. University of Birmingham</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_55"><a class="anchor" href="#_motivation_to_participate_55"></a>A.55.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_55"><a class="anchor" href="#_implemented_solution_55"></a>A.55.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_55"><a class="anchor" href="#_proposed_alternatives_55"></a>A.55.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_55"><a class="anchor" href="#_experiences_with_ogc_api_specifications_55"></a>A.55.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_55"><a class="anchor" href="#_other_impressions_recommendations_55"></a>A.55.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="UniversityofMunster"><a class="anchor" href="#UniversityofMunster"></a>A.56. University of Münster</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_56"><a class="anchor" href="#_motivation_to_participate_56"></a>A.56.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_56"><a class="anchor" href="#_implemented_solution_56"></a>A.56.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_56"><a class="anchor" href="#_proposed_alternatives_56"></a>A.56.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_56"><a class="anchor" href="#_experiences_with_ogc_api_specifications_56"></a>A.56.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_56"><a class="anchor" href="#_other_impressions_recommendations_56"></a>A.56.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="UniversityofNotreDame"><a class="anchor" href="#UniversityofNotreDame"></a>A.57. University of Notre Dame</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_57"><a class="anchor" href="#_motivation_to_participate_57"></a>A.57.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_57"><a class="anchor" href="#_implemented_solution_57"></a>A.57.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_57"><a class="anchor" href="#_proposed_alternatives_57"></a>A.57.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_57"><a class="anchor" href="#_experiences_with_ogc_api_specifications_57"></a>A.57.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_57"><a class="anchor" href="#_other_impressions_recommendations_57"></a>A.57.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="WebGeoDataVore"><a class="anchor" href="#WebGeoDataVore"></a>A.58. WebGeoDataVore</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_58"><a class="anchor" href="#_motivation_to_participate_58"></a>A.58.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_58"><a class="anchor" href="#_implemented_solution_58"></a>A.58.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_58"><a class="anchor" href="#_proposed_alternatives_58"></a>A.58.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_58"><a class="anchor" href="#_experiences_with_ogc_api_specifications_58"></a>A.58.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_58"><a class="anchor" href="#_other_impressions_recommendations_58"></a>A.58.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="WestUniversityofTimisoara"><a class="anchor" href="#WestUniversityofTimisoara"></a>A.59. West University of Timisoara</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_59"><a class="anchor" href="#_motivation_to_participate_59"></a>A.59.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_59"><a class="anchor" href="#_implemented_solution_59"></a>A.59.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_59"><a class="anchor" href="#_proposed_alternatives_59"></a>A.59.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_59"><a class="anchor" href="#_experiences_with_ogc_api_specifications_59"></a>A.59.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_59"><a class="anchor" href="#_other_impressions_recommendations_59"></a>A.59.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4214,7 +4384,37 @@ This list will be updated at the start of the Hackathon
 <p><a id="OGC15_107"></a>Tandy, J., Brink, L. van den, Barnaghi, P.: OGC/W3C Spatial Data on the Web Best Practices. OGC 15-107,Open Geospatial Consortium &amp; World Wide Web Consortium, <a href="https://www.w3.org/TR/sdw-bp/" class="bare">https://www.w3.org/TR/sdw-bp/</a> (2017).</p>
 </li>
 <li>
-<p><a id="GEOAIP2009"></a>Giacobbo, D., Frye, S., Caumont, H.: Floods Disaster Response Scenario Engineering Report. GEO Architecture Implementation Pilot - Phase 2, <a href="http://www.opengeospatial.org/pub/ogcnetwork/GEOSS/AIP3/documents/FINAL_23082009_AIP2_SBA_ER_Floods.pdf" class="bare">http://www.opengeospatial.org/pub/ogcnetwork/GEOSS/AIP3/documents/FINAL_23082009_AIP2_SBA_ER_Floods.pdf</a> (2009).</p>
+<p><a id="WikipediaEUFloods"></a>Wikipedia: 2018 European floods, <a href="https://en.wikipedia.org/wiki/2018_European_floods" class="bare">https://en.wikipedia.org/wiki/2018_European_floods</a>.</p>
+</li>
+<li>
+<p><a id="WikipediaUSFloods"></a>Wikipedia: 2019 Midwestern U.S. floods, <a href="https://en.wikipedia.org/wiki/2019_Midwestern_U.S._floods" class="bare">https://en.wikipedia.org/wiki/2019_Midwestern_U.S._floods</a>.</p>
+</li>
+<li>
+<p><a id="Idol2018"></a>Idol, T., Thomas, R.: OGC Development of Disaster Spatial Data Infrastructures for Disaster Resilience. OGC 18-087r5,Open Geospatial Consortium, <a href="https://portal.opengeospatial.org/files/18-087r5" class="bare">https://portal.opengeospatial.org/files/18-087r5</a> (2018).</p>
+</li>
+<li>
+<p><a id="ESACopernicus1"></a>European Space Agency: Copernicus - Observing the Earth, <a href="https://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Overview4" class="bare">https://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Overview4</a>, (2018).</p>
+</li>
+<li>
+<p><a id="Sinergise2019"></a>Sinergise: Sentinel Hub, <a href="https://www.sentinel-hub.com/develop/capabilities/wms" class="bare">https://www.sentinel-hub.com/develop/capabilities/wms</a>.</p>
+</li>
+<li>
+<p><a id="MetOffice2019"></a>MetOffice: Data Point, <a href="https://www.metoffice.gov.uk/datapoint" class="bare">https://www.metoffice.gov.uk/datapoint</a>.</p>
+</li>
+<li>
+<p><a id="MetOffice2019b"></a>MetOffice: UK Met Office Atmospheric Deterministic and Probabilistic Forecasts, <a href="https://registry.opendata.aws/uk-met-office/" class="bare">https://registry.opendata.aws/uk-met-office/</a>.</p>
+</li>
+<li>
+<p><a id="OrdnanceSurvey2019z"></a>Ordnance Survey: OS Open Zoomstack, <a href="https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-zoomstack.html" class="bare">https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-zoomstack.html</a>.</p>
+</li>
+<li>
+<p><a id="MSC2019"></a>Meteorological Service of Canada: Meteorological Service of Canada Datamart, <a href="https://dd.weather.gc.ca" class="bare">https://dd.weather.gc.ca</a>.</p>
+</li>
+<li>
+<p><a id="MSC2019b"></a>Meteorological Service of Canada: Geospatial web services, <a href="https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/geospatial-web-services.html" class="bare">https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/geospatial-web-services.html</a>.</p>
+</li>
+<li>
+<p><a id="NOAA2019"></a>National Oceanic and Atmospheric Administration: National Weather Service Data as OGC Web Services, <a href="https://www.weather.gov/gis/WebServices" class="bare">https://www.weather.gov/gis/WebServices</a>.</p>
 </li>
 </ol>
 </div>
@@ -4223,7 +4423,7 @@ This list will be updated at the start of the Hackathon
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-06 08:59:14 +0100
+Last updated 2019-06-07 08:25:30 +0100
 </div>
 </div>
 </body>

@@ -1,4 +1,4 @@
-[[52NorthGmbH]]
+[[FiftyTwoNorthGmbH]]
 === 52°North GmbH
 
 
@@ -11,7 +11,11 @@ TBA
 
 ==== Implemented Solution
 
-TBA
+52°North implemented and deployed an instance of the 52°North Web Processing Service software. A screenshot of the deployed service is shown in <<img_52n_wps>>. The software was configured to offer an interface that conforms to the OGC API - Processes specification.
+
+[#img_52n_wps,reftext='{figure-caption} {counter:figure-num}']
+.Swagger Hub page of the OGC API - Processes implementation deployed by 52°North GmbH
+image::images/52n_wps.png[width=800,align="center"]
 
 ==== Proposed Alternatives
 
@@ -24,4 +28,3 @@ TBA
 ==== Other Impressions & Recommendations
 
 TBA
-

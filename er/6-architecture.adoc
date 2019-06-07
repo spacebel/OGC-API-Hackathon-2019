@@ -1,0 +1,25 @@
+[[Architecture]]
+== Architecture
+
+Implementations of these specifications were deployed in the Hackathon infrastructure in order to build a solution with the architecture shown in <<img_architecture>>. As shown on the illustration, the focus of the hackathon was on development of the OGC API - Common, the OGC API - Features, OGC API – Processes, the OGC API – Coverages and the OGC API – Map Tiles standards.
+
+[#img_architecture,reftext='{figure-caption} {counter:figure-num}']
+.Solution Architecture of the OGC API Hackathon
+image::images/architecture.png[width=800,align="center"]
+
+The OGC API - Common specification documents the set of common practices and shared requirements that have emerged from the development of Resource Oriented Architectures and Web APIs within the OGC. The specification serves as a common foundation upon which all OGC APIs will be built. The OGC API - Processes specification defines how a client application can request the execution of a process, how the inputs to that process can be provided, and how the output from the process is handled. The OGC API - Map Tiles specification defines an OGC standard for a Web Map Tile API that can serve map tiles of spatially referenced data using tile images with predefined content, extent, and resolution. The OGC API - Coverages specification defines a Web API for accessing coverages that are modelled according to the http://docs.opengeospatial.org/is/09-146r6/09-146r6.html[Coverage Implementation Schema (CIS) 1.1]. The hackathon also sought to maintain consistency between the aforementioned specifications and the OGC API - Features specification. The OGC API - Features specification offers the capability to create, modify and query geospatial feature data on the Web.
+
+
+=== Service Implementations
+
+==== pygeoapi
+
+pygeoapi is a Python server implementation of the emerging OGC API specifications. Early versions of this software implemented the OGC API - Features specification (formerly WFS 3.0). Recent versions of the software have included support for both the OGC API - Features and the OGC API - Processes specifications. Support for these specifications makes it possible publish feature data and geospatial processes. As the name suggests the software is built using the Python programming language and is supported by a developer toolchain that includes Docker and Git/Github.
+
+==== 52°North Web Processing Service
+
+The 52°North Web Processing Service is an open source implementation of both the WPS standard and the OGC API - Processes specification. It enables the deployment of geospatial processes on the Web in a way that conforms to OGC standards. The software is built using the Java programming language and is supported by a developer toolchain that includes Maven and Git/Github. The software features a pluggable architecture for processes and data encodings.
+
+=== Client Implementations
+
+TBA

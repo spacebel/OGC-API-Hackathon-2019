@@ -19,11 +19,13 @@ The challenge of the Hackathon was to define and test common elements from Cover
 
 NOTE: This section is a working draft.
 
-To facilitate the development of the OGC API specifications, the scenario presented in this section was provided as a reference for the teams. Risk mitigation is part of the disaster management cycle cite:[GEOAIP2009], which includes the steps shown in <<img_disastermanagementcycle>>.
+To facilitate the development of the OGC API specifications, the scenario presented in this section was provided as a reference for the teams. The scenario is based on flood risk management and is motivated by recents events such as the 2018 floods that affected parts of Europe (including the United Kingdom, Italy, France, Spain and Portugal) cite:[WikipediaEUFloods] and the 2019 floods that affected parts of the United States cite:[WikipediaUSFloods]. The scenario draws from the OGC's Disasters Interoperability Concept Development Study (CDS) which assessed geospatial Web services across the disaster domain, defining the core components of National Spatial Data Infrastructure (SDI) architecture for disasters (Disasters SDI), and defining use cases and scenarios for future implementations as part of a follow-on pilot phase cite:[Idol2018].
+
+Risk mitigation is one of the phases in the ‘life cycle’ of disaster management cite:[Idol2018], which includes the steps shown in <<img_disastermanagementcycle>>. _Mitigation_ refers to taking sustained actions to minimise or completely eliminate the long-term risk from hazards and their effects to individuals and property. _Preparedness_ refers to building the emergency management capabilities to respond effectively to any hazard, as well as to recover from the hazard. _Response_ refers to conducting emergency operations that reduce the hazard to acceptable levels (or eliminate it entirely) in order to save lives, through evacuation of potential victims, and provision of food, water, medical care and shelter to those affected by the disaster. _Recovery_ refers to the rebuilding of communities that have been affected by a disaster so that those communities, as well as their governments, can return to normality and function on their own. A more detailed discussion on disaster management can be found in the OGC Development of Disaster Spatial Data Infrastructures for Disaster Resilience Engineering Report cite:[Idol2018].
 
 [#img_disastermanagementcycle,reftext='{figure-caption} {counter:figure-num}']
 .Disaster management cycle
-image::images/disastermgmtcycle.png[width=400,align="center"]
+image::images/disastermgmtcycle2.png[width=800,align="center"]
 
 As part of Government flood risk management policy, Local Authorities have to carry out a preliminary flood risk analysis. Using satellite imagery, flood risk data, along with asset information, vulnerable property information and topographic data, Local Authorities carry out analysis to improve resilience and promote a more efficient use of resource.
 
@@ -72,16 +74,23 @@ A Local Authority is tasked with identifying at-risk residential properties in o
 
 === What was provided
 
-==== Data and Supporting Services
+==== Supporting Datasets
 
 The following datasets were identified as relevant to the scenario, and thus recommended for testing implementations of the specifications.
 
-* https://sentinel.esa.int/web/sentinel/sentinel-data-access[ESA Sentinel Data]
-* https://www.metoffice.gov.uk/datapoint[Met Office DataPoint]
-* https://registry.opendata.aws/uk-met-office/[Met Office Gridded Data]
-* https://www.ordnancesurvey.co.uk/opendatadownload/products.html[Ordnance Survey - OS Open Zoomstack]
-* https://www.ordnancesurvey.co.uk/opendatadownload/products.html[Ordnance Survey - OS Open Greenspace]
-* https://dd.weather.gc.ca/[Meteorological Service of Canada Datamart]
+* ESA Sentinel Data: The Sentinels are a family of missions developed by ESA for Corpenicus, the European Union's Earth Observation programme. The data supplied to the OGC API Hackathon included imagery from the Sentinel-2 mission. Launched on 23 June 2015, the Sentinel-2 mission is a polar-orbiting, multispectral high-resolution imaging mission for land monitoring to support emergency services, imagery of vegetation, soil and water cover, inland waterways and coastal areas cite:[ESACopernicus1].  The Sentinel imagery was supplied by Sinergise, the providers of sentinelhub.com cite:[Sinergise2019].
+* UK Met Office DataPoint: DataPoint is a freely available service that offers meteorological feeds for use by professionals, the scientific community, and developers. It is an unsupported service, with a primary goal of facilitating research, development and innovation cite:[MetOffice2019].
+* UK Met Office Atmospheric Deterministic and Probabilistic Forecasts: This dataset includes atmospheric deterministic and probabilistic forecasts provided as downloadable gridded data cite:[MetOffice2019b]. The data includes 2km deterministic high-resolution atmospheric data for the UK and 10km deterministic high-resolution atmospheric data for the Globe. There is also data from the Global and Regional Ensemble Prediction System.
+* Ordnance Survey - OS Open Zoomstack: This dataset provides a single, customisable map of Great Britain to be used at national and local levels. The dataset is available in OGC GeoPackage format. The dataset includes vector data at a variety of scales, from a whole-country view to a street-level view (1:10,000) cite:[OrdnanceSurvey2019z].
+* Meteorological Service of Canada Datamart: A variety of raw meteorological data types and forecast data provided by the Meteorological Service of Canada (MSC). It is aimed at specialized users with good meteorological and Information Technology knowledge. The datasets are available through direct download from an HTTP server, as well as through a Web Map Service (WMS) cite:[MSC2019].
+
+
+==== Supporting Services
+
+The following datasets were identified as relevant to the scenario, and thus recommended for testing implementations of the specifications.
+
+* Meteorological Service of Canada Geospatial web services: This service provides access to the MSC's open data, including raw numerical weather prediction (NWP) model data layers and the weather radar mosaic. The service provides meteorological layers through a Web Map Service (WMS) interface to enable end-users to display meteorological data within their own tools, on interactive web maps and in mobile apps cite:[MSC2019b].
+* National Oceanic and Atmospheric Administration (NOAA) National Weather Service Data as OGC Web Services: These web services provide meteorological data covering the United States, through interfaces that conform to the Web Map Service (WMS), Web Feature Service (WFS) and Web Coverage Service (WCS) standards of the OGC cite:[NOAA2019].
 
 ==== Deployment Infrastructure
 

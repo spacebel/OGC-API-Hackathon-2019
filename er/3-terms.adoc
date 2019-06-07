@@ -4,31 +4,61 @@
 
 For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9] shall apply. In addition, the following terms and definitions apply.
 
-.NOTE: Delete the first three terms because they are examples.
-
 &#9679; application programming interface ::
 
  standard set of documented and supported functions and procedures that expose the capabilities or data of an operating system, application or service to other applications (adapted from ISO/IEC TR 13066-2:2016)
 
-&#9679; portrayal ::
+&#9679; feature ::
 
- presentation of information to humans (source: ISO 19117)
+ abstraction of real world phenomena (source: ISO 19101-1:2014)
 
-&#9679; term name ::
+&#9679; OpenAPI definition | OpenAPI document ::
 
- text of the definition
+ a document (or set of documents) that defines or describes an API and conforms to the OpenAPI Specification [derived from the OpenAPI Specification]
 
-&#9679; term name|synonym  ::
+&#9679; coverage  ::
 
- text of the definition
+ feature that acts as a function to return values from its range for any direct position within its spatiotemporal domain, as defined in OGC Abstract Topic 6 (OGC 07-011).
 
+&#9679; Regular grid  ::
+
+ grid whose grid lines have a constant distance along each grid axis
+
+&#9679; process  ::
+
+ A process p is a function that for each input returns a corresponding output
++
+image::images/processterm.png[align="center"]
++
+where X denotes the domain of arguments x and Y denotes the co-domain of values y. Within the Web Processing Service (WPS) standard, process arguments are referred to as process inputs and result values are referred to as process outputs. Processes that have no process inputs represent value generators that deliver constant or random process outputs.
+
+&#9679; service  ::
+
+ distinct part of the functionality that is provided by an entity through interfaces (source: ISO/IEC TR 14252)
+
+&#9679; operation  ::
+
+ specification of a transformation or query that an object may be called to execute (source: ISO 19119)
+
+&#9679; request  ::
+
+ invocation of an operation by a client
+
+&#9679; response  ::
+
+ result of an operation, returned from a server to a client
 
 ===	Abbreviated terms
 
-.NOTE: The abbreviated terms clause gives a list of the abbreviated terms and the symbols necessary for understanding this document. All symbols should be listed in alphabetical order. Some more frequently used abbreviated terms are provided below as examples.
-
 * API	Application Programming Interface
+* CRS Coordinate Reference System
+* GML Geography Markup Language
+* HTML Hypertext Markup Language
+* HTTP Hypertext Transfer Protocol
+* JSON Java Script Object Notation
 * WCS	Web Coverage Service
 * WFS	Web Feature Service
 * WMTS	Web Map Tile Service
 * OWS	OGC Web Services
+* REST Representational State Transfer
+* XML Extensible Markup Language

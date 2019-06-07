@@ -1,9 +1,7 @@
 [[MeteorologicalServiceofCanada]]
 === Meteorological Service of Canada
 
-
-
-TBA
+The Meteorological Service of Canada (MSC) is the national meteorological agency of Canada. It is a division of Environment and Climate Change Canada. The MSC primarily provides public meteorological information, weather forecasts, and warnings of severe weather and other environmental hazards.
 
 ==== Motivation to Participate
 
@@ -11,7 +9,17 @@ TBA
 
 ==== Implemented Solution
 
-TBA
+The MSC implemented and deployed an instance of pygeoapi - a Python server implementation of the emerging OGC API specifications. A screenshot of the landing page of the deployed service is shown in <<img_msc_pygeoapi>>. The software was configured to offer an interface that conforms to the OGC API - Features and OGC API - Processes specifications.
+
+[#img_msc_pygeoapi,reftext='{figure-caption} {counter:figure-num}']
+.The landing page of the pygeoapi instance deployed by the Meteorological Service of Canada
+image::images/msc_pygeoapi.png[width=800,align="center"]
+
+A screenshot of the OpenAPI page of the deployed service is shown in <<img_msc_pygeoapi_openapi>>.
+
+[#img_msc_pygeoapi_openapi,reftext='{figure-caption} {counter:figure-num}']
+.The OpenAPI definition of the pygeoapi instance deployed by the Meteorological Service of Canada
+image::images/msc_pygeoapi_openapi.png[width=800,align="center"]
 
 ==== Proposed Alternatives
 
@@ -24,4 +32,3 @@ TBA
 ==== Other Impressions & Recommendations
 
 TBA
-
