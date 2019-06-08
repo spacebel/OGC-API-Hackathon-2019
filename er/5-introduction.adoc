@@ -143,7 +143,6 @@ The following organizations participated in the Hackathon:
 * Infinity Corporation Limited
 * interactive instruments GmbH
 * ISRIC - World Soil Information
-* Jacobs University
 * Jet Propulsion Laboratory (JPL)
 * JRC, European Commission
 * Land Information New Zealand
@@ -161,6 +160,7 @@ The following organizations participated in the Hackathon:
 * Princeton University
 * Princeton University Library
 * Quick Caption
+* rasdaman GmbH
 * Secure Dimensions
 * Simms Reeve
 * Sinergise
