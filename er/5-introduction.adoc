@@ -131,7 +131,7 @@ The following organizations participated in the Hackathon:
 * Esri UK
 * Eurac Research
 * European Space Agency (ESA)
-* GEOBEYOND
+* Geobeyond
 * GeoCat B.V.
 * GeoLabs
 * GeoSeer
