@@ -150,7 +150,7 @@ include::8-key_findings.adoc[]
 // Editors add or remove annexes as necessary.
 // *****************************************************************************
 
-include::annex-a.adoc[]
+include::appendix-a.adoc[]
 
 
 // *****************************************************************************
