@@ -79,6 +79,8 @@ include::participanting-organizations/LandcareResearchNewZealand.adoc[]
 
 include::participanting-organizations/LandInformationNewZealand.adoc[]
 
+include::participanting-organizations/latlonGmbH.adoc[]
+
 include::participanting-organizations/MeteorologicalServiceofCanada.adoc[]
 
 include::participanting-organizations/MetOffice.adoc[]

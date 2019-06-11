@@ -147,6 +147,7 @@ The following organizations participated in the Hackathon:
 * JRC, European Commission
 * Land Information New Zealand
 * Landcare Research, New Zealand
+* lat/lon GmbH
 * Met Office
 * Meteorological Service of Canada
 * National Aeronautics and Space Administration (NASA)
