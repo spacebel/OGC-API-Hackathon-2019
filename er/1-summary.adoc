@@ -28,11 +28,17 @@ All questions regarding this document should be directed to the editor or the co
 |Scott Simmons | Open Geospatial Consortium |TBA
 |Michael Gordon | Ordnance Survey |TBA
 |Simon Green | Ordnance Survey |TBA
-|((Full Name)) | ((from org)) |TBA
-|((Full Name)) | ((from org)) |TBA
-|((Full Name)) | ((from org)) |TBA
-|((Full Name)) | ((from org)) |TBA
-|((Full Name)) | ((from org)) |TBA
+|Clemens Portele | interactive instruments GmbH |TBA
+|Jorge Samuel Mendes de Jesus | ISRIC - World Soil Information |TBA
+|Peter Baumann | rasdaman GmbH |TBA
+|Francesco	Bartoli | Geobeyond |TBA
+|Dirk Stenger | lat/lon GmbH |TBA
+|TBA | TBA |TBA
+|TBA | TBA |TBA
+|TBA | TBA |TBA
+|TBA | TBA |TBA
+|TBA | TBA |TBA
+|TBA | TBA |TBA
 |====================
 
 NOTE: Role = Editor and/or Contributor
