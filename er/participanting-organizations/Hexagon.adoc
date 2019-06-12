@@ -1,13 +1,13 @@
 [[Hexagon]]
 === Hexagon
 
+Hexagon is a global leader in sensor, software and autonomous solutions. We are putting data to work to boost efficiency, productivity, and quality across industrial, manufacturing, infrastructure, safety, and mobility applications. Our technologies are shaping urban and production ecosystems to become increasingly connected and autonomous — ensuring a scalable, sustainable future. 
 
-
-TBA
+Within Hexagon Geospatial, we create solutions that visualize location intelligence. From the desktop to the browser to the edge, we bridge the divide between the geospatial and the operational worlds.
 
 ==== Motivation to Participate
 
-TBA
+Hexagon Geospatial has been an active supporter of OGC and OGC standards for many years. Next to implementing a wide range of OGC standards, we have ample experience in applying OGC standards within industry solutions for a variety of domains, such as Aviation, Defense & Intelligence, Maritime, Transportation, Mining or Disaster Management. By being part of many testbeds and interoperability experiments the past decade and contributing numerous software components and engineering reports, we also learned that cooperation with other people on real-world use cases is an excellent way of testing and improving specifications. Hexagon Geospatial is motivated to share its expertise as long-term implementer and user to support the advancements of OGC standards related to map tiles, coverages and processes.  
 
 ==== Implemented Solution
 
@@ -19,7 +19,7 @@ TBA
 
 ==== Experiences with OGC API Specifications
 
-TBA
+The Hexagon Geospatial product portfolios applied OGC standards from the start and currently implement more than a dozen OGC standards and candidate standards, including implementations of WFS, WMS, WCS, WMTS, WPS, CSW, GeoPackage, Filter Encoding, SLD / SE, GML, KML, 3D Tiles and NetCDF. 
 
 ==== Other Impressions & Recommendations
 
