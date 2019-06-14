@@ -1,23 +1,29 @@
 [[UniversityofMunster]]
 === University of Münster
 
-TBA
+Participant: Matthias Mohr
 
 ==== Motivation to Participate
 
-TBA
+* Align the openEO API with OGC API - Commons.
+* Start discussions with the WPS community about alignment and their take on process chaining.
+* Figure out future steps of WFS3 to port them back to the STAC specification.
+* Discuss with CSW/CAT people about the planned steps and alignment with STAC.
 
 ==== Implemented Solution
 
-TBA
+* openEO API implementation, which partly implements and aligns with OGC API - Commons / WFS3.
 
 ==== Proposed Alternatives
 
-TBA
+* Workflows (process chaining) for WPS?
+* Base CSW/CAT work on STAC?
+* ...
 
 ==== Experiences with OGC API Specifications
 
-TBA
+* WFS3 experience through STAC, contributed to WFS3 with some proposals for changes.
+* Basic understanding of WPS and Commons
 
 ==== Other Impressions & Recommendations
 
