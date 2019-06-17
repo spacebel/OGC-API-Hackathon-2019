@@ -753,10 +753,16 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_service_implementations">7.1. Service Implementations</a>
 <ul class="sectlevel3">
 <li><a href="#_pygeoapi">7.1.1. pygeoapi</a></li>
-<li><a href="#_52north_web_processing_service">7.1.2. 52°North Web Processing Service</a></li>
+<li><a href="#_52north_javaps">7.1.2. 52°North JavaPS</a></li>
+<li><a href="#_tba">7.1.3. TBA</a></li>
 </ul>
 </li>
-<li><a href="#_client_implementations">7.2. Client Implementations</a></li>
+<li><a href="#_client_implementations">7.2. Client Implementations</a>
+<ul class="sectlevel3">
+<li><a href="#_tba_2">7.2.1. TBA</a></li>
+<li><a href="#_tba_3">7.2.2. TBA</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#OGCAPISpecifications">8. OGC API Specifications</a>
@@ -1774,6 +1780,27 @@ This section is a working draft.
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>The illustration in <a href="#img_aoi">Figure 2</a> shows the Area of Interest (AOI) that was selected to facilitate prototyping, demonstration and briefings. The AOI covered the region of Carmarthenshire, Wales and focused on the town of Carmarthen. The region was the site of significant flooding in October 2018 and hence provided an appropriate location to based the flood-based scenario adopted for the Hackathon.</p>
+</div>
+<div id="img_aoi" class="imageblock text-center">
+<div class="content">
+<img src="images/aoi.png" alt="aoi" width="800">
+</div>
+<div class="title">Figure 2. Area-of-Interest (Contains OS data © Crown copyright and database right 2019;  Satellite image: ESA Copyright)</div>
+</div>
+<div class="paragraph">
+<p>Whereas the Time-Of-Interest (TOI) was October 2018, the AOI had the polygonal bounds in World Geodetic System 1984 (WGS84) coordinates:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="txt">-4.09247619415462,51.6507504017036
+-4.59606172257991,51.6468710002251
+-4.59750580025958,52.0105126182078
+-4.09303085864973,52.0127870676365
+-4.09247619415462,51.6507504017036</code></pre>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_what_was_provided"><a class="anchor" href="#_what_was_provided"></a>6.3. What was provided</h3>
@@ -2064,13 +2091,13 @@ This list will be updated at the start of the Hackathon
 <h2 id="Architecture"><a class="anchor" href="#Architecture"></a>7. Architecture</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Implementations of these specifications were deployed in the Hackathon infrastructure in order to build a solution with the architecture shown in <a href="#img_architecture">Figure 2</a>. As shown on the illustration, the focus of the hackathon was on development of the OGC API - Common, the OGC API - Features, OGC API – Processes, the OGC API – Coverages and the OGC API – Map Tiles standards.</p>
+<p>The focus of the hackathon was on development of the OGC API - Common, the OGC API - Features, OGC API – Processes, the OGC API – Coverages and the OGC API – Map Tiles standards. Implementations of these specifications were deployed in the Hackathon infrastructure in order to build a solution with the architecture shown in <a href="#img_architecture">Figure 3</a>. As shown on the illustration, the architecture adopted a multi-tier approach that included one or more implementations of each OGC API specification deployed on the wider Internet (e.g. in participants' own Cloud environments), as well as some implementations deployed in the Ordnance Survey&#8217;s Cloud which is hosted on Microsoft Azure.</p>
 </div>
 <div id="img_architecture" class="imageblock text-center">
 <div class="content">
-<img src="images/architecture.png" alt="architecture" width="800">
+<img src="images/DeploymentDiagram.png" alt="DeploymentDiagram" width="800">
 </div>
-<div class="title">Figure 2. Solution Architecture of the OGC API Hackathon</div>
+<div class="title">Figure 3. Solution Architecture of the OGC API Hackathon</div>
 </div>
 <div class="paragraph">
 <p>The OGC API - Common specification documents the set of common practices and shared requirements that have emerged from the development of Resource Oriented Architectures and Web APIs within the OGC. The specification serves as a common foundation upon which all OGC APIs will be built. The OGC API - Processes specification defines how a client application can request the execution of a process, how the inputs to that process can be provided, and how the output from the process is handled. The OGC API - Map Tiles specification defines an OGC standard for a Web Map Tile API that can serve map tiles of spatially referenced data using tile images with predefined content, extent, and resolution. The OGC API - Coverages specification defines a Web API for accessing coverages that are modelled according to the <a href="http://docs.opengeospatial.org/is/09-146r6/09-146r6.html">Coverage Implementation Schema (CIS) 1.1</a>. The hackathon also sought to maintain consistency between the aforementioned specifications and the OGC API - Features specification. The OGC API - Features specification offers the capability to create, modify and query geospatial feature data on the Web.</p>
@@ -2084,16 +2111,31 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_52north_web_processing_service"><a class="anchor" href="#_52north_web_processing_service"></a>7.1.2. 52°North Web Processing Service</h4>
+<h4 id="_52north_javaps"><a class="anchor" href="#_52north_javaps"></a>7.1.2. 52°North JavaPS</h4>
 <div class="paragraph">
-<p>The 52°North Web Processing Service is an open source implementation of both the WPS standard and the OGC API - Processes specification. It enables the deployment of geospatial processes on the Web in a way that conforms to OGC standards. The software is built using the Java programming language and is supported by a developer toolchain that includes Maven and Git/Github. The software features a pluggable architecture for processes and data encodings.</p>
+<p>The 52°North JavaPS product is an open source implementation of both the Web Processing Service (WPS) standard and the OGC API - Processes specification. JavaPS enables the deployment of geospatial processes on the Web in a way that conforms to OGC standards. The software is built using the Java programming language and is supported by a developer toolchain that includes Maven and Git/Github. The software features a pluggable architecture for processes and data encodings that is based on the 52°North <a href="https://wiki.52north.org/SensorWeb/Iceland">Iceland</a> project which represents a generic Java framework for OGC Web Services. By virtue of being based on the Iceland project, JavaPS provides components that are associated with processing geospatial data, for example request objects, response objects, decoders, encoders, parsers.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tba"><a class="anchor" href="#_tba"></a>7.1.3. TBA</h4>
+<div class="paragraph">
+<p>TBA</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_client_implementations"><a class="anchor" href="#_client_implementations"></a>7.2. Client Implementations</h3>
+<div class="sect3">
+<h4 id="_tba_2"><a class="anchor" href="#_tba_2"></a>7.2.1. TBA</h4>
 <div class="paragraph">
 <p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tba_3"><a class="anchor" href="#_tba_3"></a>7.2.2. TBA</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
 </div>
 </div>
 </div>
@@ -2109,10 +2151,32 @@ This list will be updated at the start of the Hackathon
 <div class="paragraph">
 <p>The OGC API - Common specification documents the set of common practices and shared requirements that have emerged from the development of Resource Oriented Architectures and Web APIs within the OGC. The specification serves as a common foundation upon which all OGC APIs will be built. As such, the OGC API - Common standard serves as the "OWS Common" standard for OGC Resource Oriented APIs. Consistent with the architecture of the Web, this specification uses a resource architecture that conforms to principles of Representational State Transfer (REST). The specification establishes a common pattern that is based on <a href="https://www.openapis.org/">OpenAPI</a>.</p>
 </div>
+<div class="paragraph">
+<p>In addition to identifying core resources, the OGC API - Common specification goes on to specify HTTP status codes that may be supported by an OGC API, as well as how to handle web caching, coordinate reference systems and encodings. The specification also describes how to handle common parameters such as bounding boxes and date-time constraints.</p>
+</div>
+<div class="paragraph">
+<p>The following subsection presents a summary of the core resources.</p>
+</div>
 <div class="sect3">
 <h4 id="_key_resources"><a class="anchor" href="#_key_resources"></a>8.1.1. Key Resources</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>There are several requirements that are defined in the specification. A subset of those requirements are summarised below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The OGC API - Common requires that each OGC API have a single <code>LandingPage</code> (path <code>/</code>).</p>
+</li>
+<li>
+<p>Each OGC API is also required to provide an API Definition at the (path <code>/api</code>),</p>
+</li>
+<li>
+<p>Each OGC API is also required to provide Conformance statements at the (path <code>/conformance</code>),</p>
+</li>
+<li>
+<p>Each OGC API is also required to provide metadata about resource Collections at the (path <code>/collections</code>).</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2227,13 +2291,13 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_implemented_solution"><a class="anchor" href="#_implemented_solution"></a>A.1.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>52°North implemented and deployed an instance of the 52°North Web Processing Service software. A screenshot of the deployed service is shown in <a href="#img_52n_wps">Figure 3</a>. The software was configured to offer an interface that conforms to the OGC API - Processes specification.</p>
+<p>52°North implemented and deployed an instance of the 52°North JavaPS software, which is an implementation of the OGC Web Processing Service (WPS) standard and the OGC API - Processes specification. A screenshot of the deployed service is shown in <a href="#img_52n_wps">Figure 4</a>. The software was configured to offer an interface that conforms to the OGC API - Processes specification.</p>
 </div>
 <div id="img_52n_wps" class="imageblock text-center">
 <div class="content">
 <img src="images/52n_wps.png" alt="52n wps" width="800">
 </div>
-<div class="title">Figure 3. Swagger Hub page of the OGC API - Processes implementation deployed by 52°North GmbH</div>
+<div class="title">Figure 4. Swagger Hub page of the OGC API - Processes implementation deployed by 52°North GmbH</div>
 </div>
 </div>
 <div class="sect3">
@@ -3640,22 +3704,22 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_implemented_solution_40"><a class="anchor" href="#_implemented_solution_40"></a>A.40.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>The MSC implemented and deployed an instance of pygeoapi - a Python server implementation of the emerging OGC API specifications. A screenshot of the landing page of the deployed service is shown in <a href="#img_msc_pygeoapi">Figure 4</a>. The software was configured to offer an interface that conforms to the OGC API - Features and OGC API - Processes specifications.</p>
+<p>The MSC implemented and deployed an instance of pygeoapi - a Python server implementation of the emerging OGC API specifications. A screenshot of the landing page of the deployed service is shown in <a href="#img_msc_pygeoapi">Figure 5</a>. The software was configured to offer an interface that conforms to the OGC API - Features and OGC API - Processes specifications.</p>
 </div>
 <div id="img_msc_pygeoapi" class="imageblock text-center">
 <div class="content">
 <img src="images/msc_pygeoapi.png" alt="msc pygeoapi" width="800">
 </div>
-<div class="title">Figure 4. The landing page of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
+<div class="title">Figure 5. The landing page of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
 </div>
 <div class="paragraph">
-<p>A screenshot of the OpenAPI page of the deployed service is shown in <a href="#img_msc_pygeoapi_openapi">Figure 5</a>.</p>
+<p>A screenshot of the OpenAPI page of the deployed service is shown in <a href="#img_msc_pygeoapi_openapi">Figure 6</a>.</p>
 </div>
 <div id="img_msc_pygeoapi_openapi" class="imageblock text-center">
 <div class="content">
 <img src="images/msc_pygeoapi_openapi.png" alt="msc pygeoapi openapi" width="800">
 </div>
-<div class="title">Figure 5. The OpenAPI definition of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
+<div class="title">Figure 6. The OpenAPI definition of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
 </div>
 </div>
 <div class="sect3">
@@ -4256,30 +4320,64 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="UniversityofMunster"><a class="anchor" href="#UniversityofMunster"></a>A.57. University of Münster</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p>Participant: Matthias Mohr</p>
 </div>
 <div class="sect3">
 <h4 id="_motivation_to_participate_57"><a class="anchor" href="#_motivation_to_participate_57"></a>A.57.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Align the openEO API with OGC API - Commons.</p>
+</li>
+<li>
+<p>Start discussions with the WPS community about alignment and their take on process chaining.</p>
+</li>
+<li>
+<p>Figure out future steps of WFS3 to port them back to the STAC specification.</p>
+</li>
+<li>
+<p>Discuss with CSW/CAT people about the planned steps and alignment with STAC.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implemented_solution_57"><a class="anchor" href="#_implemented_solution_57"></a>A.57.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>openEO API implementation, which partly implements and aligns with OGC API - Commons / WFS3.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_proposed_alternatives_57"><a class="anchor" href="#_proposed_alternatives_57"></a>A.57.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Workflows (process chaining) for WPS?</p>
+</li>
+<li>
+<p>Base CSW/CAT work on STAC?</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_experiences_with_ogc_api_specifications_57"><a class="anchor" href="#_experiences_with_ogc_api_specifications_57"></a>A.57.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>WFS3 experience through STAC, contributed to WFS3 with some proposals for changes.</p>
+</li>
+<li>
+<p>Basic understanding of WPS and Commons</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
@@ -4507,5 +4605,94 @@ This list will be updated at the start of the Hackathon
 Last updated 2019-06-10 10:38:53 +0100
 </div>
 </div>
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.code{padding:0 0 0 .75em}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
 </body>
 </html>

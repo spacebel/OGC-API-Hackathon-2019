@@ -72,6 +72,23 @@ A Local Authority is tasked with identifying at-risk residential properties in o
 |===
 
 
+The illustration in <<img_aoi>> shows the Area of Interest (AOI) that was selected to facilitate prototyping, demonstration and briefings. The AOI covered the region of Carmarthenshire, Wales and focused on the town of Carmarthen. The region was the site of significant flooding in October 2018 and hence provided an appropriate location to based the flood-based scenario adopted for the Hackathon.
+
+[#img_aoi,reftext='{figure-caption} {counter:figure-num}']
+.Area-of-Interest (Contains OS data © Crown copyright and database right 2019;  Satellite image: ESA Copyright)
+image::images/aoi.png[width=800,align="center"]
+
+Whereas the Time-Of-Interest (TOI) was October 2018, the AOI had the polygonal bounds in World Geodetic System 1984 (WGS84) coordinates:
+
+[source,txt]
+----
+-4.09247619415462,51.6507504017036
+-4.59606172257991,51.6468710002251
+-4.59750580025958,52.0105126182078
+-4.09303085864973,52.0127870676365
+-4.09247619415462,51.6507504017036
+----
+
 === What was provided
 
 ==== Supporting Datasets

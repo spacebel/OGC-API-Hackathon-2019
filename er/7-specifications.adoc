@@ -7,9 +7,19 @@ This chapter describes each of the OGC API specifications that were advanced by 
 
 The OGC API - Common specification documents the set of common practices and shared requirements that have emerged from the development of Resource Oriented Architectures and Web APIs within the OGC. The specification serves as a common foundation upon which all OGC APIs will be built. As such, the OGC API - Common standard serves as the "OWS Common" standard for OGC Resource Oriented APIs. Consistent with the architecture of the Web, this specification uses a resource architecture that conforms to principles of Representational State Transfer (REST). The specification establishes a common pattern that is based on https://www.openapis.org/[OpenAPI].
 
+In addition to identifying core resources, the OGC API - Common specification goes on to specify HTTP status codes that may be supported by an OGC API, as well as how to handle web caching, coordinate reference systems and encodings. The specification also describes how to handle common parameters such as bounding boxes and date-time constraints.
+
+The following subsection presents a summary of the core resources.
+
+
 ==== Key Resources
 
-TBA
+There are several requirements that are defined in the specification. A subset of those requirements are summarised below:
+
+* The OGC API - Common requires that each OGC API have a single `LandingPage` (path `/`).
+* Each OGC API is also required to provide an API Definition at the (path `/api`),
+* Each OGC API is also required to provide Conformance statements at the (path `/conformance`),
+* Each OGC API is also required to provide metadata about resource Collections at the (path `/collections`).
 
 
 === OGC API - Features
