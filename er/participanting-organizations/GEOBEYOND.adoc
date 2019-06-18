@@ -1,25 +1,28 @@
 [[GEOBEYOND]]
 === GEOBEYOND
 
-
-
-TBA
+Participant: Francesco Bartoli
 
 ==== Motivation to Participate
 
-TBA
+* Port the GEE-Bridge API to OGC API - Commons and OGC API - Processes.
+* Discuss with the community how to handle WPS remote processes and process chaining (local and remote)
+* Understand and find the way how to implement several specifications together for the new GeoNode API
+* Align with the CSW community about the new OpenAPI based specification
 
 ==== Implemented Solution
 
-TBA
+* GeoNode API draft work of OGC API - Processes which would implement a generic solution for algorithms as functions
 
 ==== Proposed Alternatives
 
-TBA
+* Process chaining and consequently workflows should be part of the perimeter of the specification or can be an abstract concept within GeoNode?
+* Processing from cloud infrastructure (Google Earth Engine, IBM Geoscope, etc) have to be considered remote or local? Sort of WPS Cascading?
 
 ==== Experiences with OGC API Specifications
 
-TBA
+* Basic experience with OGC API - Features
+* Basic experience with OGC API - Commons and OGC API - Processes
 
 ==== Other Impressions & Recommendations
 
