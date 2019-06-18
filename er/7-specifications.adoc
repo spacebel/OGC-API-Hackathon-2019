@@ -14,7 +14,7 @@ The following subsection presents a summary of the core resources.
 
 ==== Key Resources
 
-A summary of the paths offered by the OGC API - Common specification are shown below:
+A summary of the paths offered by the OGC API - Common specification is presented below:
 
 * Path = /
 ** Returns landing page
@@ -33,11 +33,24 @@ A summary of the paths offered by the OGC API - Common specification are shown b
 
 === OGC API - Features
 
-The OGC API - Features specification offers the capability to create, modify and query spatial data on the Web. The specification is a multi-part document. The Core part of the specification describes the mandatory capabilities that every implementing service has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Envisaged future capabilities include, for example, support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems. This specification builds on the Web Feature Service (WFS) standard.
+The OGC API - Features specification offers the capability to create, modify and query spatial data on the Web. This standard specifies requirements and recommendations for APIs that want to follow a standard way of sharing feature data. The specification is a multi-part document. The Core part of the specification describes the mandatory capabilities that every implementing service has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Envisaged future capabilities include, for example, support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems. This specification builds on the Web Feature Service (WFS) standard and has previously been referred to as WFS 3.0.
 
 ==== Key Resources
 
-TBA
+A summary of the paths offered by the OGC API - Features specification is presented below:
+
+* Path = /
+** Returns the landing page of this API (inherited from OGC API - Common)
+* Path = /conformance
+** Returns information about standards that this API conforms to (inherited from OGC API - Common)
+* Path = /collections
+** Returns a description of the feature collections in the dataset (inherited from OGC API - Common)
+* Path = /collections/{collectionId}
+** Returns a description of the {collectionId} feature collection (inherited from OGC API - Common)
+* Path = /collections/{collectionId}/items
+** Returns features of feature collection {collectionId}
+* Path = /collections/{collectionId}/items/{featureId}
+** Returns a feature; using content negotiation to request HTML, GeoJSON or other
 
 === OGC API - Processes
 
@@ -45,7 +58,24 @@ The OGC API - Processes specification provides defines how a client application 
 
 ==== Key Resources
 
-TBA
+A summary of the paths offered by the OGC API - Processes specification is presented below:
+
+* Path = /
+** Returns landing page (inherited from OGC API - Common)
+* Path = /api
+** Returns API Description document (OpenAPI) (inherited from OGC API - Common)
+* Path = /conformance
+** Returns a set of conformance class URIs. (inherited from OGC API - Common)
+* Path = /processes
+** Returns available processes
+* Path = /processes/{id}/
+** Returns a process description
+* Path = /processes/{id}/jobs
+** Returns the list of jobs for a process.
+* Path = /processes/{id}/jobs/{jobID}
+** Returns the status of a job
+* Path = /processes/{id}/jobs/{jobID}/result
+** Returns the result(s) of a job
 
 === OGC API - Map Tiles
 
@@ -53,7 +83,46 @@ The OGC API - Map Tiles specification defines an OGC standard for a Web Map Tile
 
 ==== Key Resources
 
-TBA
+A summary of the paths offered by the OGC API - Processes specification is presented below:
+
+* Path = /
+** Returns landing page (inherited from OGC API - Common)
+* Path = /conformance
+** Returns a set of conformance class URIs. (inherited from OGC API - Common)
+* Path = /collections
+** Returns metadata describing the collections accessible through this API (inherited from OGC API - Common)
+* Path = /collections/{collectionId}
+** Returns metadata describing the collection identified by {collectionId}
+* Path = /collections/{collectionId}/queryables
+**  Returns the queryable properties of the feature collection
+* Path = /collections/{collectionId}/items
+**  Returns features of the feature collection
+* Path = /collections/{collectionId}/items/{featureId}
+**  Returns a feature
+* Path = /tileMatrixSet
+**  Returns all available tile matrix sets (tiling schemes)
+* Path = /tileMatrixSet/{tileMatrixSetId}
+**  Returns a tiling scheme by id
+* Path = /tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}
+**  Returns a tile of the dataset
+* Path = /collections/{collectionId}/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}
+**  Returns a tile of the collection with or without style
+* Path = /tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}/info
+**  Returns information on a point of a tile with or without style
+* Path = /collections/{collectionId}/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}/info
+**  Returns information of a point in a tile of the collection with or without style
+* Path = /tiles/{tileMatrixSetId}
+**  Returns tiles from several collections.
+* Path = /collections/{collectionId}/tiles/{tileMatrixSetId}
+**  Returns tiles of a collection
+* Path = /map
+**  Returns a map of collections with or without style
+* Path = /collections/{collectionId}/map
+**  Returns a maps from the collection with or without style
+* Path = /map/info
+**  Returns information about a map of the collection with or without style
+* Path = /collections/{collectionId}/map/info
+**  Returns information about a map from the collection with or without style
 
 === OGC API - Coverages
 
@@ -62,14 +131,18 @@ The OGC API - Coverages specification defines a Web API for accessing coverages 
 
 ==== Key Resources
 
-A summary of the paths offered by the OGC API - Coverages specification are shown below:
+A summary of the paths offered by the OGC API - Coverages specification is presented below:
 
-* From Common
-** Path = /,
-** Path = /api,
-** Path = /conformance
-** Path = /collections/
-** Path = /collections/{collectionId}
+* Path = /
+** Returns landing page (inherited from OGC API - Common)
+* Path = /api
+** Returns API Description document (OpenAPI) (inherited from OGC API - Common)
+* Path = /conformance
+** Returns a set of conformance class URIs. (inherited from OGC API - Common)
+* Path = /collections
+** Returns metadata describing the collections accessible through this API (inherited from OGC API - Common)
+* Path = /collections/{collectionId}
+** Returns metadata describing the collection identified by {collectionId}
 * Path = /collections/{collectionId}/coverages
 ** Returns metadata about each coverage in the collection
 * Path = /collections/{collectionId}/coverages/{coverageID}

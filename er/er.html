@@ -1452,18 +1452,18 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chuck Heazel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Heazeltech LLC</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Matthias Mohr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">University of Münster</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Robin Houtmeyers</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hexagon Geospatial</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">TBA</p></td>
 </tr>
 <tr>
@@ -2160,21 +2160,61 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_key_resources"><a class="anchor" href="#_key_resources"></a>8.1.1. Key Resources</h4>
 <div class="paragraph">
-<p>There are several requirements that are defined in the specification. A subset of those requirements are summarised below:</p>
+<p>A summary of the paths offered by the OGC API - Common specification is presented below:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The OGC API - Common requires that each OGC API have a single <code>LandingPage</code> (path <code>/</code>).</p>
+<p>Path = /</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns landing page</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>Each OGC API is also required to provide an API Definition at the (path <code>/api</code>),</p>
+<p>Path = /api</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns API Description document (OpenAPI)</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>Each OGC API is also required to provide Conformance statements at the (path <code>/conformance</code>),</p>
+<p>Path = /conformance</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a set of conformance class URIs.</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
-<p>Each OGC API is also required to provide metadata about resource Collections at the (path <code>/collections</code>).</p>
+<p>Path = /collections</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns metadata describing the collections accessible through this API</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}
+**Returns metadata describing the collection identified by {collectionId}
+*Path = /collections/{collectionId}/items</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns --- TBD.  This may be where Common leaves off and resource specific standards take over.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -2183,12 +2223,76 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="_ogc_api_features"><a class="anchor" href="#_ogc_api_features"></a>8.2. OGC API - Features</h3>
 <div class="paragraph">
-<p>The OGC API - Features specification offers the capability to create, modify and query spatial data on the Web. The specification is a multi-part document. The Core part of the specification describes the mandatory capabilities that every implementing service has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Envisaged future capabilities include, for example, support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems. This specification builds on the Web Feature Service (WFS) standard.</p>
+<p>The OGC API - Features specification offers the capability to create, modify and query spatial data on the Web. This standard specifies requirements and recommendations for APIs that want to follow a standard way of sharing feature data. The specification is a multi-part document. The Core part of the specification describes the mandatory capabilities that every implementing service has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Envisaged future capabilities include, for example, support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems. This specification builds on the Web Feature Service (WFS) standard and has previously been referred to as WFS 3.0.</p>
 </div>
 <div class="sect3">
 <h4 id="_key_resources_2"><a class="anchor" href="#_key_resources_2"></a>8.2.1. Key Resources</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>A summary of the paths offered by the OGC API - Features specification is presented below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Path = /</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns the landing page of this API (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /conformance</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns information about standards that this API conforms to (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a description of the feature collections in the dataset (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a description of the {collectionId} feature collection (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/items</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns features of feature collection {collectionId}</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/items/{featureId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a feature; using content negotiation to request HTML, GeoJSON or other</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2200,7 +2304,91 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_key_resources_3"><a class="anchor" href="#_key_resources_3"></a>8.3.1. Key Resources</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>A summary of the paths offered by the OGC API - Processes specification is presented below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Path = /</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns landing page (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /api</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns API Description document (OpenAPI) (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /conformance</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a set of conformance class URIs. (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /processes</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns available processes</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /processes/{id}/</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a process description</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /processes/{id}/jobs</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns the list of jobs for a process.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /processes/{id}/jobs/{jobID}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns the status of a job</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /processes/{id}/jobs/{jobID}/result</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns the result(s) of a job</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2212,7 +2400,201 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_key_resources_4"><a class="anchor" href="#_key_resources_4"></a>8.4.1. Key Resources</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>A summary of the paths offered by the OGC API - Processes specification is presented below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Path = /</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns landing page (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /conformance</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a set of conformance class URIs. (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns metadata describing the collections accessible through this API (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns metadata describing the collection identified by {collectionId}</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/queryables</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns the queryable properties of the feature collection</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/items</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns features of the feature collection</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/items/{featureId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a feature</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /tileMatrixSet</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns all available tile matrix sets (tiling schemes)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /tileMatrixSet/{tileMatrixSetId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a tiling scheme by id</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a tile of the dataset</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a tile of the collection with or without style</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}/info</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns information on a point of a tile with or without style</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}/info</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns information of a point in a tile of the collection with or without style</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /tiles/{tileMatrixSetId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns tiles from several collections.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/tiles/{tileMatrixSetId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns tiles of a collection</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /map</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a map of collections with or without style</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/map</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a maps from the collection with or without style</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /map/info</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns information about a map of the collection with or without style</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/map/info</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns information about a map from the collection with or without style</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2224,7 +2606,111 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_key_resources_5"><a class="anchor" href="#_key_resources_5"></a>8.5.1. Key Resources</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>A summary of the paths offered by the OGC API - Coverages specification is presented below:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Path = /</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns landing page (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /api</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns API Description document (OpenAPI) (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /conformance</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a set of conformance class URIs. (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns metadata describing the collections accessible through this API (inherited from OGC API - Common)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns metadata describing the collection identified by {collectionId}</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/coverages</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns metadata about each coverage in the collection</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/coverages/{coverageID}</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns the coverage itself.  Typically as an image file.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/coverages/{coverageID}/metadata</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns metadata about a coverage.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/coverages/{coverageID}/domainset</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a description of the domain set of the coverage</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Path = /collections/{collectionId}/coverages/{coverageID}/rangetype</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Returns a description of the range type of the coverage</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -3042,30 +3528,61 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="GEOBEYOND"><a class="anchor" href="#GEOBEYOND"></a>A.22. GEOBEYOND</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p>Participant: Francesco Bartoli</p>
 </div>
 <div class="sect3">
 <h4 id="_motivation_to_participate_22"><a class="anchor" href="#_motivation_to_participate_22"></a>A.22.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Port the GEE-Bridge API to OGC API - Commons and OGC API - Processes.</p>
+</li>
+<li>
+<p>Discuss with the community how to handle WPS remote processes and process chaining (local and remote)</p>
+</li>
+<li>
+<p>Understand and find the way how to implement several specifications together for the new GeoNode API</p>
+</li>
+<li>
+<p>Align with the CSW community about the new OpenAPI based specification</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implemented_solution_22"><a class="anchor" href="#_implemented_solution_22"></a>A.22.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>GeoNode API draft work of OGC API - Processes which would implement a generic solution for algorithms as functions</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_proposed_alternatives_22"><a class="anchor" href="#_proposed_alternatives_22"></a>A.22.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Process chaining and consequently workflows should be part of the perimeter of the specification or can be an abstract concept within GeoNode?</p>
+</li>
+<li>
+<p>Processing from cloud infrastructure (Google Earth Engine, IBM Geoscope, etc) have to be considered remote or local? Sort of WPS Cascading?</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_experiences_with_ogc_api_specifications_22"><a class="anchor" href="#_experiences_with_ogc_api_specifications_22"></a>A.22.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Basic experience with OGC API - Features</p>
+</li>
+<li>
+<p>Basic experience with OGC API - Commons and OGC API - Processes</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect3">
