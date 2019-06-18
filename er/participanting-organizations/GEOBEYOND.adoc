@@ -1,5 +1,5 @@
 [[GEOBEYOND]]
-=== GEOBEYOND
+=== Geobeyond
 
 Participant: Francesco Bartoli
 
@@ -27,4 +27,3 @@ Participant: Francesco Bartoli
 ==== Other Impressions & Recommendations
 
 TBA
-
