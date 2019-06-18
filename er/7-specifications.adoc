@@ -14,12 +14,21 @@ The following subsection presents a summary of the core resources.
 
 ==== Key Resources
 
-There are several requirements that are defined in the specification. A subset of those requirements are summarised below:
+A summary of the paths offered by the OGC API - Common specification are shown below:
 
-* The OGC API - Common requires that each OGC API have a single `LandingPage` (path `/`).
-* Each OGC API is also required to provide an API Definition at the (path `/api`),
-* Each OGC API is also required to provide Conformance statements at the (path `/conformance`),
-* Each OGC API is also required to provide metadata about resource Collections at the (path `/collections`).
+* Path = /
+** Returns landing page
+* Path = /api
+** Returns API Description document (OpenAPI)
+* Path = /conformance
+** Returns a set of conformance class URIs.
+* Path = /collections
+** Returns metadata describing the collections accessible through this API
+* Path = /collections/{collectionId}
+**Returns metadata describing the collection identified by {collectionId}
+*Path = /collections/{collectionId}/items
+** Returns --- TBD.  This may be where Common leaves off and resource specific standards take over.
+
 
 
 === OGC API - Features
@@ -53,4 +62,21 @@ The OGC API - Coverages specification defines a Web API for accessing coverages 
 
 ==== Key Resources
 
-TBA
+A summary of the paths offered by the OGC API - Coverages specification are shown below:
+
+* From Common
+** Path = /,
+** Path = /api,
+** Path = /conformance
+** Path = /collections/
+** Path = /collections/{collectionId}
+* Path = /collections/{collectionId}/coverages
+** Returns metadata about each coverage in the collection
+* Path = /collections/{collectionId}/coverages/{coverageID}
+** Returns the coverage itself.  Typically as an image file.
+* Path = /collections/{collectionId}/coverages/{coverageID}/metadata
+** Returns metadata about a coverage.
+* Path = /collections/{collectionId}/coverages/{coverageID}/domainset
+** Returns a description of the domain set of the coverage
+* Path = /collections/{collectionId}/coverages/{coverageID}/rangetype
+** Returns a description of the range type of the coverage

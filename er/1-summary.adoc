@@ -33,9 +33,9 @@ All questions regarding this document should be directed to the editor or the co
 |Peter Baumann | rasdaman GmbH |TBA
 |Francesco	Bartoli | Geobeyond |TBA
 |Dirk Stenger | lat/lon GmbH |TBA
-|TBA | TBA |TBA
-|TBA | TBA |TBA
-|TBA | TBA |TBA
+|Chuck Heazel | Heazeltech LLC |TBA
+|Matthias Mohr | University of Münster |TBA
+|Robin Houtmeyers | Hexagon Geospatial |TBA
 |TBA | TBA |TBA
 |TBA | TBA |TBA
 |TBA | TBA |TBA
