@@ -183,6 +183,7 @@ The following organizations participated in the Hackathon:
 * Simms Reeve
 * Sinergise
 * Solenix
+* Spacebel s.a.
 * Strategic Alliance Consulting Inc
 * University College London
 * University of Birmingham
