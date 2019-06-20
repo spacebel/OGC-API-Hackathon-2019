@@ -1,17 +1,15 @@
 [[EsriUK]]
 === Esri UK
 
-
-
-TBA
+Esri make ArcGIS mapping and analytics software. 
 
 ==== Motivation to Participate
 
-TBA
+Evolution of the OGC specifications to a modern, developer-friendly API is essential. 
 
 ==== Implemented Solution
 
-TBA
+To date we have not implemented any of the new draft OGC API standards in our released software. We have been working on various R&D prototypes of server and client. 
 
 ==== Proposed Alternatives
 
@@ -19,7 +17,7 @@ TBA
 
 ==== Experiences with OGC API Specifications
 
-TBA
+Esri has been involved in the OGC since its inception, and have widely implemented many other OGC standards in both server and client software.
 
 ==== Other Impressions & Recommendations
 
