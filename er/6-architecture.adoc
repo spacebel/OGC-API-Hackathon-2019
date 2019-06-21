@@ -12,47 +12,23 @@ The OGC API - Common specification documents the set of common practices and sha
 
 === Service Implementations
 
-==== 52°North JavaPS
-
-The 52°North JavaPS product is an open source implementation of both the Web Processing Service (WPS) standard and the OGC API - Processes specification. JavaPS enables the deployment of geospatial processes on the Web in a way that conforms to OGC standards. The software is built using the Java programming language and is supported by a developer toolchain that includes Maven and Git/Github. The software features a pluggable architecture for processes and data encodings that is based on the 52°North https://wiki.52north.org/SensorWeb/Iceland[Iceland] project which represents a generic Java framework for OGC Web Services. By virtue of being based on the Iceland project, JavaPS provides components that are associated with processing geospatial data, for example request objects, response objects, decoders, encoders, parsers.
-
-==== CubeWerx Inc. WPS-T
-
-TBA
-
-==== GeoSolutions GeoServer
-
-TBA
-
-==== Helyx Secure Information systems Processes - Routing Profile
-
-TBA
-
 ==== pygeoapi
 
 pygeoapi is a Python server implementation of the emerging OGC API specifications. Early versions of this software implemented the OGC API - Features specification (formerly WFS 3.0). Recent versions of the software have included support for both the OGC API - Features and the OGC API - Processes specifications. Support for these specifications makes it possible publish feature data and geospatial processes. As the name suggests the software is built using the Python programming language and is supported by a developer toolchain that includes Docker and Git/Github.
 
-==== Solenix WPS-T
+==== 52°North JavaPS
+
+The 52°North JavaPS product is an open source implementation of both the Web Processing Service (WPS) standard and the OGC API - Processes specification. JavaPS enables the deployment of geospatial processes on the Web in a way that conforms to OGC standards. The software is built using the Java programming language and is supported by a developer toolchain that includes Maven and Git/Github. The software features a pluggable architecture for processes and data encodings that is based on the 52°North https://wiki.52north.org/SensorWeb/Iceland[Iceland] project which represents a generic Java framework for OGC Web Services. By virtue of being based on the Iceland project, JavaPS provides components that are associated with processing geospatial data, for example request objects, response objects, decoders, encoders, parsers.
+
+==== Esri 
+Esri produce both an installable product (ArcGIS Enterprise) and SaaS product (ArcGIS Online) which support adopted OGC specifications. ArcGIS Enterprise as a server implements WMS, WMTS, WCS2, WPS, WFS2, KML, Geopackage etc as well as other de-facto standards. ArcGIS Online as a server implements WMTS, WFS2 as well as other de-facto standards.
+Until the OGC API standards are stable and formally adopted, it is not feasible to implement them in the released products. Therefore for the purposes of the Hackathon and further R&D, Esri have implemented the OGC-API tiles as a facade on to ArcGIS Online tiled services. Technically this is currently implemented as a node.js server running in Microsoft Azure.
+https://ogc-tiles-esri-server.azurewebsites.net
+
+
+==== TBA
 
 TBA
-
-
-
-==== Spacebel OGC API Common - OpenSearch DataBio EO Catalog
-
-TBA
-
-==== Spacebel API for Processes (WPS-T Server)
-
-TBA
-
-
-
-==== ZOO-Project rest-binding demo
-
-TBA
-
-
 
 === Client Implementations
 
@@ -71,9 +47,9 @@ The Solenix WPS Demo client is an adaptation of the OGC Testbed 14 client, accou
 
 The client application runs from a web browser.
 
-==== OWSLib OGC API - Features Client
+==== TBA
 
-OWSLib is a longstanding Python package providing Pythonic access to OGC services. Recent work allows for interacting with OGC API - Features services. Designed as a reusable component/library, this allows projects in the Python ecosystem to work with OGC API - Features in Python as part of their workflows. The nature of OGC API - Features greatly lowers the implementation barrier.
+TBA
 
 
 ==== TBA
