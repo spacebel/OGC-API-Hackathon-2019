@@ -23,8 +23,7 @@ The 52°North JavaPS product is an open source implementation of both the Web Pr
 ==== Esri
 Esri produce both an installable product (ArcGIS Enterprise) and SaaS product (ArcGIS Online) which support adopted OGC specifications. ArcGIS Enterprise as a server implements WMS, WMTS, WCS2, WPS, WFS2, KML, Geopackage etc as well as other de-facto standards. ArcGIS Online as a server implements WMTS, WFS2 as well as other de-facto standards.
 Until the OGC API standards are stable and formally adopted, it is not feasible to implement them in the released products. Therefore for the purposes of the Hackathon and further R&D, Esri have implemented the OGC-API tiles as a facade on to ArcGIS Online tiled services. Technically this is currently implemented as a node.js server running in Microsoft Azure.
-https://ogc-tiles-esri-server.azurewebsites.net
-
+https://ogc-tiles-esri-server.azurewebsites.net 
 
 ==== TBA
 
@@ -45,6 +44,9 @@ LuciadLightspeed provides a foundation for advanced geospatial analytics applica
 The Solenix WPS Demo client is an adaptation of the OGC Testbed 14 client, accounting for some of the changes introduced with the OGC API - Processing.
 
 The client application runs from a web browser.
+
+==== Esri OGC API-Tiles Demo Client
+The Esri client application is a simple Leaflet application which connects to the Esri OGC API-Tiles server implementation for testing purposes.
 
 ==== TBA
 
