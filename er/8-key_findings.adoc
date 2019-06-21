@@ -106,7 +106,7 @@ image::images/interests_1.png[width=800,align="center"]
 .Participants' interests (2 of 3)
 image::images/interests_2.png[width=800,align="center"]
 
-[#img_interests_2,reftext='{figure-caption} {counter:figure-num}']
+[#img_interests_3,reftext='{figure-caption} {counter:figure-num}']
 .Participants' interests (3 of 3)
 image::images/interests_3.png[width=800,align="center"]
 
