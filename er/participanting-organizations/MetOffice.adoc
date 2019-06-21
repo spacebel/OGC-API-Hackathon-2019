@@ -2,7 +2,7 @@
 === Met Office
 The Met Office is the national meteorological service for the United Kingdom. It produces both daily weather forecasts and long term climate predictions as well as performing fundamental science. It also runs several forcasting services for oceanography. Its customers cover a wide range of domains, such as aviation, defence, public sector, marine, private industry, media.
 
-It has been an active Member of OGC since 2009, and, along with several other national meteorological services, founded the OGC Met-Ocean Domain Working Group and initiated a Memorandum of Understanding between OGC and the World Meteorological Organisation (WMO). WMO is the United Nations international treaty organisation that coordinates 193 national hydrometeorological service. It also defines international standards for meteorology, hydrology and oceanography. 
+It has been an active Member of OGC since 2009, and, along with several other national meteorological services, founded the OGC Met-Ocean Domain Working Group and initiated a Memorandum of Understanding between OGC and the World Meteorological Organisation (WMO). WMO is the United Nations international treaty organisation that coordinates 193 national hydrometeorological services. It also defines international standards for meteorology, hydrology and oceanography. 
 
 The Met Office is also active in the World Wide Web Consortium (W3C) standards development organisation.
 
