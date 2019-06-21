@@ -1,27 +1,30 @@
 [[MetOffice]]
 === Met Office
+The Met Office is the national meteorological service for the United Kingdom. It produces both daily weather forecasts and long term climate predictions as well as performing fundamental science. It also runs several forcasting services for oceanography. Its customers cover a wide range of domains, such as aviation, defence, public sector, marine, private industry, media.
 
+It has been an active Member of OGC since 2009, and, along with several other national meteorological services, founded the OGC Met-Ocean Domain Working Group and initiated a Memorandum of Understanding between OGC and the World Meteorological Organisation (WMO). WMO is the United Nations international treaty organisation that coordinates 193 national hydrometeorological service. It also defines international standards for meteorology, hydrology and oceanography. 
 
-
-TBA
+The Met Office is also active in the World Wide Web Consortium (W3C) standards development organisation.
 
 ==== Motivation to Participate
 
-TBA
+Meteorology has had a long tradition of inventing and using technologies for its specific and very demanding requirements. As weather and climate information become ever more important to many aspects of society, it has become increasingly important to make information available using widespread technologies and approaches. We think using OpenAPI version 3 for defining public and private APIs to our data and information will have many benefits, for both customers and our infrastructure, especially when supporting services from clouds. We would like the APIs to be consistent with, and conformant to, any OGC OpenAPI standards.
 
 ==== Implemented Solution
 
-TBA
+Weather on the Web (WotW) is an initiative to agree APIs for common data retrieval patterns, such as points, time-series, polygons, and trajectories, in 2, 3 and 4 Dimensions. The intent is to make it a global standard for meteorological and environmental services. 
+
+Point Data has been working for some time, as have Time-series at a point, and Polygons. Trajectories and Data Tiles are being developed.
 
 ==== Proposed Alternatives
 
-TBA
+Fall-back is to develop our meteorological APIs separetely from the OGC proposals and standardise through WMO, though this will be much slower.
 
 ==== Experiences with OGC API Specifications
 
-TBA
+A Hackathon was held in December 2018 in Washington DC, USA, building on the OGC WFS3.0 specification. Servers and clients based on existing WFS software were readily developed. Agreement was reached on the initial data retrieval patterns to support: point, timeseries, etc..
 
 ==== Other Impressions & Recommendations
 
-TBA
+In the WFS3.0 spec, /Items/ needs to be replaced by 'point', 'timeseries', trajectory', etc. This is consistent with the apporach advocated by Joan Maso for maps and tiles.
 
