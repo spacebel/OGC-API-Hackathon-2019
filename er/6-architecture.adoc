@@ -25,6 +25,9 @@ Esri produce both an installable product (ArcGIS Enterprise) and SaaS product (A
 Until the OGC API standards are stable and formally adopted, it is not feasible to implement them in the released products. Therefore for the purposes of the Hackathon and further R&D, Esri have implemented the OGC-API tiles as a facade on to ArcGIS Online tiled services. Technically this is currently implemented as a node.js server running in Microsoft Azure.
 https://ogc-tiles-esri-server.azurewebsites.net 
 
+==== rasdaman
+rasdaman ("raster data manager") is a flexible, scalable datacube engine with location-transparent federation capabilities. Open-source rasdaman is available from www.rasdaman.org. Being WCS reference implementation rasdaman supports OGC WMS, WCS, and WCPS (the OGC datacube analytics standard). For experimentation with the emerging OGC OpenAPI interface for coverages a rasdaman server has been made available on Amazon with an OpenAPI facade to WCS; access has been demonstrated with EURAC and Sinergise OpenAPI clients.
+
 ==== TBA
 
 TBA
