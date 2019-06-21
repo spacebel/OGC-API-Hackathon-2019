@@ -9,7 +9,15 @@ But perhaps the most important impact was the leap of the OGC Web Feature Servic
 
 Numerous discussions occurred at OGC quarterly Technical Committee (TC) Meetings to consider those elements being developed in each SWG which should be common to all web API standards. These discussions came to a head at the February 2019 TC Meeting in Singapore, where a series of working group meetings and common sessions for the whole TC Membership reinforced the desire to work on a common framework for many OGC web standards and to develop a nomenclature for labeling these standards. Thus, the pattern “OGC API [resource]” was coined. The discussions in Singapore also resulted in the planning of the OGC API Hackathon to define and test common elements from Coverages, Map Tiles, and Processing standards work using foundational material from the Features work.
 
-The OGC API Hackathon 2019 was hosted by the Geovation Hub in London, United Kingdom, from June 20th to 21st, 2019. The hackathon was sponsored by the European Space Agency (ESA) and the Ordnance Survey. The goal of the hackathon was to advance the development of OGC API specifications. The output of this hackathon should lead to a solid, common core and advancement of a whole new generation of OGC standards that are flexible in modern IT environments.
+The OGC API Hackathon 2019 was hosted by the Geovation Hub in London, United Kingdom, from June 20th to 21st, 2019. The hackathon was sponsored by the European Space Agency (ESA) and the Ordnance Survey. The *goal* of the hackathon was to advance the development of OGC API specifications.
+
+The objectives of the hackathon were set out as to:
+* develop, deploy and test services/clients that support OGC APIs
+* suggest improvements for a common core
+* define rules/guidance that can be documented
+* validate work that has been completed to date
+* contribute to the GitHub repositories
+
 
 === Overview of the Challenge
 

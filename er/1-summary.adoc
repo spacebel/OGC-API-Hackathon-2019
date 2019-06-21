@@ -16,6 +16,8 @@ The subject of this Engineering Report (ER) is a hackathon event that was held f
 
 (( This section shall be between 1-3 pages.))
 
+The output of this hackathon should lead to a solid, common core and advancement of a whole new generation of OGC standards that are flexible in modern IT environments.
+
 ===	Document contributor contact points
 
 All questions regarding this document should be directed to the editor or the contributors:
