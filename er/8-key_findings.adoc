@@ -57,25 +57,27 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 [#table_ties,reftext='{table-caption} {counter:table-num}']
 .Technology Integration Experiments (TIE) for OGC APIs
-[cols=",,,,,",width="75%",options="header",align="center"]
+[cols=",,,,,,,",width="75%",options="header",align="center"]
 |===
-|Services\Client | Hexagon | Helyx | OpenSphere | Esri | Solenix
+|Services\Client | Hexagon | Helyx | OpenSphere | Esri | Solenix | EURAC | Sinergise
 
-|52 North |  | Processes  | | | Processes
+|52 North |  | Processes  | | | Processes | |
 
-|CubeWerx |  | Processes |  | | Processes
+|CubeWerx |  | Processes |  | | Processes | |
 
-|Esri | Map Tiles |   |   | Map Tiles |
+|Esri | Map Tiles |   |   | Map Tiles | | |
 
-|Helyx |  | Processes  |  | |
+|Helyx |  | Processes  |  | | | |
 
-|pygeoapi |  |  | Features | | Processes
+|pygeoapi |  |  | Features | | Processes | |
 
-|Geoserver |  |   | Features | |
+|Geoserver |  |   | Features | | | |
 
-|Spacebel |  |   | Features | | Processes
+|Spacebel |  |   | Features | | Processes | |
 
-|West University of Timisoara | | | | | Processes
+|West University of Timisoara | | | | | Processes | |
+
+|rasdaman | | | | | | Coverages | Coverages
 
 |===
 
