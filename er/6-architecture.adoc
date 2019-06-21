@@ -26,9 +26,25 @@ TBA
 
 === Client Implementations
 
+==== OpenSphere OGC API Plugin
+
+This plugin extends OpenSphere with OGC API Features (aka WFS3) support. An instance of the client application, with the GeoSolutions GeoServer and pygeoapi master demo server pre-configured was deployed at http://frozen-lime.surge.sh/ . Other services can be added - click on the "Add Data" button in the top left, then on Manage Servers. The client application runs from a web browser.
+The OpenSphere OGC API Plugin was configured to support up to 10,000 features if a server is configured according to the OGC API - Features specification. There are plans to include support for OGC APIs for map tiles and processes in the future.
+
+==== Hexagon LuciadLightspeed
+
+LuciadLightspeed provides a foundation for advanced geospatial analytics applications. It allows users to create high performance command & control and location intelligence applications with clean design implementation and rapid application development. A desktop client application was implemented using LuciadLightspeed and configured to interface services implementing the OGC API - Map Tiles specification.
+
+==== Solenix WPS Demo Client
+
+The Solenix WPS Demo client is an adaptation of the OGC Testbed 14 client, accounting for some of the changes introduced with the OGC API - Processing.
+
+The client application runs from a web browser.
+
 ==== TBA
 
 TBA
+
 
 ==== TBA
 

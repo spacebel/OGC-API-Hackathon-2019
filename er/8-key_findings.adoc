@@ -81,9 +81,6 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 NOTE: Services on rows and Clients on columns
 
-=== Alternatives
-
-TBA
 
 === What occurred
 
