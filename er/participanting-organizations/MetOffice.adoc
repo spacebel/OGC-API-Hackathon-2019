@@ -8,7 +8,7 @@ The Met Office is also active in the World Wide Web Consortium (W3C) standards d
 
 ==== Motivation to Participate
 
-Meteorology has had a long tradition of inventing and using technologies for its specific and very demanding requirements. As weather and climate information become ever more important to many aspects of society, it has become increasingly important to make information available using widespread technologies and approaches. We think using OpenAPI version 3 for defining public and private APIs to our data and information will have many benefits, for both customers and our infrastructure, especially when supporting services from clouds. We would like the APIs to be consistent with, and conformant to, any OGC OpenAPI standards.
+Meteorology has had a long tradition of inventing and using technologies for its specific and very demanding requirements. As weather and climate information become ever more important to many aspects of society, it has become increasingly important to make information available using widespread technologies and approaches. We think using OpenAPI version 3 for defining public and private APIs to our data and information will have many benefits, for both customers and our infrastructure, especially when supporting services from computing clouds. We would like the APIs to be consistent with, and conformant to, any OGC OpenAPI standards.
 
 ==== Implemented Solution
 
