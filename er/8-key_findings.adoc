@@ -5,7 +5,6 @@ This section presents the key findings from the Hackathon.
 
 === Results
 
-
 ==== OGC API - Processes
 
 The participants made an observation that some attributes for referenceValue were missing. As a result, changes were made to add attributes for identifying the MIME type, schema and encoding in a referenceValue object. These changes were needed for providing input in a specific format or returning output in a specific format.
@@ -86,15 +85,45 @@ NOTE: Services on rows and Clients on columns
 
 TBA
 
+=== What occurred
+
+==== Processes
+
+The decision to hold the OGC API Hackathon was made by the TC at the 2019 TC meeting in Singapore. Following this decision, OGC staff engaged a number of potential sponsors from the OGC membership. Having identified sponsors and hosts, a series of teleconferences were held for planning the event. These teleconferences discussed venue logistics, computing infrastructure, data, scenarios, catering and other topics. A Gantt chart of the planning and execution of the hackathon is shown in <<img_gantt>>.
+
+[#img_gantt,reftext='{figure-caption} {counter:figure-num}']
+.A Gantt chart of the planning and execution of the hackathon
+image::images/gantt.png[width=800,align="center"]
+
+During the hackathon, the process involved alternation between briefings, discussions and coding. On the first day of the hackathon, three back-briefs were held, that is one in the morning, another in the afternoon and another in the evening. These briefings provided an opportunity for issues to be discussed across teams. Agreements and resolutions from the discussions triggered by the briefings were then fed back into the team-specific work.
+
+==== Organization
+
+By the event date, 76 individuals had been registered to participate in-person and 35 participants had been registered to participate remotely. A questionnaire sent out just before the hackathon to collect information about which OGC API specifications participants would focus on received 27 responses, with the spread of interest as showin in <<img_interests_1>>, <<img_interests_2>> and <<img_interests_3>>.
+
+[#img_interests_1,reftext='{figure-caption} {counter:figure-num}']
+.Participants' interests (1 of 3)
+image::images/interests_1.png[width=800,align="center"]
+
+[#img_interests_2,reftext='{figure-caption} {counter:figure-num}']
+.Participants' interests (2 of 3)
+image::images/interests_2.png[width=800,align="center"]
+
+[#img_interests_2,reftext='{figure-caption} {counter:figure-num}']
+.Participants' interests (3 of 3)
+image::images/interests_3.png[width=800,align="center"]
+
+The hackathon was therefore organized around teams based on the OGC API specifications. Participants interested in APIs other than those for coverages, processes, and map tiles, were asked to contribute to the work on advancing the OGC API - Common specification. This would help ensure that the OGC API - Common specification provides an appropriate a base for all future OGC APIs.
+
+==== Technology
+
+==== Information
+
 === Experiences
 
 TBA
 
 === Lessons learnt
-
-TBA
-
-=== What occurred
 
 TBA
 
