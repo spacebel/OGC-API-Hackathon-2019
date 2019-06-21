@@ -103,6 +103,8 @@ include::participanting-organizations/QuickCaption.adoc[]
 
 include::participanting-organizations/SecureDimensions.adoc[]
 
+include::participanting-organizations/SigmaBravo.adoc[]
+
 include::participanting-organizations/SimmsReeve.adoc[]
 
 include::participanting-organizations/Sinergise.adoc[]

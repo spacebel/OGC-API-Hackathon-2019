@@ -20,7 +20,7 @@ pygeoapi is a Python server implementation of the emerging OGC API specification
 
 The 52°North JavaPS product is an open source implementation of both the Web Processing Service (WPS) standard and the OGC API - Processes specification. JavaPS enables the deployment of geospatial processes on the Web in a way that conforms to OGC standards. The software is built using the Java programming language and is supported by a developer toolchain that includes Maven and Git/Github. The software features a pluggable architecture for processes and data encodings that is based on the 52°North https://wiki.52north.org/SensorWeb/Iceland[Iceland] project which represents a generic Java framework for OGC Web Services. By virtue of being based on the Iceland project, JavaPS provides components that are associated with processing geospatial data, for example request objects, response objects, decoders, encoders, parsers.
 
-==== Esri 
+==== Esri
 Esri produce both an installable product (ArcGIS Enterprise) and SaaS product (ArcGIS Online) which support adopted OGC specifications. ArcGIS Enterprise as a server implements WMS, WMTS, WCS2, WPS, WFS2, KML, Geopackage etc as well as other de-facto standards. ArcGIS Online as a server implements WMTS, WFS2 as well as other de-facto standards.
 Until the OGC API standards are stable and formally adopted, it is not feasible to implement them in the released products. Therefore for the purposes of the Hackathon and further R&D, Esri have implemented the OGC-API tiles as a facade on to ArcGIS Online tiled services. Technically this is currently implemented as a node.js server running in Microsoft Azure.
 https://ogc-tiles-esri-server.azurewebsites.net
@@ -34,8 +34,7 @@ TBA
 
 ==== OpenSphere OGC API Plugin
 
-This plugin extends OpenSphere with OGC API Features (aka WFS3) support. An instance of the client application, with the GeoSolutions GeoServer and pygeoapi master demo server pre-configured was deployed at http://frozen-lime.surge.sh/ . Other services can be added - click on the "Add Data" button in the top left, then on Manage Servers. The client application runs from a web browser.
-The OpenSphere OGC API Plugin was configured to support up to 10,000 features if a server is configured according to the OGC API - Features specification. There are plans to include support for OGC APIs for map tiles and processes in the future.
+OpenSphere is a pluggable, single-page, GIS web application that supports both 2D and 3D views. It supports hooking up to many common servers and formats such as ArcGIS, Geoserver (and other OGC WMS/WFS services), XYZ, TMS, KML, GeoJSON, Shapefiles and CSVs. Other features include animation of both raster and vector data, import and export of various formats, and saving files and layers between sessions. Sigma Bravo extended OpenSphere to support OGC API - Features and OGC API - Map Tiles.
 
 ==== Hexagon LuciadLightspeed
 

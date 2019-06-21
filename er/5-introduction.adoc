@@ -188,6 +188,7 @@ The following organizations participated in the Hackathon:
 * Quick Caption
 * rasdaman GmbH
 * Secure Dimensions
+* Sigma Bravo
 * Simms Reeve
 * Sinergise
 * Solenix
