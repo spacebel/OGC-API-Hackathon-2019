@@ -1,7 +1,7 @@
 [[KeyFindings]]
 == Key Findings
 
-TBA
+This section presents the key findings from the Hackathon.
 
 === Results
 
