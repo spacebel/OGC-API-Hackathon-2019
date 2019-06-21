@@ -56,23 +56,23 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 [#table_ties,reftext='{table-caption} {counter:table-num}']
 .Technology Integration Experiments (TIE) for OGC APIs
-[cols=",,,",width="75%",options="header",align="center"]
+[cols=",,,,",width="75%",options="header",align="center"]
 |===
-|Server/Client | Hexagon | Helyx | OpenSphere
+|Server/Client | Hexagon | Helyx | OpenSphere | Esri
 
-|52 North |  | Processes  |
+|52 North |  | Processes  | |
 
-|CubeWerx |  | Processes |
+|CubeWerx |  | Processes |  |
 
-|Esri | Map Tiles |   |
+|Esri | Map Tiles |   |   | Map Tiles
 
-|Helyx |  | Processes  |
+|Helyx |  | Processes  |  |
 
-|pygeoapi |  |  | Features
+|pygeoapi |  |  | Features |
 
-|geoserver |  |   | Features
+|geoserver |  |   | Features |
 
-|spacebel |  |   | Features
+|spacebel |  |   | Features |
 
 |===
 
