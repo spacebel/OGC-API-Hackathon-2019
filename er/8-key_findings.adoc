@@ -68,11 +68,11 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 |Helyx |  | Processes  |
 
-|pygeoapi |  |  | X
+|pygeoapi |  |  | Features
 
-|geoserver |  |   | X
+|geoserver |  |   | Features
 
-|spacebel |  |   | X
+|spacebel |  |   | Features
 
 |===
 
