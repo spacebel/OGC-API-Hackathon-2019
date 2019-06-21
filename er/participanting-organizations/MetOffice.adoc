@@ -26,5 +26,5 @@ A Hackathon was held in December 2018 in Washington DC, USA, building on the OGC
 
 ==== Other Impressions & Recommendations
 
-In the WFS3.0 spec, /Items/ needs to be replaced by 'point', 'timeseries', trajectory', etc. This is consistent with the apporach advocated by Joan Maso for maps and tiles.
+In the WFS3.0 spec, /Items/ needs to be replaced by 'point', 'timeseries', trajectory', etc. This is consistent with the approach advocated by Joan Maso for maps and tiles.
 
