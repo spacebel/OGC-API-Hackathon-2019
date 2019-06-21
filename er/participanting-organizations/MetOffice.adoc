@@ -12,7 +12,7 @@ Meteorology has had a long tradition of inventing and using technologies for its
 
 ==== Implemented Solution
 
-[[https://github.com/opengeospatial/weather-on-the-web|Weather on the Web (WotW)]] is an initiative to agree APIs for common data retrieval patterns, such as points, time-series, polygons, and trajectories, in 2, 3 and 4 Dimensions. The intent is to make it a global standard for meteorological and environmental services. 
+[Weather on the Web](https://github.com/opengeospatial/weather-on-the-web) (WotW) is an initiative to agree APIs for common data retrieval patterns, such as points, time-series, polygons, and trajectories, in 2, 3 and 4 Dimensions. The intent is to make it a global standard for meteorological and environmental services. 
 
 Point Data has been working for some time, as have Time-series at a point, and Polygons. Trajectories and Data Tiles are being developed.
 
