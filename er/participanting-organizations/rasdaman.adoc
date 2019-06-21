@@ -1,0 +1,62 @@
+[[rasdaman]]
+=== rasdaman GmbH
+
+The rasdaman datacube engine has pioneered actionable spatio-temporal datacubes, 
+mature and proven on multi-Petabyte 3D image timeseries, 4D weather forecasts, etc. 
+Rasdaman stands out through its flexibility, performance, scalability, security, open standards support, 
+and planetary-scale federation capabilities on Big Earth Data. 
+
+Since many years, rasdaman is shaping the datacube standards in OGC and ISO.
+
+==== Motivation to Participate
+
+We are happy to bring in our experience and knowledge on the design and implementation of coverage-centric 
+services, based on our decades of implementation background and being the main editor of the OGC and ISO 
+coverage standards.
+
+==== Implemented Solution
+
+The rasdaman datacube engine has been enhanced with OpenAPI Coverages functionality at the London hackathon. 
+This experimental service has been accessed by several OpenPI Coverage clients.
+
+==== Proposed Alternatives
+
+WCS offers several protocol bindings, OpenAPI represents an interesting alternative. This allows implementers to choose 
+according to their particular needs.
+For example, URL length in practice often is constrained to 2 kB which can be short, eg, when passed polygons as parameters.
+
+==== Experiences with OGC API Specifications
+
+The OpenAPI functionality defined was smooth to implement on top of the existing WCS 2. 
+Given the modularity of WCS 2 it appears natural and straightforward to incorporate OpenAPI as 
+an additional protocol binding, next to GET/KVP, POST/XML, and SOAP; this is an important outcome as it allows 
+preservation of existing tool and service assets while embracing novel developments.
+Effectively, CIS 1.1 together with WCS 2 Core and extensions provide a valuable roadmap guiding 
+stepwise development of OpenAPI Coverages.
+
+As it turns out, some concepts and practices differ significantly between features and coverages, 
+which calls for a detailed, case-by-case inspection on what can be leveraged from Common.
+One example is multi-dimensional coordinates encompassing horizontal coordinates plus elevation/bathymetry plus time. 
+Another point of discussion at the hackathon was the use of CRSs, which in practice is different in features vs coverages. 
+
+For OpenAPI Features there is a recommendation for HTML and GeoJSON as encoding formats. Both are not applicable for coverages:
+* HTML is not used for delivering imagery and other non-text data
+* GeoJSON does not support coverages.
+Therefore, it was decided to use OGC CIS JSON instead which is an adopted, proven standard.
+
+Coverages are multi-dimensional by nature. In CIS 1.1, therefore, a coverage has exactly one CRS ("Native CRS") 
+which may consist of any number of axes. Correspondingly, WCS subsetting (trimming and slicing) has one mechanism which 
+is coherent across all dimensions. OAPI Common instead has different mechanisms: 
+* the bbox coordinate list for horizontal coordinates
+* a tbd mechanism for time
+* nothing for elevation
+* nothing for possible further axes.
+It is, therefore, strongly recommnded (and this has been a consent in the coverages working group at the hackathon, 
+as well in the preceding telecons) to retain the WCS coverage subsetting mechanism which is easy to communicate and understand, 
+homogeneous, less error prone, and extensible without spec changing.
+
+
+==== Other Impressions & Recommendations
+
+It is unclear currently how server update functionality can be expressed, i.e.: the WCS-T request types 
+InsertCoverage, UpdateCoverage, DeleteCoverage.
