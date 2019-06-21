@@ -40,17 +40,21 @@ One example is multi-dimensional coordinates encompassing horizontal coordinates
 Another point of discussion at the hackathon was the use of CRSs, which in practice is different in features vs coverages. 
 
 For OpenAPI Features there is a recommendation for HTML and GeoJSON as encoding formats. Both are not applicable for coverages:
+
 * HTML is not used for delivering imagery and other non-text data
 * GeoJSON does not support coverages.
+
 Therefore, it was decided to use OGC CIS JSON instead which is an adopted, proven standard.
 
 Coverages are multi-dimensional by nature. In CIS 1.1, therefore, a coverage has exactly one CRS ("Native CRS") 
 which may consist of any number of axes. Correspondingly, WCS subsetting (trimming and slicing) has one mechanism which 
 is coherent across all dimensions. OAPI Common instead has different mechanisms: 
+
 * the bbox coordinate list for horizontal coordinates
 * a tbd mechanism for time
 * nothing for elevation
 * nothing for possible further axes.
+
 It is, therefore, strongly recommnded (and this has been a consent in the coverages working group at the hackathon, 
 as well in the preceding telecons) to retain the WCS coverage subsetting mechanism which is easy to communicate and understand, 
 homogeneous, less error prone, and extensible without spec changing.
