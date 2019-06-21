@@ -58,7 +58,7 @@ The following table presents Technology Integration Experiments (TIE) that were 
 .Technology Integration Experiments (TIE) for OGC APIs
 [cols=",,,,",width="75%",options="header",align="center"]
 |===
-|Server/Client | Hexagon | Helyx | OpenSphere | Esri
+|Services\Client | Hexagon | Helyx | OpenSphere | Esri
 
 |52 North |  | Processes  | |
 
@@ -76,6 +76,7 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 |===
 
+NOTE: Services on rows and Clients on columns
 
 === Alternatives
 
