@@ -6,7 +6,7 @@ TBA
 === Results
 
 
-==== Processes
+==== OGC API - Processes
 
 The participants made an observation that some attributes for referenceValue were missing. As a result, changes were made to add attributes for identifying the MIME type, schema and encoding in a referenceValue object. These changes were needed for providing input in a specific format or returning output in a specific format.
 
@@ -22,7 +22,7 @@ There was a https://github.com/opengeospatial/wps-rest-binding/issues/31[suggest
 There was a https://github.com/opengeospatial/wps-rest-binding/issues/32[suggestion] to add the exception information to the status information at GET `/processes/{id}/jobs/{jobID}` and remove the GET `/processes/{id}/jobs/{jobID}/exception` endpoint. The participants considered whether an HTTP 201 code should be returned with POST /processes/{id}/jobs. The participants resolved that allowing for plural form results could address this issue, for example `processes/{processId}/jobs/{jobId}/results/{resultId}`. Use of an HTTP 201 code was however inconclusive.
 
 
-==== Map Tiles
+==== OGC API - Map Tiles
 
 The participants identified three roots for API building blocks, namely the root of the service, collection ID, and collection ID combined the coverage ID. A need to combine these root paths with maps and tiles was identified. There was an observation made that if the roots are combined with maps and tiles, there is an opportunity to provide much more information through data tiles such as vector tiles or coverage tiles. There was also an observation made that if a style and style id are concatenated with the path then the API would be able to combine data tiles with portrayals of the information. There was a third alternative identified, which is the concatenation of both the aforementioned approaches.
 
@@ -30,21 +30,23 @@ These paths have associated with them specific query parameters. Participants ob
 
 There was a discussion about whether the response for maps should return raster or vector maps. Related to this was whether a map was at the same level as a collection. There was agreement that maps are not at the same level as collections.
 
-==== Coverage
 
-Notes to be rephrased:
-* Decided to stick with coverages
-* For each axis, have a separate coverage filter.
-* Concluded that we do not have a construct in the core that supports filtering coverages.
-* Want to inherit from Common as much as possible.
-* Agreed not to include the complete coverage description.
-* We want to inherit the bbox and time parameter from Common.
-* We have different ways for getting the coverages individually. Since not every format is suitable for transferring all of the coverage information, there needs to be different ways for getting the different types of coverages.
-* For applications that do not want to use collections, they can just use coverages/coverageid
+==== OGC API - Coverages
 
-There was a discussion about whether parameters, values and URL bases were case sensitive. This issue was observed to be applicable to all of the specifications. There was a suggestion that the Common spec should specify a rule for case sensitivity and that that rule should be consistent with the RFC.
+The participants agreed that OGC API - Coverages should inherit from OGC API - Common as much as possible. This meant that wherever a requirement is specified in OGC API - Common, if it is relevant to coverages, the OGC API - Coverages specification would reference the requirement in the OGC API - Common specification.
 
-==== Common
+The participants agreed that a request for the coverages path would return a list of all  of the coverage identifiers included in the collection.
+
+There was also agreement that a request for the coverage description would only return the essential information instead of the complete metadata associated with the coverage.
+
+There was discussion about how to support bounding box (BBOX) filters on multidimensional coverages. The participants expressed the need to inherit the BBOX and time parameters from OGC API - Common, however also they also observed that there would be a need to identify a CRS for height. One of the suggestions was for each axis to have a separate coverage filter. The participants concluded that there is currently no construct in the Core part of the OGC API - Common specification that supports filtering of coverages.
+
+The was discussion about the retrieval of coverages. The OGC API - Coverages specification was updated to allow for different ways for getting the coverages individually. Since not every format is suitable for transferring all of the coverage information, participants identified different ways for getting the different types of coverages. It was also noted that for applications that do not want to use collections, they can just use the `coverages/{coverageid}` path.
+
+There was a discussion about whether parameters, values and URL bases were case sensitive. This issue was observed to be applicable to all of the specifications. There was a suggestion that the OGC API - Common specification should specify a rule for case sensitivity and that that rule should be consistent with the RFC.
+
+
+==== OGC API - Common
 
 There was a discussion about whether OGC API - Common should support the CRS:84 coordinate system (WGS84) by default. The participants observed that the collectionInfo metadata (returned for each collection) allows one to specify the CRS supported by the collection. The client can specify one of the other CRS if they do not support the default. For coverages, the default CRS was observed to be the native CRS. The participants concluded that there will be a default CRS for the API and the OGC API - Common specification should have complete control over the CRS and the default CRS should not constrain the resource.
 
