@@ -1,26 +1,28 @@
 [[SigmaBravo]]
 === SigmaBravo
 
-
-
-TBA
+Sigma Bravo is a specialist provider of ICT services focused specifically on military operations.
+We enable and support an integrated, informed and agile 5th generation force.
 
 ==== Motivation to Participate
 
-TBA
+Sigma Bravo has a strong support of open standards as a path to interoperability. We recognise the 
+value of simple, implementer-friendly standards.
 
 ==== Implemented Solution
 
-TBA
-
-==== Proposed Alternatives
-
-TBA
+Sigma Bravo extended the OpenSphere web application to support OGC API - Features and OGC API - Map Tiles.
+Interoperability with GeoServer, pygeoapi and SpaceBel OGC API - Features servers was demonstrated.
+Interoperability with ESRI OGC API - Map Tiles was also demonstrated.
 
 ==== Experiences with OGC API Specifications
 
-TBA
+Sigma Bravo has significant experience with previous OGC Specifications, particulary on GeoPackage. The
+most mature part of our OGC API implementation is OGC API - Features.
 
 ==== Other Impressions & Recommendations
 
-TBA
+Sigma Bravo commends the OGC on the OGC API program of work, and thanks OGC staff and GeoVation for their
+work in organising and hosting the hackathon. Sigma Bravo recommends that OGC seek to mature the OGC API
+standards through ongoing engagement and outreach activities, development of comprehensive Executable
+Test Suites and ongoing "in the open" standards development.

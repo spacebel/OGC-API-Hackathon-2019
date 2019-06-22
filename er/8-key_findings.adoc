@@ -25,7 +25,7 @@ There was a https://github.com/opengeospatial/wps-rest-binding/issues/32[suggest
 
 The participants identified three roots for API building blocks, namely the root of the service, collection ID, and collection ID combined the coverage ID. A need to combine these root paths with maps and tiles was identified. There was an observation made that if the roots are combined with maps and tiles, there is an opportunity to provide much more information through data tiles such as vector tiles or coverage tiles. There was also an observation made that if a style and style id are concatenated with the path then the API would be able to combine data tiles with portrayals of the information. There was a third alternative identified, which is the concatenation of both the aforementioned approaches.
 
-These paths have associated with them specific query parameters. Participants observed that such a capability may not be fully supported by OpenAPI 3.0.
+These paths have specific query parameters associated with them. Participants observed that such a capability may not be fully supported by OpenAPI 3.0.
 
 There was a discussion about whether the response for maps should return raster or vector maps. Related to this was whether a map was at the same level as a collection. There was agreement that maps are not at the same level as collections.
 
@@ -65,7 +65,7 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 |CubeWerx |  | Processes |  | | Processes | |
 
-|Esri | Map Tiles |   |   | Map Tiles | | |
+|Esri | Map Tiles |   | Map Tiles | Map Tiles | | |
 
 |Helyx |  | Processes  |  | | | |
 
