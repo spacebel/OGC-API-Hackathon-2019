@@ -12,6 +12,7 @@ Numerous discussions occurred at OGC quarterly Technical Committee (TC) Meetings
 The OGC API Hackathon 2019 was hosted by the Geovation Hub in London, United Kingdom, from June 20th to 21st, 2019. The hackathon was sponsored by the European Space Agency (ESA) and the Ordnance Survey. The *goal* of the hackathon was to advance the development of OGC API specifications.
 
 The objectives of the hackathon were set out as to:
+
 * develop, deploy and test services/clients that support OGC APIs
 * suggest improvements for a common core
 * define rules/guidance that can be documented

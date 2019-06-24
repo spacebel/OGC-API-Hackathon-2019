@@ -34,9 +34,7 @@ There was a discussion about whether the response for maps should return raster 
 
 The participants agreed that OGC API - Coverages should inherit from OGC API - Common as much as possible. This meant that wherever a requirement is specified in OGC API - Common, if it is relevant to coverages, the OGC API - Coverages specification would reference the requirement in the OGC API - Common specification.
 
-The participants agreed that a request for the coverages path would return a list of all  of the coverage identifiers included in the collection.
-
-There was also agreement that a request for the coverage description would only return the essential information instead of the complete metadata associated with the coverage.
+There was also agreement that a request for the coverages path would return a list of all  of the coverage identifiers included in the collection. Regarding coverage descriptions, it was agreed that a request for the coverage description would only return the essential information instead of the complete metadata associated with the coverage.
 
 There was discussion about how to support bounding box (BBOX) filters on multidimensional coverages. The participants expressed the need to inherit the BBOX and time parameters from OGC API - Common, however also they also observed that there would be a need to identify a CRS for height. One of the suggestions was for each axis to have a separate coverage filter. The participants concluded that there is currently no construct in the Core part of the OGC API - Common specification that supports filtering of coverages.
 
@@ -57,7 +55,7 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 [#table_ties,reftext='{table-caption} {counter:table-num}']
 .Technology Integration Experiments (TIE) for OGC APIs
-[cols=",,,,,,,",width="75%",options="header",align="center"]
+[cols=",,,,,,,",width="100%",options="header",align="center"]
 |===
 |Services\Client | Hexagon | Helyx | OpenSphere | Esri | Solenix | EURAC | Sinergise
 
@@ -88,17 +86,17 @@ NOTE: Services on rows and Clients on columns
 
 ==== Processes
 
-The decision to hold the OGC API Hackathon was made by the TC at the 2019 TC meeting in Singapore. Following this decision, OGC staff engaged a number of potential sponsors from the OGC membership. Having identified sponsors and hosts, a series of teleconferences were held for planning the event. These teleconferences discussed venue logistics, computing infrastructure, data, scenarios, catering and other topics. A Gantt chart of the planning and execution of the hackathon is shown in <<img_gantt>>.
+The decision to hold the OGC API Hackathon was made by the TC at the February 2019 TC meeting in Singapore. Following this decision, OGC staff engaged a number of potential sponsors from the OGC membership. Having identified sponsors and hosts, a series of teleconferences were held for planning the event. These teleconferences discussed venue logistics, computing infrastructure, data, scenarios, catering and other topics. A Gantt chart of the planning and execution of the hackathon is shown in <<img_gantt>>.
 
 [#img_gantt,reftext='{figure-caption} {counter:figure-num}']
 .A Gantt chart of the planning and execution of the hackathon
 image::images/gantt.png[width=800,align="center"]
 
-During the hackathon, the process involved alternation between briefings, discussions and coding. On the first day of the hackathon, three back-briefs were held, that is one in the morning, another in the afternoon and another in the evening. These briefings provided an opportunity for issues to be discussed across teams. Agreements and resolutions from the discussions triggered by the briefings were then fed back into the team-specific work.
+During the hackathon, the process involved a series of briefings, discussions and coding sessions. On the first day of the hackathon, three back-briefs were held, that is one in the morning, another in the afternoon and another in the evening. These briefings provided an opportunity for issues to be discussed across teams. Agreements and resolutions from the discussions triggered by the briefings were then fed back into the team-specific work.
 
 ==== Organization
 
-By the event date, 76 individuals had been registered to participate in-person and 35 participants had been registered to participate remotely. A questionnaire sent out just before the hackathon to collect information about which OGC API specifications participants would focus on received 27 responses, with the spread of interest as showin in <<img_interests_1>>, <<img_interests_2>> and <<img_interests_3>>.
+By the event date, 76 individuals had been registered to participate in-person and 35 participants had been registered to participate remotely. A questionnaire sent out just before the hackathon to collect information about which OGC API specifications participants planned to focus on received 27 responses, with the spread of interest as showin in <<img_interests_1>>, <<img_interests_2>> and <<img_interests_3>>.
 
 [#img_interests_1,reftext='{figure-caption} {counter:figure-num}']
 .Participants' interests (1 of 3)
@@ -112,9 +110,15 @@ image::images/interests_2.png[width=800,align="center"]
 .Participants' interests (3 of 3)
 image::images/interests_3.png[width=800,align="center"]
 
-The hackathon was therefore organized around teams based on the OGC API specifications. Participants interested in APIs other than those for coverages, processes, and map tiles, were asked to contribute to the work on advancing the OGC API - Common specification. This would help ensure that the OGC API - Common specification provides an appropriate a base for all future OGC APIs.
+The hackathon was therefore organized around teams based on the OGC API specifications. Participants interested in APIs other than those for coverages, processes, and map tiles, were asked to contribute to the work on advancing the OGC API - Common specification. This would help ensure that the OGC API - Common specification provides an appropriate base for all future OGC APIs.
 
 ==== Technology
+
+At least 7 client applications were deployed during the hackathon. The client applications included a mixture of standalone and web browser based applications. At least 9 server-side applications were deployed. Some of the programming languages that were used by these applications included Python, C++, Java and NodeJS.
+
+Some of the participants implemented proxies in front of implementations of WCS, WMTS and WPS to provide an adapter for OGC API applications.
+
+It was observed that, although the OGC API specifications do not prescribe where an API definition should be hosted, Swaggerhub proved a popular choice amongst hackathon participants.
 
 ==== Information
 

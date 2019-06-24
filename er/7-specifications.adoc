@@ -25,8 +25,8 @@ A summary of the paths offered by the OGC API - Common specification is presente
 * Path = /collections
 ** Returns metadata describing the collections accessible through this API
 * Path = /collections/{collectionId}
-**Returns metadata describing the collection identified by {collectionId}
-*Path = /collections/{collectionId}/items
+** Returns metadata describing the collection identified by {collectionId}
+* Path = /collections/{collectionId}/items
 ** Returns --- TBD.  This may be where Common leaves off and resource specific standards take over.
 
 

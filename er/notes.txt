@@ -1,0 +1,3 @@
+add webinar to  gantt
+
+add second day of hackathon to section 9.2.1 last paragraph
