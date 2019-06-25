@@ -1,17 +1,21 @@
 [[GeoLabs]]
 === GeoLabs
 
+http://www.geolabs.fr
 
-
-TBA
+GeoLabs is a high-tech SME providing geospatial management solutions world-wide based on open source technologies. GeoLabs is leading the development of numerous open source geospatial projects and provides SaaS/PaaS services for geospatial data. GeoLabs has developed MapMint (mapmint.com), a complete web based web mapping infrastructure, participated in the development of geoportail.fr, the development of the Senegal’s National Cadastre. Further, it provides commercial cloud-based GIS services, and contributes in numerous open source projects.
 
 ==== Motivation to Participate
 
-TBA
+Get more informations about the directions followed by the working groups for the different standards. Get answer to some questions we got about the Processes api specifically. Indeed, as we implemented part of (or should I say adaptation of)  the wps-rest-binding before attending the hackathon, we were facing some issue in trying mimicing the different options available in WPS 2.0 and, we would like to discuss with other to see their point of view and share ours.
 
 ==== Implemented Solution
 
-TBA
+We came with the ZOO-Project implementation demonstration swagger interface available at: https://demo.mapmint.com/swagger-ui/dist/ for interracting with two WPS instances available at: http://demo.mapmint.com/WPS2/ and  http://demo.mapmint.com/WPS3/ (where WPS2 is using the model available on the opengeospatial github repository when the second one is made based on the tests we have made to change the wps-rest-binding and atempt to make it fitting the current WPS 2.0 defintions).
+
+This WPS implementation is based on the one available at http://www.zoo-project.org with some modifications. 
+
+As it is based on an implementation able to offer access to libraries and applications such as GDAL, OGR, GEOS, PROJ,  the Orfeo ToolBox (https://www.orfeo-toolbox.org/) and the SAGA-GIS application. The demonstration include numerous services available to be run using the wps-rest-binding.
 
 ==== Proposed Alternatives
 
