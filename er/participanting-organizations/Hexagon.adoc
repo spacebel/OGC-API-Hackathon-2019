@@ -11,11 +11,33 @@ Hexagon Geospatial has been an active supporter of OGC and OGC standards for man
 
 ==== Implemented Solution
 
-TBA
+We implemented a desktop Java-based fat client to experiment with the Map Tiles API. The client retrieved data from the server provided by EsriUK, accessing the maps using the tile-based approach.
+
+Interesting about the client implementation is that it started from `/collections/{collectionId}` and used the provided metadata to look up the appropriate tile matrix set from `/tileMatrixSets/{tileMatrixSetId}`. Now that the tile structure was known, the client used `/collections/\{collectionId}/tiles/{styleId}/{tileMatrixSetId}/...` to get the actual tile data. Note that the specification was still evolving and there was no `map/` before `{styleId}/` yet.
+
+The implementation showed that the necessary metadata is available to access the map tiles generically.
+
+<<img_hexagon_2d>> shows the client accessing a map tiles collection from the server. The tiles are shown in the native CRS of the tile matrix set.
+
+[#img_hexagon_2d,reftext='{figure-caption} {counter:figure-num}']
+.Hexagon client showing map tiles using native CRS of the tile matrix set
+image::images/hexagon_maptiles_2d.png[width=800,align="center"]
+
+<<img_hexagon_3d>> shows the client accessing a map tiles collection from the server. The tiles are requested in their native CRS, but reprojected onto a 3D globe.
+
+[#img_hexagon_3d,reftext='{figure-caption} {counter:figure-num}']
+.Hexagon client showing map tiles projected onto 3D globe
+image::images/hexagon_maptiles_3d.png[width=800,align="center"]
 
 ==== Proposed Alternatives
 
-TBA
+We raised some questions related to the consistency and duplication in various parts of the metadata in the API.
+
+We participated in the discussions about composability of the tiling scheme on top of collections or maps.
+
+We noted that there seems to be an opportunity for having more concepts in the Common API. Specifically, it seems that _extent_ could be in there.
+
+When generating a map depicting multiple collections, the request will probably get quite complex. Perhaps it is useful to think of such a map as a composition of multiple single-collection maps. The multiple-collection map request could perhaps refer to multiple single-collection maps?
 
 ==== Experiences with OGC API Specifications
 
@@ -23,5 +45,6 @@ The Hexagon Geospatial product portfolios applied OGC standards from the start a
 
 ==== Other Impressions & Recommendations
 
-TBA
+It is very good to hear that OGC is trying to make the APIs more easily consumable by users. However, and perhaps specifically to the Map Tiles, the variety of use cases and access patterns still leads to considerable complexity, for instance by having request parameters related to parts of the URL path.
 
+We believe the hackaton was useful to get a feel for the practicality of the proposed APIs. However, when each group goes off to work on their specification separately, it is easy for the APIs to start diverging. It would be good to have a convergence phase where ideas from the various group are compared and commonalities can be extracted for the Common API.
