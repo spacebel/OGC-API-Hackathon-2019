@@ -111,6 +111,8 @@ include::participanting-organizations/Sinergise.adoc[]
 
 include::participanting-organizations/Solenix.adoc[]
 
+include::participanting-organizations/Spacebel.adoc[]
+
 include::participanting-organizations/StrategicAllianceConsultingInc.adoc[]
 
 include::participanting-organizations/UniversityCollegeLondon.adoc[]

@@ -118,6 +118,10 @@ The hackathon was therefore organized around teams based on the OGC API specific
 
 ==== Technology
 
+The client and service applications were bound together through interfaces conforming to the OGC APIs for Map Tiles, Processes, Features, Catalogues, and Coverages. The client applications included software from Hexagon, Helyx, OpenSphere, Esri, Solenix, EURAC and Sinergise. The service applications included software from  52 North, CubeWerx, Esri, Helyx, pygeoapi, Geoserver, Spacebel, West University of Timisoara, and rasdaman. The variety of software implementations suggests that the OGC API specifications widely implementable and do not depend on any single vendor’s technology.
+
+The deployed technologies includes software implemented in Python, Java, and NodeJS. Some of the deployed technologies includes Python adapters to software implemented in C++. This variety of programming languages shows that the OGC API specifications are independent of any programming language.
+
 ==== Information
 
 === Experiences
