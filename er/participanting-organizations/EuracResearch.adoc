@@ -1,17 +1,21 @@
 [[EuracResearch]]
 === Eurac Research
 
+Eurac Research (http://www.eurac.edu)is an advanced private not-for-profit research centre established in 1992 with headquarters in Bolzano. Its 430 staff members, united by shared values of passion for their work and an unwavering commitment to quality, have the opportunity to work in a multicultural environment thanks to a wide diversity of nationalities represented among its team. This diversity, of gender and nationality, ensures a positive environment that enables respect and an understanding of different cultural patterns. Eurac Research is internally organized in 11 Research Institutes, supported by 11 Service Departments, performing research activities in different fields from issues related to minority rights protection, federal, regional and local governmental trends and the efficient management of public administrations to studies on renewable energies, promotion of sustainable development and the protection of natural resources. The contributing body for this hackathon is the Institute for Earth Observation (http://www.eurac.edu/en/research/mountains/remsen/Pages/default.aspx) with its research groups for  Advanced Computing for Earth Observation (http://www.eurac.edu/en/research/mountains/remsen/researchfields/Pages/Technology-for-Environmental-Monitoring.aspx). Purpose of the Institute is the advanced analysis of Earth Observation data and their integration into products and services tackling most relevant environmental issues in mountain areas.  
+The Group for Advanced Computing for Earth Observation focuses on the research in the field of big data science for developing and implementing novel technology and methodology for handling and analysis of big earth observation data as well as management and processing of earth observation data for the Institute for Earth Observation.
 
-
-TBA
+Participating from Eurac Research: Alexander Jacob - Research Group Leader - Advanced Computing for Earth Observation (alexander.jacob@eurac.edu)
 
 ==== Motivation to Participate
 
-TBA
+Eurac Research is actively contributing to openEO (https://openeo.org/) an open source inniative aiming to federate EO cloud service providers by developing a standardised interface together with back-end and client implementations. This allows users to approach diverse EO data infrastructures, using source code with the same processing commands. Eurac Research develops a back-end driver (https://github.com/Open-EO/openeo-wcps-driver) towards high level interfaces for data cubes via OGC standard WC(P)S and contributes further with the implementation of a use case for operational snow monitoring using openEO.
+Since a lot of the developments of OGC API now are moving in a similar direction, we wanted to participate in this hackathon event in order to understand well the intend and orientation of OGC API and also to align as much as possible the implementations, in order to make them compatible. Already now several pieces of the openEO API are very similar to the OGC API, since we were from the start of the development also looking at what was happening inside OGC. Especially WFS-3 now known as OGC API - Features we followed with great interest as they were the first going into a restful implementation. We are also looking and following the development of the Spatial Temporal Asset Catalogue (STAC) of the Radiant Earth Foundation (https://github.com/radiantearth/stac-spec). 
 
 ==== Implemented Solution
 
-TBA
+During the hackathon event in London we have first further speced out the OGC API - Coverages on the first day and then have implemented a number of back-end implementations. I personally have implemented a first implementation of the latest agreed on spec on the second day. The implemented solutions is available at: http://saocompute.eurac.edu/openEO_WCPS_Driver/openeo/.
+This solution is based on the aforementioned openEO WCPS driver and has adopted some new REST endpoints considering OGC API - coverages.
+The existing driver works on top of an installation of rasdaman community edition, exposing both the already existing WCS 2 and it's extension WCPS 1. 
 
 ==== Proposed Alternatives
 
