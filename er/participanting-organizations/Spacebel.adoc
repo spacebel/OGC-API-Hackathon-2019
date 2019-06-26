@@ -7,11 +7,13 @@ TBA
 
 ==== Motivation to Participate
 
-TBA
+Spacebel participated remotely on behalf of the https://www.databio.eu/en/[H2020 DataBio project] contributing a Catalog Server implementation hosting application and dataset metadata from the DataBio Hub (https://www.databiohub.eu/registry/) aiming to improve alignment of the DataBio catalog and Hub implementation with the OGC API Common specification in addition to the Testbed-15 EOPAD discovery approach.
+
+In addition, Spacebel was also present in London to participate with ESA support to the OGC API Processes activities contributing an OGC API Processes implementation (Proxy).
 
 ==== Implemented Solution
 
-TBA
+Catalog Server (https://databio.spacebel.be/eo-catalog/readme.html) hosting EO applications and services (OGC 19-020), EO collections (OGC 17-084) and EO product (OGC 17-003) metadata implementing OpenSearch and Open API Common interfaces.  Resources `/`, `/conformance`, `/collections` were implemented and interoperability was demonstrated through TIE testing with the http://frozen-lime.surge.sh/[OpenSphere client] implementing OGC API Features provided by another participant.
 
 ==== Proposed Alternatives
 
