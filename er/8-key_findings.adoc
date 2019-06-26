@@ -29,6 +29,12 @@ These paths have specific query parameters associated with them. Participants ob
 
 There was a discussion about whether the response for maps should return raster or vector maps. Related to this was whether a map was at the same level as a collection. There was agreement that maps are not at the same level as collections.
 
+There was a https://github.com/opengeospatial/OGC-API-Map-Tiles/issues/12[suggestion] to normalize the case used by attributes of the tileMatrix construct. Before the hackathon some of the attribute names where in UpperCamelCase whereas others were in lowerCamelCase. Normalizing the attribute names would ensure consistency of naming and thus make it easier for developers to implement.
+
+There was also an https://github.com/opengeospatial/OGC-API-Map-Tiles/issues/13[observation] made that there is a need to determine where metadata fields supported by WMS could be applied in the OGC API - Map Tiles standard. The metadata fields supported by the WMS standard include: Name, Title, Abstract, KeywordList, Style, CRS, EX_GeographicBoundingBox, BoundingBox, Dimension, Attribution, AuthorityURL, Identifier, MetadataURL, DataURL, FeatureListURL, MinScaleDenominator, MaxScaleDenominator, queryable, cascaded, opaque, noSubsets, fixedWidth, and fixedHeight.
+
+The participants https://github.com/opengeospatial/OGC-API-Map-Tiles/issues/14[observed] that the extents and bounding box classes used by the OGC API - Map Tiles specification have been defined in different ways. The extent class defines a bounding extent as an array of numbers indicating  bounding coordinates, whereas the boundingBox class defines the bounding coordinates as separate attributes for the lower and upper corner coordinates.
+
 
 ==== OGC API - Coverages
 
