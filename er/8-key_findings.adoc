@@ -11,7 +11,7 @@ The participants made an observation that some attributes for referenceValue wer
 
 There was a https://github.com/opengeospatial/wps-rest-binding/issues/42[suggestion] to add ows:additionalProperties and ows:context to metadata. It was observed that ows:additionalParameters allows a service to provide key value pairs metadata information. It was also observed that Testbed 13 and testbed 14 had demonstrated the utility of such a capability. As a result, the hackathon participants committed changes to the OGC API - Process specification adding the definition of additionalParameters.
 
-There was a https://github.com/opengeospatial/wps-rest-binding/issues/37[discussion] about whether process output arrays are fully supported. The participants observed that currently the http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/output-value-cardinality[output-value-cardinality] requirement limits cardinality of the output to one. A number of workarounds were suggested including returning a list of outputs, returning an archive (zip), returning a Metalink, or returning Multipart/mixed responses. The participants concluded that a solution would need to handle all kind of outputs, including outputs by reference, as well as binary files.
+There was also a https://github.com/opengeospatial/wps-rest-binding/issues/37[discussion] about whether process output arrays are fully supported. The participants observed that currently the http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/output-value-cardinality[output-value-cardinality] requirement limits cardinality of the output to one. A number of workarounds were suggested including returning a list of outputs, returning an archive (zip), returning a Metalink, or returning Multipart/mixed responses. The participants concluded that a solution would need to handle all kind of outputs, including outputs by reference, as well as binary files.
 
 
 There was a https://github.com/opengeospatial/wps-rest-binding/issues/30[discussion] about how to specify synchronous execution OGC API Hackathon. The options identified included i) Either use a query parameter or a HTTP header to specify the execution mode, ii) Return a result object, iii)  Do not return a header with the location (as there technically is no location, i.e. its a temp. This issue was also related to the broader issue of how to choose between synchronous and asynchronous mode for job creation. The participants observed that indeed the WPS 2.0 specification has a jobID in the the status object, and therefore the OGC API - Processes specification should also include a jobID into the statusInfo object.
@@ -49,6 +49,8 @@ There was a discussion about whether parameters, values and URL bases were case 
 
 There was a discussion about whether OGC API - Common should support the CRS:84 coordinate system (WGS84) by default. The participants observed that the collectionInfo metadata (returned for each collection) allows one to specify the CRS supported by the collection. The client can specify one of the other CRS if they do not support the default. For coverages, the default CRS was observed to be the native CRS. The participants concluded that there will be a default CRS for the API and the OGC API - Common specification should have complete control over the CRS and the default CRS should not constrain the resource.
 
+The participants discussed what role version numbers would play within an OGC API, recognising that the current suite of OGC web service standards require implementations to indicate the supported versions as a query parameter. The participants determined that the version of the standard would be reflected in the conformance class. Each conformance class would be made uniquely identifiable and any change to that conformance class would relate in the creation of a new conformance class. It would therefore not be necessary to indicate the version on the standard on the path or the query parameters of an implementation of the OGC APIs.
+
 The participants observed that there is a need for something like CRS:84 that has ellipsoid height. EPSG:4327 was suggested as a possible basis for such a CRS, with the caveat that it has been deprecated. It was agreed to discuss the issue of a height or elevation CRS with the WFS SWG and the CRS DWG at the OGC TC meeting in Leuven.
 
 ==== Technology Integration Experiments (TIE)
@@ -57,9 +59,9 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 [#table_ties,reftext='{table-caption} {counter:table-num}']
 .Technology Integration Experiments (TIE) for OGC APIs
-[cols=",,,,,,,",width="75%",options="header",align="center"]
+[cols=",,,,,,,",width="100%",options="header",align="center"]
 |===
-|Services\Client | Hexagon | Helyx | OpenSphere | Esri | Solenix | EURAC | Sinergise
+|Services\Client | Hexagon | Helyx | SigmaBravo | Esri | Solenix | EURAC | Sinergise
 
 |52 North |  | Processes  | | | Processes | |
 
@@ -73,7 +75,7 @@ The following table presents Technology Integration Experiments (TIE) that were 
 
 |Geoserver |  |   | Features | | | |
 
-|Spacebel |  |   | Features | | Processes | |
+|Spacebel |  |   | Features, Catalogue | | Processes | |
 
 |West University of Timisoara | | | | | Processes | |
 
