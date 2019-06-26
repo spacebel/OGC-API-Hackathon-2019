@@ -1,27 +1,49 @@
 [[GeoSeer]]
 === GeoSeer
 
-
-
-TBA
+GeoSeer is a search engine for OGC Services. At the time of writing it has just shy of 200,000 such services in its index, making their data easily and freely searchable.
 
 ==== Motivation to Participate
 
-TBA
+The Motivation behind creating GeoSeer was to help solve the discoverability problem. End users often find it difficult to find the services or data that exists. GeoSeer's participation was an extension of this seeking to facilitate making life easier for finding data through the new OGC API Specifications, or at least to ensure it did not get even harder.
+In fact team behind GeoSeer suggests that discovery is one of the aspects that could be improved in current OGC services and should be getting more consideration in the new OGC API specifications.
+
 
 ==== Implemented Solution
 
-TBA
+N/A
 
 ==== Proposed Alternatives
 
-TBA
+N/A
 
 ==== Experiences with OGC API Specifications
 
-TBA
+The OGC API specifications all seem quite interesting, though the concept of "collections" took some getting used to and remains somewhat confusing. This suggests they may not be as intuitive as could be desired and users may struggle with it.
+
+In relation to discoverability:
+
+===== Good
+* The HTML reports that are created are good for improving discoverability with mainstream search engines.
+* The OGC API specifications are easily parsable.
+
+===== Issues
+A number of potential discoverability issues were identified with the current specification.
+
+* The specifications do not include "keywords" currently. Ideally this should be mandatory in core to facilitate discovery. While popular search engines may not currently use this field, that does not mean they and/or others would not in the future. GeoSeer does use this field for indexing, and many current OGC Web Services have this set with meaningful keywords by their deployers. GeoSeer would suggest having it both at the root level (to indicate the type of "service"), and at the /collections level for each collection. This would improve discoverability.
+
+* There may be too much reliance on extensions. Many deployers will NOT install extensions even if they should. For example, the data for services that claim to be compliant to Implementing Rules of the European Union's INSPIRE directive shows that only around half of the services actually have the INSPIRE ExtendedCapabilities. And that is for something that INSPIRE says is mandatory. An extension for "discovery" would therefore not provide its peak usefulness unless its components were in core.
+
+* The "Title", and "Description", fields are both optional in Core, and Features/Maps as far as we can see. These fields should be mandatory. If they are not they will not be there for many services and that will make them considerably less discoverable. It will also significantly reduce usability with desktop GIS (imagine selecting a feature collection when none of them have these...).
+
+* There should be a mandatory BBOX in WGS84 in Core required for each collection. This will facilitate discovery of spatial data - "WHERE" being critical to such data. There are many thousands of "tree" datasets out there for instance, how can a user otherwise know where the data is without this? Some wording to allow exclusion for non-spatial datasets could be incorporated. This could be in addition to a native BBOX defined by the extensions as necessary.
+
+* Metadata url should be included too. While GeoSeer were no big fan of external metadata documents, many large organisations find them extremely important and they are used a fair percentage on current services. A consistent way to specify them would make access to this information automatically easier.
+
+* GeoSeer would like to highlight that if something is not explicitly specified in the OGC API specifications and instead relies on the deployer deciding what/how to implement it (as has been suggested with Keywords), this obviates much of the benefit of a standard. Even *with* standards, developers end up finding many different ways to do things! Without standards the number of ways to do things just makes life extremely difficult for anyone who wishes to automate access to services. Never rely on the deployers/implementers being consistent.
+
+Many of the above would also make it easier for end-users who are accessing these services via a desktop client like QGIS/ArcGIS. Without title/description information in a JSON format it will be impossible for such a user to know what they want without opening stuff in parallel web-browser; hardly easy.
 
 ==== Other Impressions & Recommendations
 
 TBA
-

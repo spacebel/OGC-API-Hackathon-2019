@@ -754,13 +754,19 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <ul class="sectlevel3">
 <li><a href="#_pygeoapi">7.1.1. pygeoapi</a></li>
 <li><a href="#_52north_javaps">7.1.2. 52°North JavaPS</a></li>
-<li><a href="#_tba">7.1.3. TBA</a></li>
+<li><a href="#_esri">7.1.3. Esri</a></li>
+<li><a href="#_rasdaman">7.1.4. rasdaman</a></li>
+<li><a href="#_tba">7.1.5. TBA</a></li>
 </ul>
 </li>
 <li><a href="#_client_implementations">7.2. Client Implementations</a>
 <ul class="sectlevel3">
-<li><a href="#_tba_2">7.2.1. TBA</a></li>
-<li><a href="#_tba_3">7.2.2. TBA</a></li>
+<li><a href="#_opensphere_ogc_api_plugin">7.2.1. OpenSphere OGC API Plugin</a></li>
+<li><a href="#_hexagon_luciadlightspeed">7.2.2. Hexagon LuciadLightspeed</a></li>
+<li><a href="#_solenix_wps_demo_client">7.2.3. Solenix WPS Demo Client</a></li>
+<li><a href="#_esri_ogc_api_tiles_demo_client">7.2.4. Esri OGC API-Tiles Demo Client</a></li>
+<li><a href="#_tba_2">7.2.5. TBA</a></li>
+<li><a href="#_tba_3">7.2.6. TBA</a></li>
 </ul>
 </li>
 </ul>
@@ -796,12 +802,26 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </li>
 <li><a href="#KeyFindings">9. Key Findings</a>
 <ul class="sectlevel2">
-<li><a href="#_results">9.1. Results</a></li>
-<li><a href="#_alternatives">9.2. Alternatives</a></li>
+<li><a href="#_results">9.1. Results</a>
+<ul class="sectlevel3">
+<li><a href="#_ogc_api_processes_2">9.1.1. OGC API - Processes</a></li>
+<li><a href="#_ogc_api_map_tiles_2">9.1.2. OGC API - Map Tiles</a></li>
+<li><a href="#_ogc_api_coverages_2">9.1.3. OGC API - Coverages</a></li>
+<li><a href="#_ogc_api_common_2">9.1.4. OGC API - Common</a></li>
+<li><a href="#_technology_integration_experiments_tie">9.1.5. Technology Integration Experiments (TIE)</a></li>
+</ul>
+</li>
+<li><a href="#_what_occurred">9.2. What occurred</a>
+<ul class="sectlevel3">
+<li><a href="#_processes">9.2.1. Processes</a></li>
+<li><a href="#_organization">9.2.2. Organization</a></li>
+<li><a href="#_technology">9.2.3. Technology</a></li>
+<li><a href="#_information">9.2.4. Information</a></li>
+</ul>
+</li>
 <li><a href="#_experiences">9.3. Experiences</a></li>
 <li><a href="#_lessons_learnt">9.4. Lessons learnt</a></li>
-<li><a href="#_what_occurred">9.5. What occurred</a></li>
-<li><a href="#_what_are_the_next_steps">9.6. What are the next steps?</a></li>
+<li><a href="#_what_are_the_next_steps">9.5. What are the next steps?</a></li>
 </ul>
 </li>
 <li><a href="#OGCAPIImplementations">Appendix A: Implementations of OGC APIs</a>
@@ -995,7 +1015,7 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_21">A.21.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#GEOBEYOND">A.22. GEOBEYOND</a>
+<li><a href="#GEOBEYOND">A.22. Geobeyond</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_22">A.22.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_22">A.22.2. Implemented Solution</a></li>
@@ -1256,94 +1276,102 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 <li><a href="#_other_impressions_recommendations_50">A.50.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#SimmsReeve">A.51. Simms Reeve</a>
+<li><a href="#SigmaBravo">A.51. SigmaBravo</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_51">A.51.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_51">A.51.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_51">A.51.3. Proposed Alternatives</a></li>
-<li><a href="#_experiences_with_ogc_api_specifications_51">A.51.4. Experiences with OGC API Specifications</a></li>
-<li><a href="#_other_impressions_recommendations_51">A.51.5. Other Impressions &amp; Recommendations</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_51">A.51.3. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_51">A.51.4. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Sinergise">A.52. Sinergise</a>
+<li><a href="#SimmsReeve">A.52. Simms Reeve</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_52">A.52.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_52">A.52.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_52">A.52.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_51">A.52.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_52">A.52.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_52">A.52.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#Solenix">A.53. Solenix</a>
+<li><a href="#Sinergise">A.53. Sinergise</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_53">A.53.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_53">A.53.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_53">A.53.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_52">A.53.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_53">A.53.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_53">A.53.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#StrategicAllianceConsultingInc">A.54. Strategic Alliance Consulting Inc</a>
+<li><a href="#Solenix">A.54. Solenix</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_54">A.54.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_54">A.54.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_54">A.54.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_53">A.54.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_54">A.54.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_54">A.54.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityCollegeLondon">A.55. University College London</a>
+<li><a href="#StrategicAllianceConsultingInc">A.55. Strategic Alliance Consulting Inc</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_55">A.55.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_55">A.55.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_55">A.55.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_54">A.55.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_55">A.55.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_55">A.55.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityofBirmingham">A.56. University of Birmingham</a>
+<li><a href="#UniversityCollegeLondon">A.56. University College London</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_56">A.56.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_56">A.56.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_56">A.56.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_55">A.56.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_56">A.56.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_56">A.56.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityofMunster">A.57. University of Münster</a>
+<li><a href="#UniversityofBirmingham">A.57. University of Birmingham</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_57">A.57.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_57">A.57.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_57">A.57.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_56">A.57.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_57">A.57.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_57">A.57.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#UniversityofNotreDame">A.58. University of Notre Dame</a>
+<li><a href="#UniversityofMunster">A.58. University of Münster</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_58">A.58.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_58">A.58.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_58">A.58.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_57">A.58.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_58">A.58.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_58">A.58.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#WebGeoDataVore">A.59. WebGeoDataVore</a>
+<li><a href="#UniversityofNotreDame">A.59. University of Notre Dame</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_59">A.59.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_59">A.59.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_59">A.59.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_58">A.59.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_59">A.59.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_59">A.59.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
-<li><a href="#WestUniversityofTimisoara">A.60. West University of Timisoara</a>
+<li><a href="#WebGeoDataVore">A.60. WebGeoDataVore</a>
 <ul class="sectlevel3">
 <li><a href="#_motivation_to_participate_60">A.60.1. Motivation to Participate</a></li>
 <li><a href="#_implemented_solution_60">A.60.2. Implemented Solution</a></li>
-<li><a href="#_proposed_alternatives_60">A.60.3. Proposed Alternatives</a></li>
+<li><a href="#_proposed_alternatives_59">A.60.3. Proposed Alternatives</a></li>
 <li><a href="#_experiences_with_ogc_api_specifications_60">A.60.4. Experiences with OGC API Specifications</a></li>
 <li><a href="#_other_impressions_recommendations_60">A.60.5. Other Impressions &amp; Recommendations</a></li>
+</ul>
+</li>
+<li><a href="#WestUniversityofTimisoara">A.61. West University of Timisoara</a>
+<ul class="sectlevel3">
+<li><a href="#_motivation_to_participate_61">A.61.1. Motivation to Participate</a></li>
+<li><a href="#_implemented_solution_61">A.61.2. Implemented Solution</a></li>
+<li><a href="#_proposed_alternatives_60">A.61.3. Proposed Alternatives</a></li>
+<li><a href="#_experiences_with_ogc_api_specifications_61">A.61.4. Experiences with OGC API Specifications</a></li>
+<li><a href="#_other_impressions_recommendations_61">A.61.5. Other Impressions &amp; Recommendations</a></li>
 </ul>
 </li>
 </ul>
@@ -1383,6 +1411,9 @@ To obtain additional rights of use, visit <a href="http://www.opengeospatial.org
 </div>
 <div class="paragraph">
 <p>This section shall be between 1-3 pages.</p>
+</div>
+<div class="paragraph">
+<p>The output of this hackathon should lead to a solid, common core and advancement of a whole new generation of OGC standards that are flexible in modern IT environments.</p>
 </div>
 <div class="sect2">
 <h3 id="_document_contributor_contact_points"><a class="anchor" href="#_document_contributor_contact_points"></a>2.1. Document contributor contact points</h3>
@@ -1683,7 +1714,15 @@ Role = Editor and/or Contributor
 <p>Numerous discussions occurred at OGC quarterly Technical Committee (TC) Meetings to consider those elements being developed in each SWG which should be common to all web API standards. These discussions came to a head at the February 2019 TC Meeting in Singapore, where a series of working group meetings and common sessions for the whole TC Membership reinforced the desire to work on a common framework for many OGC web standards and to develop a nomenclature for labeling these standards. Thus, the pattern “OGC API [resource]” was coined. The discussions in Singapore also resulted in the planning of the OGC API Hackathon to define and test common elements from Coverages, Map Tiles, and Processing standards work using foundational material from the Features work.</p>
 </div>
 <div class="paragraph">
-<p>The OGC API Hackathon 2019 was hosted by the Geovation Hub in London, United Kingdom, from June 20th to 21st, 2019. The hackathon was sponsored by the European Space Agency (ESA) and the Ordnance Survey. The goal of the hackathon was to advance the development of OGC API specifications. The output of this hackathon should lead to a solid, common core and advancement of a whole new generation of OGC standards that are flexible in modern IT environments.</p>
+<p>The OGC API Hackathon 2019 was hosted by the Geovation Hub in London, United Kingdom, from June 20th to 21st, 2019. The hackathon was sponsored by the European Space Agency (ESA) and the Ordnance Survey. The <strong>goal</strong> of the hackathon was to advance the development of OGC API specifications.</p>
+</div>
+<div class="paragraph">
+<p>The objectives of the hackathon were set out as to:
+* develop, deploy and test services/clients that support OGC APIs
+* suggest improvements for a common core
+* define rules/guidance that can be documented
+* validate work that has been completed to date
+* contribute to the GitHub repositories</p>
 </div>
 <div class="sect2">
 <h3 id="_overview_of_the_challenge"><a class="anchor" href="#_overview_of_the_challenge"></a>6.1. Overview of the Challenge</h3>
@@ -2053,6 +2092,9 @@ This list will be updated at the start of the Hackathon
 <p>Secure Dimensions</p>
 </li>
 <li>
+<p>Sigma Bravo</p>
+</li>
+<li>
 <p>Simms Reeve</p>
 </li>
 <li>
@@ -2060,6 +2102,9 @@ This list will be updated at the start of the Hackathon
 </li>
 <li>
 <p>Solenix</p>
+</li>
+<li>
+<p>Spacebel s.a.</p>
 </li>
 <li>
 <p>Strategic Alliance Consulting Inc</p>
@@ -2117,7 +2162,21 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_tba"><a class="anchor" href="#_tba"></a>7.1.3. TBA</h4>
+<h4 id="_esri"><a class="anchor" href="#_esri"></a>7.1.3. Esri</h4>
+<div class="paragraph">
+<p>Esri produce both an installable product (ArcGIS Enterprise) and SaaS product (ArcGIS Online) which support adopted OGC specifications. ArcGIS Enterprise as a server implements WMS, WMTS, WCS2, WPS, WFS2, KML, Geopackage etc as well as other de-facto standards. ArcGIS Online as a server implements WMTS, WFS2 as well as other de-facto standards.
+Until the OGC API standards are stable and formally adopted, it is not feasible to implement them in the released products. Therefore for the purposes of the Hackathon and further R&amp;D, Esri have implemented the OGC-API tiles as a facade on to ArcGIS Online tiled services. Technically this is currently implemented as a node.js server running in Microsoft Azure.
+<a href="https://ogc-tiles-esri-server.azurewebsites.net" class="bare">https://ogc-tiles-esri-server.azurewebsites.net</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_rasdaman"><a class="anchor" href="#_rasdaman"></a>7.1.4. rasdaman</h4>
+<div class="paragraph">
+<p>rasdaman ("raster data manager") is a flexible, scalable datacube engine with location-transparent federation capabilities. Open-source rasdaman is available from www.rasdaman.org. Being WCS reference implementation rasdaman supports OGC WMS, WCS, and WCPS (the OGC datacube analytics standard). For experimentation with the emerging OGC OpenAPI interface for coverages a rasdaman server has been made available on Amazon with an OpenAPI facade to WCS; access has been demonstrated with EURAC and Sinergise OpenAPI clients.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tba"><a class="anchor" href="#_tba"></a>7.1.5. TBA</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2126,13 +2185,40 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="_client_implementations"><a class="anchor" href="#_client_implementations"></a>7.2. Client Implementations</h3>
 <div class="sect3">
-<h4 id="_tba_2"><a class="anchor" href="#_tba_2"></a>7.2.1. TBA</h4>
+<h4 id="_opensphere_ogc_api_plugin"><a class="anchor" href="#_opensphere_ogc_api_plugin"></a>7.2.1. OpenSphere OGC API Plugin</h4>
+<div class="paragraph">
+<p><a href="https://github.com/ngageoint/opensphere">OpenSphere</a> is a pluggable, single-page, GIS web application that supports both 2D and 3D views. It supports hooking up to many common servers and formats such as ArcGIS, Geoserver (and other OGC WMS/WFS services), XYZ, TMS, KML, GeoJSON, Shapefiles and CSVs. Other features include animation of both raster and vector data, import and export of various formats, and saving files and layers between sessions. Sigma Bravo extended OpenSphere to support OGC API - Features and OGC API - Map Tiles.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_hexagon_luciadlightspeed"><a class="anchor" href="#_hexagon_luciadlightspeed"></a>7.2.2. Hexagon LuciadLightspeed</h4>
+<div class="paragraph">
+<p>LuciadLightspeed provides a foundation for advanced geospatial analytics applications. It allows users to create high performance command &amp; control and location intelligence applications with clean design implementation and rapid application development. A desktop client application was implemented using LuciadLightspeed and configured to interface services implementing the OGC API - Map Tiles specification.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_solenix_wps_demo_client"><a class="anchor" href="#_solenix_wps_demo_client"></a>7.2.3. Solenix WPS Demo Client</h4>
+<div class="paragraph">
+<p>The Solenix WPS Demo client is an adaptation of the OGC Testbed 14 client, accounting for some of the changes introduced with the OGC API - Processing.</p>
+</div>
+<div class="paragraph">
+<p>The client application runs from a web browser.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_esri_ogc_api_tiles_demo_client"><a class="anchor" href="#_esri_ogc_api_tiles_demo_client"></a>7.2.4. Esri OGC API-Tiles Demo Client</h4>
+<div class="paragraph">
+<p>The Esri client application is a simple Leaflet application which connects to the Esri OGC API-Tiles server implementation for testing purposes.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tba_2"><a class="anchor" href="#_tba_2"></a>7.2.5. TBA</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_tba_3"><a class="anchor" href="#_tba_3"></a>7.2.2. TBA</h4>
+<h4 id="_tba_3"><a class="anchor" href="#_tba_3"></a>7.2.6. TBA</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2720,18 +2806,260 @@ This list will be updated at the start of the Hackathon
 <h2 id="KeyFindings"><a class="anchor" href="#KeyFindings"></a>9. Key Findings</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>TBA</p>
+<p>This section presents the key findings from the Hackathon.</p>
 </div>
 <div class="sect2">
 <h3 id="_results"><a class="anchor" href="#_results"></a>9.1. Results</h3>
+<div class="sect3">
+<h4 id="_ogc_api_processes_2"><a class="anchor" href="#_ogc_api_processes_2"></a>9.1.1. OGC API - Processes</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>The participants made an observation that some attributes for referenceValue were missing. As a result, changes were made to add attributes for identifying the MIME type, schema and encoding in a referenceValue object. These changes were needed for providing input in a specific format or returning output in a specific format.</p>
+</div>
+<div class="paragraph">
+<p>There was a <a href="https://github.com/opengeospatial/wps-rest-binding/issues/42">suggestion</a> to add ows:additionalProperties and ows:context to metadata. It was observed that ows:additionalParameters allows a service to provide key value pairs metadata information. It was also observed that Testbed 13 and testbed 14 had demonstrated the utility of such a capability. As a result, the hackathon participants committed changes to the OGC API - Process specification adding the definition of additionalParameters.</p>
+</div>
+<div class="paragraph">
+<p>There was a <a href="https://github.com/opengeospatial/wps-rest-binding/issues/37">discussion</a> about whether process output arrays are fully supported. The participants observed that currently the <a href="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/output-value-cardinality">output-value-cardinality</a> requirement limits cardinality of the output to one. A number of workarounds were suggested including returning a list of outputs, returning an archive (zip), returning a Metalink, or returning Multipart/mixed responses. The participants concluded that a solution would need to handle all kind of outputs, including outputs by reference, as well as binary files.</p>
+</div>
+<div class="paragraph">
+<p>There was a <a href="https://github.com/opengeospatial/wps-rest-binding/issues/30">discussion</a> about how to specify synchronous execution OGC API Hackathon. The options identified included i) Either use a query parameter or a HTTP header to specify the execution mode, ii) Return a result object, iii)  Do not return a header with the location (as there technically is no location, i.e. its a temp. This issue was also related to the broader issue of how to choose between synchronous and asynchronous mode for job creation. The participants observed that indeed the WPS 2.0 specification has a jobID in the the status object, and therefore the OGC API - Processes specification should also include a jobID into the statusInfo object.</p>
+</div>
+<div class="paragraph">
+<p>There was a <a href="https://github.com/opengeospatial/wps-rest-binding/issues/31">suggestion</a> for an extension supporting triggers according to job status. In particular the suggestion was for the user/client to be able to specify triggers for conditions like: <code>onSuccess</code> a Url to be triggered upon process completion, or <code>onFail</code> a URL to be triggered on process failure, <code>progressUpdate</code> a URL to be triggered by the job while progressing and should contain progress status (eg. proccent of job completion). Participants considered whether such a capability might be more appropriate as an extension, perhaps associated with a pub/sub notification capability.</p>
+</div>
+<div class="paragraph">
+<p>There was a <a href="https://github.com/opengeospatial/wps-rest-binding/issues/32">suggestion</a> to add the exception information to the status information at GET <code>/processes/{id}/jobs/{jobID}</code> and remove the GET <code>/processes/{id}/jobs/{jobID}/exception</code> endpoint. The participants considered whether an HTTP 201 code should be returned with POST /processes/{id}/jobs. The participants resolved that allowing for plural form results could address this issue, for example <code>processes/{processId}/jobs/{jobId}/results/{resultId}</code>. Use of an HTTP 201 code was however inconclusive.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ogc_api_map_tiles_2"><a class="anchor" href="#_ogc_api_map_tiles_2"></a>9.1.2. OGC API - Map Tiles</h4>
+<div class="paragraph">
+<p>The participants identified three roots for API building blocks, namely the root of the service, collection ID, and collection ID combined the coverage ID. A need to combine these root paths with maps and tiles was identified. There was an observation made that if the roots are combined with maps and tiles, there is an opportunity to provide much more information through data tiles such as vector tiles or coverage tiles. There was also an observation made that if a style and style id are concatenated with the path then the API would be able to combine data tiles with portrayals of the information. There was a third alternative identified, which is the concatenation of both the aforementioned approaches.</p>
+</div>
+<div class="paragraph">
+<p>These paths have specific query parameters associated with them. Participants observed that such a capability may not be fully supported by OpenAPI 3.0.</p>
+</div>
+<div class="paragraph">
+<p>There was a discussion about whether the response for maps should return raster or vector maps. Related to this was whether a map was at the same level as a collection. There was agreement that maps are not at the same level as collections.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ogc_api_coverages_2"><a class="anchor" href="#_ogc_api_coverages_2"></a>9.1.3. OGC API - Coverages</h4>
+<div class="paragraph">
+<p>The participants agreed that OGC API - Coverages should inherit from OGC API - Common as much as possible. This meant that wherever a requirement is specified in OGC API - Common, if it is relevant to coverages, the OGC API - Coverages specification would reference the requirement in the OGC API - Common specification.</p>
+</div>
+<div class="paragraph">
+<p>The participants agreed that a request for the coverages path would return a list of all  of the coverage identifiers included in the collection.</p>
+</div>
+<div class="paragraph">
+<p>There was also agreement that a request for the coverage description would only return the essential information instead of the complete metadata associated with the coverage.</p>
+</div>
+<div class="paragraph">
+<p>There was discussion about how to support bounding box (BBOX) filters on multidimensional coverages. The participants expressed the need to inherit the BBOX and time parameters from OGC API - Common, however also they also observed that there would be a need to identify a CRS for height. One of the suggestions was for each axis to have a separate coverage filter. The participants concluded that there is currently no construct in the Core part of the OGC API - Common specification that supports filtering of coverages.</p>
+</div>
+<div class="paragraph">
+<p>The was discussion about the retrieval of coverages. The OGC API - Coverages specification was updated to allow for different ways for getting the coverages individually. Since not every format is suitable for transferring all of the coverage information, participants identified different ways for getting the different types of coverages. It was also noted that for applications that do not want to use collections, they can just use the <code>coverages/{coverageid}</code> path.</p>
+</div>
+<div class="paragraph">
+<p>There was a discussion about whether parameters, values and URL bases were case sensitive. This issue was observed to be applicable to all of the specifications. There was a suggestion that the OGC API - Common specification should specify a rule for case sensitivity and that that rule should be consistent with the RFC.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ogc_api_common_2"><a class="anchor" href="#_ogc_api_common_2"></a>9.1.4. OGC API - Common</h4>
+<div class="paragraph">
+<p>There was a discussion about whether OGC API - Common should support the CRS:84 coordinate system (WGS84) by default. The participants observed that the collectionInfo metadata (returned for each collection) allows one to specify the CRS supported by the collection. The client can specify one of the other CRS if they do not support the default. For coverages, the default CRS was observed to be the native CRS. The participants concluded that there will be a default CRS for the API and the OGC API - Common specification should have complete control over the CRS and the default CRS should not constrain the resource.</p>
+</div>
+<div class="paragraph">
+<p>The participants observed that there is a need for something like CRS:84 that has ellipsoid height. EPSG:4327 was suggested as a possible basis for such a CRS, with the caveat that it has been deprecated. It was agreed to discuss the issue of a height or elevation CRS with the WFS SWG and the CRS DWG at the OGC TC meeting in Leuven.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_technology_integration_experiments_tie"><a class="anchor" href="#_technology_integration_experiments_tie"></a>9.1.5. Technology Integration Experiments (TIE)</h4>
+<div class="paragraph">
+<p>The following table presents Technology Integration Experiments (TIE) that were completed during the Hackathon.</p>
+</div>
+<table id="table_ties" class="tableblock frame-all grid-all" style="width: 75%;">
+<caption class="title">Table 2. Technology Integration Experiments (TIE) for OGC APIs</caption>
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Services\Client</th>
+<th class="tableblock halign-left valign-top">Hexagon</th>
+<th class="tableblock halign-left valign-top">Helyx</th>
+<th class="tableblock halign-left valign-top">OpenSphere</th>
+<th class="tableblock halign-left valign-top">Esri</th>
+<th class="tableblock halign-left valign-top">Solenix</th>
+<th class="tableblock halign-left valign-top">EURAC</th>
+<th class="tableblock halign-left valign-top">Sinergise</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">52 North</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CubeWerx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map Tiles</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map Tiles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Map Tiles</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Helyx</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pygeoapi</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Features</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Geoserver</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Features</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spacebel</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Features</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">West University of Timisoara</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Processes</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rasdaman</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Coverages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Coverages</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Services on rows and Clients on columns
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_alternatives"><a class="anchor" href="#_alternatives"></a>9.2. Alternatives</h3>
+<h3 id="_what_occurred"><a class="anchor" href="#_what_occurred"></a>9.2. What occurred</h3>
+<div class="sect3">
+<h4 id="_processes"><a class="anchor" href="#_processes"></a>9.2.1. Processes</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>The decision to hold the OGC API Hackathon was made by the TC at the 2019 TC meeting in Singapore. Following this decision, OGC staff engaged a number of potential sponsors from the OGC membership. Having identified sponsors and hosts, a series of teleconferences were held for planning the event. These teleconferences discussed venue logistics, computing infrastructure, data, scenarios, catering and other topics. A Gantt chart of the planning and execution of the hackathon is shown in <a href="#img_gantt">Figure 4</a>.</p>
+</div>
+<div id="img_gantt" class="imageblock text-center">
+<div class="content">
+<img src="images/gantt.png" alt="gantt" width="800">
+</div>
+<div class="title">Figure 4. A Gantt chart of the planning and execution of the hackathon</div>
+</div>
+<div class="paragraph">
+<p>During the hackathon, the process involved alternation between briefings, discussions and coding. On the first day of the hackathon, three back-briefs were held, that is one in the morning, another in the afternoon and another in the evening. These briefings provided an opportunity for issues to be discussed across teams. Agreements and resolutions from the discussions triggered by the briefings were then fed back into the team-specific work.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_organization"><a class="anchor" href="#_organization"></a>9.2.2. Organization</h4>
+<div class="paragraph">
+<p>By the event date, 76 individuals had been registered to participate in-person and 35 participants had been registered to participate remotely. A questionnaire sent out just before the hackathon to collect information about which OGC API specifications participants would focus on received 27 responses, with the spread of interest as showin in <a href="#img_interests_1">Figure 5</a>, <a href="#img_interests_2">Figure 6</a> and <a href="#img_interests_3">Figure 7</a>.</p>
+</div>
+<div id="img_interests_1" class="imageblock text-center">
+<div class="content">
+<img src="images/interests_1.png" alt="interests 1" width="800">
+</div>
+<div class="title">Figure 5. Participants' interests (1 of 3)</div>
+</div>
+<div id="img_interests_2" class="imageblock text-center">
+<div class="content">
+<img src="images/interests_2.png" alt="interests 2" width="800">
+</div>
+<div class="title">Figure 6. Participants' interests (2 of 3)</div>
+</div>
+<div id="img_interests_3" class="imageblock text-center">
+<div class="content">
+<img src="images/interests_3.png" alt="interests 3" width="800">
+</div>
+<div class="title">Figure 7. Participants' interests (3 of 3)</div>
+</div>
+<div class="paragraph">
+<p>The hackathon was therefore organized around teams based on the OGC API specifications. Participants interested in APIs other than those for coverages, processes, and map tiles, were asked to contribute to the work on advancing the OGC API - Common specification. This would help ensure that the OGC API - Common specification provides an appropriate a base for all future OGC APIs.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_technology"><a class="anchor" href="#_technology"></a>9.2.3. Technology</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_information"><a class="anchor" href="#_information"></a>9.2.4. Information</h4>
+
 </div>
 </div>
 <div class="sect2">
@@ -2747,13 +3075,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="_what_occurred"><a class="anchor" href="#_what_occurred"></a>9.5. What occurred</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_what_are_the_next_steps"><a class="anchor" href="#_what_are_the_next_steps"></a>9.6. What are the next steps?</h3>
+<h3 id="_what_are_the_next_steps"><a class="anchor" href="#_what_are_the_next_steps"></a>9.5. What are the next steps?</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -2777,13 +3099,13 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_implemented_solution"><a class="anchor" href="#_implemented_solution"></a>A.1.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>52°North implemented and deployed an instance of the 52°North JavaPS software, which is an implementation of the OGC Web Processing Service (WPS) standard and the OGC API - Processes specification. A screenshot of the deployed service is shown in <a href="#img_52n_wps">Figure 4</a>. The software was configured to offer an interface that conforms to the OGC API - Processes specification.</p>
+<p>52°North implemented and deployed an instance of the 52°North JavaPS software, which is an implementation of the OGC Web Processing Service (WPS) standard and the OGC API - Processes specification. A screenshot of the deployed service is shown in <a href="#img_52n_wps">Figure 8</a>. The software was configured to offer an interface that conforms to the OGC API - Processes specification.</p>
 </div>
 <div id="img_52n_wps" class="imageblock text-center">
 <div class="content">
 <img src="images/52n_wps.png" alt="52n wps" width="800">
 </div>
-<div class="title">Figure 4. Swagger Hub page of the OGC API - Processes implementation deployed by 52°North GmbH</div>
+<div class="title">Figure 8. Swagger Hub page of the OGC API - Processes implementation deployed by 52°North GmbH</div>
 </div>
 </div>
 <div class="sect3">
@@ -3456,18 +3778,18 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="EsriUK"><a class="anchor" href="#EsriUK"></a>A.20. Esri UK</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p>Esri make ArcGIS mapping and analytics software.</p>
 </div>
 <div class="sect3">
 <h4 id="_motivation_to_participate_20"><a class="anchor" href="#_motivation_to_participate_20"></a>A.20.1. Motivation to Participate</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Evolution of the OGC specifications to a modern, developer-friendly API is essential.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implemented_solution_20"><a class="anchor" href="#_implemented_solution_20"></a>A.20.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>To date we have not implemented any of the new draft OGC API standards in our released software. We have been working on various R&amp;D prototypes of server and client.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3479,7 +3801,7 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_experiences_with_ogc_api_specifications_20"><a class="anchor" href="#_experiences_with_ogc_api_specifications_20"></a>A.20.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Esri has been involved in the OGC since its inception, and have widely implemented many other OGC standards in both server and client software.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3526,7 +3848,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="GEOBEYOND"><a class="anchor" href="#GEOBEYOND"></a>A.22. GEOBEYOND</h3>
+<h3 id="GEOBEYOND"><a class="anchor" href="#GEOBEYOND"></a>A.22. Geobeyond</h3>
 <div class="paragraph">
 <p>Participant: Francesco Bartoli</p>
 </div>
@@ -3631,18 +3953,27 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="GeoLabs"><a class="anchor" href="#GeoLabs"></a>A.24. GeoLabs</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p><a href="http://www.geolabs.fr" class="bare">http://www.geolabs.fr</a></p>
+</div>
+<div class="paragraph">
+<p>GeoLabs is a high-tech SME providing geospatial management solutions world-wide based on open source technologies. GeoLabs is leading the development of numerous open source geospatial projects and provides SaaS/PaaS services for geospatial data. GeoLabs has developed MapMint (mapmint.com), a complete web based web mapping infrastructure, participated in the development of geoportail.fr, the development of the Senegal’s National Cadastre. Further, it provides commercial cloud-based GIS services, and contributes in numerous open source projects.</p>
 </div>
 <div class="sect3">
 <h4 id="_motivation_to_participate_24"><a class="anchor" href="#_motivation_to_participate_24"></a>A.24.1. Motivation to Participate</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Get more informations about the directions followed by the working groups for the different standards. Get answer to some questions we got about the Processes api specifically. Indeed, as we implemented part of (or should I say adaptation of)  the wps-rest-binding before attending the hackathon, we were facing some issue in trying mimicing the different options available in WPS 2.0 and, we would like to discuss with other to see their point of view and share ours.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implemented_solution_24"><a class="anchor" href="#_implemented_solution_24"></a>A.24.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>We came with the ZOO-Project implementation demonstration swagger interface available at: <a href="https://demo.mapmint.com/swagger-ui/dist/" class="bare">https://demo.mapmint.com/swagger-ui/dist/</a> for interracting with two WPS instances available at: <a href="http://demo.mapmint.com/WPS2/" class="bare">http://demo.mapmint.com/WPS2/</a> and  <a href="http://demo.mapmint.com/WPS3/" class="bare">http://demo.mapmint.com/WPS3/</a> (where WPS2 is using the model available on the opengeospatial github repository when the second one is made based on the tests we have made to change the wps-rest-binding and atempt to make it fitting the current WPS 2.0 defintions).</p>
+</div>
+<div class="paragraph">
+<p>This WPS implementation is based on the one available at <a href="http://www.zoo-project.org" class="bare">http://www.zoo-project.org</a> with some modifications.</p>
+</div>
+<div class="paragraph">
+<p>As it is based on an implementation able to offer access to libraries and applications such as GDAL, OGR, GEOS, PROJ,  the Orfeo ToolBox (<a href="https://www.orfeo-toolbox.org/" class="bare">https://www.orfeo-toolbox.org/</a>) and the SAGA-GIS application. The demonstration include numerous services available to be run using the wps-rest-binding.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3667,30 +3998,78 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="GeoSeer"><a class="anchor" href="#GeoSeer"></a>A.25. GeoSeer</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p>GeoSeer is a search engine for OGC Services. At the time of writing it has just shy of 200,000 such services in its index, making their data easily and freely searchable.</p>
 </div>
 <div class="sect3">
 <h4 id="_motivation_to_participate_25"><a class="anchor" href="#_motivation_to_participate_25"></a>A.25.1. Motivation to Participate</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>The Motivation behind creating GeoSeer was to help solve the discoverability problem. End users often find it difficult to find the services or data that exists. GeoSeer&#8217;s participation was an extension of this seeking to facilitate making life easier for finding data through the new OGC API Specifications, or at least to ensure it did not get even harder.
+In fact team behind GeoSeer suggests that discovery is one of the aspects that could be improved in current OGC services and should be getting more consideration in the new OGC API specifications.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implemented_solution_25"><a class="anchor" href="#_implemented_solution_25"></a>A.25.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>N/A</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_proposed_alternatives_25"><a class="anchor" href="#_proposed_alternatives_25"></a>A.25.3. Proposed Alternatives</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>N/A</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_experiences_with_ogc_api_specifications_25"><a class="anchor" href="#_experiences_with_ogc_api_specifications_25"></a>A.25.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>The OGC API specifications all seem quite interesting, though the concept of "collections" took some getting used to and remains somewhat confusing. This suggests they may not be as intuitive as could be desired and users may struggle with it.</p>
+</div>
+<div class="paragraph">
+<p>In relation to discoverability:</p>
+</div>
+<div class="sect4">
+<h5 id="_good"><a class="anchor" href="#_good"></a>Good</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>The HTML reports that are created are good for improving discoverability with mainstream search engines.</p>
+</li>
+<li>
+<p>The OGC API specifications are easily parsable.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_issues"><a class="anchor" href="#_issues"></a>Issues</h5>
+<div class="paragraph">
+<p>A number of potential discoverability issues were identified with the current specification.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The specifications do not include "keywords" currently. Ideally this should be mandatory in core to facilitate discovery. While popular search engines may not currently use this field, that does not mean they and/or others would not in the future. GeoSeer does use this field for indexing, and many current OGC Web Services have this set with meaningful keywords by their deployers. GeoSeer would suggest having it both at the root level (to indicate the type of "service"), and at the /collections level for each collection. This would improve discoverability.</p>
+</li>
+<li>
+<p>There may be too much reliance on extensions. Many deployers will NOT install extensions even if they should. For example, the data for services that claim to be compliant to Implementing Rules of the European Union&#8217;s INSPIRE directive shows that only around half of the services actually have the INSPIRE ExtendedCapabilities. And that is for something that INSPIRE says is mandatory. An extension for "discovery" would therefore not provide its peak usefulness unless its components were in core.</p>
+</li>
+<li>
+<p>The "Title", and "Description", fields are both optional in Core, and Features/Maps as far as we can see. These fields should be mandatory. If they are not they will not be there for many services and that will make them considerably less discoverable. It will also significantly reduce usability with desktop GIS (imagine selecting a feature collection when none of them have these&#8230;&#8203;).</p>
+</li>
+<li>
+<p>There should be a mandatory BBOX in WGS84 in Core required for each collection. This will facilitate discovery of spatial data - "WHERE" being critical to such data. There are many thousands of "tree" datasets out there for instance, how can a user otherwise know where the data is without this? Some wording to allow exclusion for non-spatial datasets could be incorporated. This could be in addition to a native BBOX defined by the extensions as necessary.</p>
+</li>
+<li>
+<p>Metadata url should be included too. While GeoSeer were no big fan of external metadata documents, many large organisations find them extremely important and they are used a fair percentage on current services. A consistent way to specify them would make access to this information automatically easier.</p>
+</li>
+<li>
+<p>GeoSeer would like to highlight that if something is not explicitly specified in the OGC API specifications and instead relies on the deployer deciding what/how to implement it (as has been suggested with Keywords), this obviates much of the benefit of a standard. Even <strong>with</strong> standards, developers end up finding many different ways to do things! Without standards the number of ways to do things just makes life extremely difficult for anyone who wishes to automate access to services. Never rely on the deployers/implementers being consistent.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Many of the above would also make it easier for end-users who are accessing these services via a desktop client like QGIS/ArcGIS. Without title/description information in a JSON format it will be impossible for such a user to know what they want without opening stuff in parallel web-browser; hardly easy.</p>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -3861,13 +4240,46 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_implemented_solution_30"><a class="anchor" href="#_implemented_solution_30"></a>A.30.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>We implemented a desktop Java-based fat client to experiment with the Map Tiles API. The client retrieved data from the server provided by EsriUK, accessing the maps using the tile-based approach.</p>
+</div>
+<div class="paragraph">
+<p>Interesting about the client implementation is that it started from <code>/collections/{collectionId}</code> and used the provided metadata to look up the appropriate tile matrix set from <code>/tileMatrixSets/{tileMatrixSetId}</code>. Now that the tile structure was known, the client used <code>/collections/{collectionId}/tiles/{styleId}/{tileMatrixSetId}/&#8230;&#8203;</code> to get the actual tile data. Note that the specification was still evolving and there was no <code>map/</code> before <code>{styleId}/</code> yet.</p>
+</div>
+<div class="paragraph">
+<p>The implementation showed that the necessary metadata is available to access the map tiles generically.</p>
+</div>
+<div class="paragraph">
+<p><a href="#img_hexagon_2d">Figure 9</a> shows the client accessing a map tiles collection from the server. The tiles are shown in the native CRS of the tile matrix set.</p>
+</div>
+<div id="img_hexagon_2d" class="imageblock text-center">
+<div class="content">
+<img src="images/hexagon_maptiles_2d.png" alt="hexagon maptiles 2d" width="800">
+</div>
+<div class="title">Figure 9. Hexagon client showing map tiles using native CRS of the tile matrix set</div>
+</div>
+<div class="paragraph">
+<p><a href="#img_hexagon_3d">Figure 10</a> shows the client accessing a map tiles collection from the server. The tiles are requested in their native CRS, but reprojected onto a 3D globe.</p>
+</div>
+<div id="img_hexagon_3d" class="imageblock text-center">
+<div class="content">
+<img src="images/hexagon_maptiles_3d.png" alt="hexagon maptiles 3d" width="800">
+</div>
+<div class="title">Figure 10. Hexagon client showing map tiles projected onto 3D globe</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_proposed_alternatives_30"><a class="anchor" href="#_proposed_alternatives_30"></a>A.30.3. Proposed Alternatives</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>We raised some questions related to the consistency and duplication in various parts of the metadata in the API.</p>
+</div>
+<div class="paragraph">
+<p>We participated in the discussions about composability of the tiling scheme on top of collections or maps.</p>
+</div>
+<div class="paragraph">
+<p>We noted that there seems to be an opportunity for having more concepts in the Common API. Specifically, it seems that <em>extent</em> could be in there.</p>
+</div>
+<div class="paragraph">
+<p>When generating a map depicting multiple collections, the request will probably get quite complex. Perhaps it is useful to think of such a map as a composition of multiple single-collection maps. The multiple-collection map request could perhaps refer to multiple single-collection maps?</p>
 </div>
 </div>
 <div class="sect3">
@@ -3879,7 +4291,10 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_other_impressions_recommendations_30"><a class="anchor" href="#_other_impressions_recommendations_30"></a>A.30.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>It is very good to hear that OGC is trying to make the APIs more easily consumable by users. However, and perhaps specifically to the Map Tiles, the variety of use cases and access patterns still leads to considerable complexity, for instance by having request parameters related to parts of the URL path.</p>
+</div>
+<div class="paragraph">
+<p>We believe the hackaton was useful to get a feel for the practicality of the proposed APIs. However, when each group goes off to work on their specification separately, it is easy for the APIs to start diverging. It would be good to have a convergence phase where ideas from the various group are compared and commonalities can be extracted for the Common API.</p>
 </div>
 </div>
 </div>
@@ -4221,22 +4636,22 @@ This list will be updated at the start of the Hackathon
 <div class="sect3">
 <h4 id="_implemented_solution_40"><a class="anchor" href="#_implemented_solution_40"></a>A.40.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>The MSC implemented and deployed an instance of pygeoapi - a Python server implementation of the emerging OGC API specifications. A screenshot of the landing page of the deployed service is shown in <a href="#img_msc_pygeoapi">Figure 5</a>. The software was configured to offer an interface that conforms to the OGC API - Features and OGC API - Processes specifications.</p>
+<p>The MSC implemented and deployed an instance of pygeoapi - a Python server implementation of the emerging OGC API specifications. A screenshot of the landing page of the deployed service is shown in <a href="#img_msc_pygeoapi">Figure 11</a>. The software was configured to offer an interface that conforms to the OGC API - Features and OGC API - Processes specifications.</p>
 </div>
 <div id="img_msc_pygeoapi" class="imageblock text-center">
 <div class="content">
 <img src="images/msc_pygeoapi.png" alt="msc pygeoapi" width="800">
 </div>
-<div class="title">Figure 5. The landing page of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
+<div class="title">Figure 11. The landing page of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
 </div>
 <div class="paragraph">
-<p>A screenshot of the OpenAPI page of the deployed service is shown in <a href="#img_msc_pygeoapi_openapi">Figure 6</a>.</p>
+<p>A screenshot of the OpenAPI page of the deployed service is shown in <a href="#img_msc_pygeoapi_openapi">Figure 12</a>.</p>
 </div>
 <div id="img_msc_pygeoapi_openapi" class="imageblock text-center">
 <div class="content">
 <img src="images/msc_pygeoapi_openapi.png" alt="msc pygeoapi openapi" width="800">
 </div>
-<div class="title">Figure 6. The OpenAPI definition of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
+<div class="title">Figure 12. The OpenAPI definition of the pygeoapi instance deployed by the Meteorological Service of Canada</div>
 </div>
 </div>
 <div class="sect3">
@@ -4261,36 +4676,45 @@ This list will be updated at the start of the Hackathon
 <div class="sect2">
 <h3 id="MetOffice"><a class="anchor" href="#MetOffice"></a>A.41. Met Office</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p>The Met Office is the national meteorological service for the United Kingdom. It produces both daily weather forecasts and long term climate predictions as well as performing fundamental science. It also runs several forcasting services for oceanography. Its customers cover a wide range of domains, such as aviation, defence, public sector, marine, private industry, media.</p>
+</div>
+<div class="paragraph">
+<p>It has been an active Member of OGC since 2009, and, along with several other national meteorological services, founded the OGC Met-Ocean Domain Working Group and initiated a Memorandum of Understanding between OGC and the World Meteorological Organisation (WMO). WMO is the United Nations international treaty organisation that coordinates 193 national hydrometeorological services. It also defines international standards for meteorology, hydrology and oceanography.</p>
+</div>
+<div class="paragraph">
+<p>The Met Office is also active in the World Wide Web Consortium (W3C) standards development organisation.</p>
 </div>
 <div class="sect3">
 <h4 id="_motivation_to_participate_41"><a class="anchor" href="#_motivation_to_participate_41"></a>A.41.1. Motivation to Participate</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Meteorology has had a long tradition of inventing and using technologies for its specific and very demanding requirements. As weather and climate information become ever more important to many aspects of society, it has become increasingly important to make information available using widespread technologies and approaches. We think using OpenAPI version 3 for defining public and private APIs to our data and information will have many benefits, for both customers and our infrastructure, especially when supporting services from computing clouds. We would like the APIs to be consistent with, and conformant to, any OGC OpenAPI standards.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implemented_solution_41"><a class="anchor" href="#_implemented_solution_41"></a>A.41.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p><a href="https://github.com/opengeospatial/weather-on-the-web">Weather on the Web</a> (WotW) is an initiative to agree APIs for common data retrieval patterns, such as points, time-series, polygons, and trajectories, in 2, 3 and 4 Dimensions. The intent is to make it a global standard for meteorological and environmental services.</p>
+</div>
+<div class="paragraph">
+<p>Point Data has been working for some time, as have Time-series at a point, and Polygons. Trajectories and Data Tiles are being developed.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_proposed_alternatives_41"><a class="anchor" href="#_proposed_alternatives_41"></a>A.41.3. Proposed Alternatives</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Fall-back is to develop our meteorological APIs separetely from the OGC proposals and standardise through WMO, though this will be much slower.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_experiences_with_ogc_api_specifications_41"><a class="anchor" href="#_experiences_with_ogc_api_specifications_41"></a>A.41.4. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>A Hackathon was held in December 2018 in Washington DC, USA, building on the OGC WFS3.0 specification. Servers and clients based on existing WFS software were readily developed. Agreement was reached on the initial data retrieval patterns to support: point, timeseries, etc..</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_other_impressions_recommendations_41"><a class="anchor" href="#_other_impressions_recommendations_41"></a>A.41.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>In the WFS3.0 spec, /Items/ needs to be replaced by 'point', 'timeseries', trajectory', etc. This is consistent with the approach advocated by Joan Maso for maps and tiles.</p>
 </div>
 </div>
 </div>
@@ -4619,43 +5043,45 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="SimmsReeve"><a class="anchor" href="#SimmsReeve"></a>A.51. Simms Reeve</h3>
+<h3 id="SigmaBravo"><a class="anchor" href="#SigmaBravo"></a>A.51. SigmaBravo</h3>
 <div class="paragraph">
-<p>TBA</p>
+<p>Sigma Bravo is a specialist provider of ICT services focused specifically on military operations.
+We enable and support an integrated, informed and agile 5th generation force.</p>
 </div>
 <div class="sect3">
 <h4 id="_motivation_to_participate_51"><a class="anchor" href="#_motivation_to_participate_51"></a>A.51.1. Motivation to Participate</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Sigma Bravo has a strong support of open standards as a path to interoperability. We recognise the
+value of simple, implementer-friendly standards.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implemented_solution_51"><a class="anchor" href="#_implemented_solution_51"></a>A.51.2. Implemented Solution</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Sigma Bravo extended the OpenSphere web application to support OGC API - Features and OGC API - Map Tiles.
+Interoperability with GeoServer, pygeoapi and SpaceBel OGC API - Features servers was demonstrated.
+Interoperability with ESRI OGC API - Map Tiles was also demonstrated.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_51"><a class="anchor" href="#_proposed_alternatives_51"></a>A.51.3. Proposed Alternatives</h4>
+<h4 id="_experiences_with_ogc_api_specifications_51"><a class="anchor" href="#_experiences_with_ogc_api_specifications_51"></a>A.51.3. Experiences with OGC API Specifications</h4>
 <div class="paragraph">
-<p>TBA</p>
+<p>Sigma Bravo has significant experience with previous OGC Specifications, particulary on GeoPackage. The
+most mature part of our OGC API implementation is OGC API - Features.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_51"><a class="anchor" href="#_experiences_with_ogc_api_specifications_51"></a>A.51.4. Experiences with OGC API Specifications</h4>
+<h4 id="_other_impressions_recommendations_51"><a class="anchor" href="#_other_impressions_recommendations_51"></a>A.51.4. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_other_impressions_recommendations_51"><a class="anchor" href="#_other_impressions_recommendations_51"></a>A.51.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
+<p>Sigma Bravo commends the OGC on the OGC API program of work, and thanks OGC staff and GeoVation for their
+work in organising and hosting the hackathon. Sigma Bravo recommends that OGC seek to mature the OGC API
+standards through ongoing engagement and outreach activities, development of comprehensive Executable
+Test Suites and ongoing "in the open" standards development.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="Sinergise"><a class="anchor" href="#Sinergise"></a>A.52. Sinergise</h3>
+<h3 id="SimmsReeve"><a class="anchor" href="#SimmsReeve"></a>A.52. Simms Reeve</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4672,7 +5098,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_52"><a class="anchor" href="#_proposed_alternatives_52"></a>A.52.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_51"><a class="anchor" href="#_proposed_alternatives_51"></a>A.52.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4691,7 +5117,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="Solenix"><a class="anchor" href="#Solenix"></a>A.53. Solenix</h3>
+<h3 id="Sinergise"><a class="anchor" href="#Sinergise"></a>A.53. Sinergise</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4708,7 +5134,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_53"><a class="anchor" href="#_proposed_alternatives_53"></a>A.53.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_52"><a class="anchor" href="#_proposed_alternatives_52"></a>A.53.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4727,7 +5153,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="StrategicAllianceConsultingInc"><a class="anchor" href="#StrategicAllianceConsultingInc"></a>A.54. Strategic Alliance Consulting Inc</h3>
+<h3 id="Solenix"><a class="anchor" href="#Solenix"></a>A.54. Solenix</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4744,7 +5170,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_54"><a class="anchor" href="#_proposed_alternatives_54"></a>A.54.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_53"><a class="anchor" href="#_proposed_alternatives_53"></a>A.54.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4763,7 +5189,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="UniversityCollegeLondon"><a class="anchor" href="#UniversityCollegeLondon"></a>A.55. University College London</h3>
+<h3 id="StrategicAllianceConsultingInc"><a class="anchor" href="#StrategicAllianceConsultingInc"></a>A.55. Strategic Alliance Consulting Inc</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4780,7 +5206,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_55"><a class="anchor" href="#_proposed_alternatives_55"></a>A.55.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_54"><a class="anchor" href="#_proposed_alternatives_54"></a>A.55.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4799,7 +5225,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="UniversityofBirmingham"><a class="anchor" href="#UniversityofBirmingham"></a>A.56. University of Birmingham</h3>
+<h3 id="UniversityCollegeLondon"><a class="anchor" href="#UniversityCollegeLondon"></a>A.56. University College London</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4816,7 +5242,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_56"><a class="anchor" href="#_proposed_alternatives_56"></a>A.56.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_55"><a class="anchor" href="#_proposed_alternatives_55"></a>A.56.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4835,12 +5261,48 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="UniversityofMunster"><a class="anchor" href="#UniversityofMunster"></a>A.57. University of Münster</h3>
+<h3 id="UniversityofBirmingham"><a class="anchor" href="#UniversityofBirmingham"></a>A.57. University of Birmingham</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_57"><a class="anchor" href="#_motivation_to_participate_57"></a>A.57.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_57"><a class="anchor" href="#_implemented_solution_57"></a>A.57.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_56"><a class="anchor" href="#_proposed_alternatives_56"></a>A.57.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_57"><a class="anchor" href="#_experiences_with_ogc_api_specifications_57"></a>A.57.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_57"><a class="anchor" href="#_other_impressions_recommendations_57"></a>A.57.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="UniversityofMunster"><a class="anchor" href="#UniversityofMunster"></a>A.58. University of Münster</h3>
 <div class="paragraph">
 <p>Participant: Matthias Mohr</p>
 </div>
 <div class="sect3">
-<h4 id="_motivation_to_participate_57"><a class="anchor" href="#_motivation_to_participate_57"></a>A.57.1. Motivation to Participate</h4>
+<h4 id="_motivation_to_participate_58"><a class="anchor" href="#_motivation_to_participate_58"></a>A.58.1. Motivation to Participate</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -4859,7 +5321,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_implemented_solution_57"><a class="anchor" href="#_implemented_solution_57"></a>A.57.2. Implemented Solution</h4>
+<h4 id="_implemented_solution_58"><a class="anchor" href="#_implemented_solution_58"></a>A.58.2. Implemented Solution</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -4869,7 +5331,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_57"><a class="anchor" href="#_proposed_alternatives_57"></a>A.57.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_57"><a class="anchor" href="#_proposed_alternatives_57"></a>A.58.3. Proposed Alternatives</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -4885,7 +5347,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_57"><a class="anchor" href="#_experiences_with_ogc_api_specifications_57"></a>A.57.4. Experiences with OGC API Specifications</h4>
+<h4 id="_experiences_with_ogc_api_specifications_58"><a class="anchor" href="#_experiences_with_ogc_api_specifications_58"></a>A.58.4. Experiences with OGC API Specifications</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -4898,42 +5360,6 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_other_impressions_recommendations_57"><a class="anchor" href="#_other_impressions_recommendations_57"></a>A.57.5. Other Impressions &amp; Recommendations</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="UniversityofNotreDame"><a class="anchor" href="#UniversityofNotreDame"></a>A.58. University of Notre Dame</h3>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-<div class="sect3">
-<h4 id="_motivation_to_participate_58"><a class="anchor" href="#_motivation_to_participate_58"></a>A.58.1. Motivation to Participate</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_implemented_solution_58"><a class="anchor" href="#_implemented_solution_58"></a>A.58.2. Implemented Solution</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_proposed_alternatives_58"><a class="anchor" href="#_proposed_alternatives_58"></a>A.58.3. Proposed Alternatives</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_experiences_with_ogc_api_specifications_58"><a class="anchor" href="#_experiences_with_ogc_api_specifications_58"></a>A.58.4. Experiences with OGC API Specifications</h4>
-<div class="paragraph">
-<p>TBA</p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="_other_impressions_recommendations_58"><a class="anchor" href="#_other_impressions_recommendations_58"></a>A.58.5. Other Impressions &amp; Recommendations</h4>
 <div class="paragraph">
 <p>TBA</p>
@@ -4941,7 +5367,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="WebGeoDataVore"><a class="anchor" href="#WebGeoDataVore"></a>A.59. WebGeoDataVore</h3>
+<h3 id="UniversityofNotreDame"><a class="anchor" href="#UniversityofNotreDame"></a>A.59. University of Notre Dame</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4958,7 +5384,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_59"><a class="anchor" href="#_proposed_alternatives_59"></a>A.59.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_58"><a class="anchor" href="#_proposed_alternatives_58"></a>A.59.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4977,7 +5403,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect2">
-<h3 id="WestUniversityofTimisoara"><a class="anchor" href="#WestUniversityofTimisoara"></a>A.60. West University of Timisoara</h3>
+<h3 id="WebGeoDataVore"><a class="anchor" href="#WebGeoDataVore"></a>A.60. WebGeoDataVore</h3>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -4994,7 +5420,7 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 <div class="sect3">
-<h4 id="_proposed_alternatives_60"><a class="anchor" href="#_proposed_alternatives_60"></a>A.60.3. Proposed Alternatives</h4>
+<h4 id="_proposed_alternatives_59"><a class="anchor" href="#_proposed_alternatives_59"></a>A.60.3. Proposed Alternatives</h4>
 <div class="paragraph">
 <p>TBA</p>
 </div>
@@ -5012,13 +5438,49 @@ This list will be updated at the start of the Hackathon
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="WestUniversityofTimisoara"><a class="anchor" href="#WestUniversityofTimisoara"></a>A.61. West University of Timisoara</h3>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+<div class="sect3">
+<h4 id="_motivation_to_participate_61"><a class="anchor" href="#_motivation_to_participate_61"></a>A.61.1. Motivation to Participate</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implemented_solution_61"><a class="anchor" href="#_implemented_solution_61"></a>A.61.2. Implemented Solution</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_proposed_alternatives_60"><a class="anchor" href="#_proposed_alternatives_60"></a>A.61.3. Proposed Alternatives</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experiences_with_ogc_api_specifications_61"><a class="anchor" href="#_experiences_with_ogc_api_specifications_61"></a>A.61.4. Experiences with OGC API Specifications</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_other_impressions_recommendations_61"><a class="anchor" href="#_other_impressions_recommendations_61"></a>A.61.5. Other Impressions &amp; Recommendations</h4>
+<div class="paragraph">
+<p>TBA</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="RevisionHistory"><a class="anchor" href="#RevisionHistory"></a>Appendix B: Revision History</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 2. Revision History</caption>
+<caption class="title">Table 3. Revision History</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -5119,7 +5581,7 @@ This list will be updated at the start of the Hackathon
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-06-10 10:38:53 +0100
+Last updated 2019-06-25 14:00:17 +0200
 </div>
 </div>
 <style>
