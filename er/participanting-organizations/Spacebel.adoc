@@ -13,7 +13,7 @@ In addition, Spacebel was also present in London to participate with ESA support
 
 ==== Implemented Solution
 
-Catalog Server (https://databio.spacebel.be/eo-catalog/readme.html) hosting EO applications and services (OGC 19-020), EO collections (OGC 17-084) and EO product (OGC 17-003) metadata implementing OpenSearch and Open API Common interfaces.  Resources `/`, `/conformance`, `/collections` were implemented and interoperability was demonstrated through TIE testing with the http://frozen-lime.surge.sh/[OpenSphere client] implementing OGC API Features provided by another participant.
+Catalog Server (https://databio.spacebel.be/eo-catalog/readme.html) hosting EO applications and services (OGC 19-020), EO collections (OGC 17-084) and EO product (OGC 17-003) metadata implementing OpenSearch (OGC 10-032r8 and OGC 13-026r8) and Open API Common interfaces.  Resources `/`, `/conformance`, `/collections` were implemented and interoperability was demonstrated through TIE testing with the http://frozen-lime.surge.sh/[OpenSphere client] implementing OGC API Features provided by another participant.
 
 ==== Proposed Alternatives
 
@@ -25,4 +25,8 @@ TBA
 
 ==== Other Impressions & Recommendations
 
-TBA
+Further alignment of the OpenSearch Catalog Server with OGC API Features interfaces, requires reconciling the time and bbox related search parameters from OGC 10-032 and OGC API Features.  While OGC 10-032r8 has separate search parameters representing the start and end of a search interval `{time:start}` and `{time:end}` respectively, OGC API Features imposes a single search parameter to represent the interval.  
+
+The approach to represent links in JSON is unfortunately different that the encoding proposed by OGC 14-055r2 which means that an OpenSearch implemention based simultaneously on OGC 14-055r2 and OGC 17-047 in combination with OGC API Common will have different encodings for links in search responses and in other resource representations (e.g. `/conformance`, `/` etc).
+
+The OGC API specifications are imposing to advertise "paths" in the Landing Page response and also contain wording suggesting that actual path names such as "api", "conformance", "collections" are mandatory and not just examples.  This should be made clearer and it seems redundant to impose the declaration of paths in the landing page if indeed the path names are "fixed".
