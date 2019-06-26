@@ -26,21 +26,34 @@ All questions regarding this document should be directed to the editor or the co
 [width="80%",options="header",caption=""]
 |====================
 |Name |Organization | Role
-|Gobe Hobona | Open Geospatial Consortium |TBA
-|Scott Simmons | Open Geospatial Consortium |TBA
-|Michael Gordon | Ordnance Survey |TBA
-|Simon Green | Ordnance Survey |TBA
-|Clemens Portele | interactive instruments GmbH |TBA
-|Jorge Samuel Mendes de Jesus | ISRIC - World Soil Information |TBA
-|Peter Baumann | rasdaman GmbH |TBA
-|Francesco	Bartoli | Geobeyond |TBA
-|Dirk Stenger | lat/lon GmbH |TBA
-|Chuck Heazel | Heazeltech LLC |TBA
-|Matthias Mohr | University of Münster |TBA
-|Robin Houtmeyers | Hexagon Geospatial |TBA
-|TBA | TBA |TBA
-|TBA | TBA |TBA
-|TBA | TBA |TBA
+|Gobe Hobona | Open Geospatial Consortium | Editor
+|Scott Simmons | Open Geospatial Consortium | Contributor
+|Michael Gordon | Ordnance Survey | Contributor
+|Simon Green | Ordnance Survey | Contributor
+|Clemens Portele | interactive instruments GmbH | Contributor
+|Jorge Samuel Mendes de Jesus | ISRIC - World Soil Information | Contributor
+|Peter Baumann | rasdaman GmbH | Contributor
+|Francesco	Bartoli | Geobeyond | Contributor
+|Dirk Stenger | lat/lon GmbH | Contributor
+|Chuck Heazel | Heazeltech LLC | Contributor
+|Matthias Mohr | University of Münster | Contributor
+|Robin Houtmeyers | Hexagon Geospatial | Contributor
+|Jonathan Moules | GeoSeer | Contributor
+|Gérald Fenoy | GeoLabs | Contributor
+|Brad Hards | Sigma Bravo | Contributor
+|Chris Little | Met Office | Contributor
+|Yves Coene | Spacebel | Contributor
+|Adam Branscomb | Esri UK | Contributor
+|Joan Maso | CREAF | Contributor
+|Stephan Meißl | EOX | Contributor
+|TBA | TBA | Contributor
+|TBA | TBA | Contributor
+|TBA | TBA | Contributor
+|TBA | TBA | Contributor
+|TBA | TBA | Contributor
+|TBA | TBA | Contributor
+|TBA | TBA | Contributor
+|TBA | TBA | Contributor
 |====================
 
 NOTE: Role = Editor and/or Contributor
