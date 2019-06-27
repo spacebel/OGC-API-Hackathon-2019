@@ -15,13 +15,51 @@ In addition, Spacebel was also present in London to participate with ESA support
 
 Catalog Server (https://databio.spacebel.be/eo-catalog/readme.html) hosting EO applications and services (OGC 19-020), EO collections (OGC 17-084) and EO product (OGC 17-003) metadata implementing OpenSearch (OGC 10-032r8 and OGC 13-026r8) and Open API Common interfaces.  Resources `/`, `/conformance`, `/collections` were implemented and interoperability was demonstrated through TIE testing with the http://frozen-lime.surge.sh/[OpenSphere client] implementing OGC API Features provided by another participant.
 
+Web Processing Service (http://34.77.240.214/ades-proxy/swagger-ui/index.html) with a OGC API for Processing as defined in OGC Testbed 14 (https://raw.githubusercontent.com/spacebel/testbed14/master/json-spec/wps-t_tb14_spacebel-v1.6.yaml), including the Transactional and the Quoting & Billing extensions. Resources `/`, `/conformance`, `/processes`, `/jobs`were implemented and itneroperability was shown through TIE testing with the Solenix client.
+
 ==== Proposed Alternatives
 
 TBA
 
 ==== Experiences with OGC API Specifications
 
-TBA
+===== OGC API for Processing 
+
+A major discussion during the OGC Hackaton 2019 (London) was about describing the process interfaces (i.e. the Process Description including inputs and outputs definitions) directly in JSON Schema and/or OpenAPI. Indeed, as OpenAPI already supports descriptions of schemas/interfaces, this would remove the need of using a specific Process Description schema, and this would also ease the work of Web client developers.
+
+For each existing process, a resource with a HTTP path is defined in the API document. Therefore, processes are discovered through the API document (no need of discovery and describe process operations) and the Client directly knows how to invoke the execution. The API document is illustrated below:
+
+.Example of processes exposed as OpenAPI operations
+[source]
+----
+openapi: 3.0.0
+paths:
+ # For each process the path and interface is provided as below
+ '/processes/mySampleProcess/jobs':
+   post:
+      summary: Start mySampleProcess execution.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/mySampleProcessExecuteRequest'
+      responses:
+        '201':
+          headers:
+            Location:
+              schema:
+                type: string
+              description: URL to check the status of the execution/job.
+----
+
+A complete report about the mapping between the Process Description specification and the JSON Schema format is available at https://github.com/spacebel/testbed14/wiki/OGC-Hackaton-2019.
+
+Others topics habe also been covered during the Hackaton:
+
+* The transactional extension specification has been submitted to the offical github repository at https://github.com/opengeospatial/wps-rest-binding/commit/7bdee9df5652ad3a7ad13075c535b84f9b264d0b.
+* An extension supporting callbacks would allow a more modern pattern for monitoring the jobs status. Instead of observing (repeated polling), the client can be notified on the following event: onSuccess, onFailure, onUpdate. Spacebel has proposed a draft specification for such notification feature (relying on OpenAPI callbacks): https://github.com/opengeospatial/wps-rest-binding/commit/8cc2bdaf6483af7d8c5a85c7ad0a45b8e68cc4b6
+* A very classical issue related to the possibility to report list of files as outputs was discussed. The conclusion of the discussion was that the new Processing API should support the presence of output file arrays.
+* Some fixes listed at https://github.com/opengeospatial/wps-rest-binding/issues have been proposed during the Hackaton.
 
 ==== Other Impressions & Recommendations
 
