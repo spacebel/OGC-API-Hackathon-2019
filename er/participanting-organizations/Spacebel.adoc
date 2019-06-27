@@ -54,7 +54,7 @@ paths:
 
 A complete report about the mapping between the Process Description specification and the JSON Schema format is available at https://github.com/spacebel/testbed14/wiki/OGC-Hackaton-2019.
 
-Others topics habe also been covered during the Hackaton:
+Others topics have also been covered during the Hackaton:
 
 * The transactional extension specification has been submitted to the offical github repository at https://github.com/opengeospatial/wps-rest-binding/commit/7bdee9df5652ad3a7ad13075c535b84f9b264d0b.
 * An extension supporting callbacks would allow a more modern pattern for monitoring the jobs status. Instead of observing (repeated polling), the client can be notified on the following event: onSuccess, onFailure, onUpdate. Spacebel has proposed a draft specification for such notification feature (relying on OpenAPI callbacks): https://github.com/opengeospatial/wps-rest-binding/commit/8cc2bdaf6483af7d8c5a85c7ad0a45b8e68cc4b6
